@@ -1,3 +1,6 @@
 # Copycats
 Wordpress template experimental themes courses and related.
-** Template **
+--index.php
+--functions.php
+--header.php
+--footer.php
