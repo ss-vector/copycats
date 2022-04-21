@@ -1,0 +1,136 @@
+// Custom.scss
+// Include any default variable overrides here (though functions won't be available)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap');
+
+//  Main color variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+// Theme color palette
+$primary:       $green;
+$shadow:        #222832;
+$light-green:   #ddffaa;
+$leaf-green:    #aaee99;
+$body-bg:       #ffffff;
+$public-yellow: #e8e524;
+$link-color:#546464;
+
+$cp-footer-bg: rgba(247,247,247,1);
+$sub-footer-bg: #e5e5e5;
+
+$cp-text-color-dark: rgba(51,51,51,1);
+$cp-text-color-light: rgba(247,247,247,1);
+
+// Theme colors: cc for copycats :3
+$copycats-theme-colors: (
+  "primary":    $primary,
+  "featured":   $pink,
+  "secondary":  $leaf-green
+);
+
+// Links color styles
+$link-color:                             $blue;
+$link-decoration:                         none;
+$link-shade-percentage:                   20%;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration:                   null;
+
+// Container Variables.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);
+
+.navbar-nav {
+    flex-direction: row !important;
+}
+
+
+
+// Option B: Include parts of Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Here use functions: Color Functions
+// Shadows
+$shadow-100: tint-color($shadow, 80%);
+$shadow-500: $shadow;
+$shadow-600: shade-color($shadow, 20%);
+$shadow-900: shade-color($shadow, 80%);
+
+
+
+@each $color, $value in $copycats-theme-colors {
+  .cc-btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+// Woocommerce Style Overrides
+
+// Utilizing WooCommerce Styles
+@import '../../../../plugins/woocommerce/assets/css/woocommerce';
+
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
+	top: 0 !important;
+}
+
+$red-featured: lighten($red, 20%) !default;
+$public-yellow-box: lighten($public-yellow, 20%) !default;
+
+
+
+.woocommerce a.button {
+  background-color: $red-featured;
+  color: white;
+}
+
+.woo_categories_menu__title {
+	background-color: $red-featured;
+  color: white;
+}
+
+@import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';
+
+// 5. Add additional custom code here
+//#ffe30061
+.fs-box.card {
+  background-color: $public-yellow-box;  }
+
+.blog-title {
+	padding: 20px;
+	background-color: $leaf-green;
+}
+
+.bg-footer {
+  background-color: $cp-footer-bg;
+  color: $cp-text-color-dark; }
+
+.sub-footer {
+  background-color: $sub-footer-bg;
+  text-align: center; }
+
+.top-bar {
+	background-color: $shadow-500;
+	color: $cp-text-color-light;
+  text-align: center;
+}
+
+@media only screen and ( max-width: 550px ){
+
+  .categories-column {
+    padding-left: 0;
+	}
+
+}
