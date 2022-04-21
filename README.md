@@ -1,4 +1,4 @@
-# Copycats
+# Copycats Template for Wordpress
 Wordpress template experimental themes courses and related.
 --index.php
 --functions.php
