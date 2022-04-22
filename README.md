@@ -12,4 +12,6 @@ Wordpress template experimental themes courses and related.
 ## Folders:
 
 - inc/
+	template parts.
 - assets/
+	css styles, admin assets, fonts, images, js, sass
