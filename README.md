@@ -12,3 +12,4 @@ Wordpress template experimental themes courses and related.
 ## Folders:
 
 - inc/
+- assets/
