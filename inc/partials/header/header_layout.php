@@ -1,6 +1,8 @@
 <?php
 	/**
 	 * Copycats header template
+	 * 
+	 * @package Copycats  
 	 */
 ?>
 <div id="master" class="site-header">
@@ -10,7 +12,7 @@
 			<div class="row align-items-center-justify-content-between">
 				<div class="col-sm">
 					<div class="hot-title">
-					 	<h5>Envios a todo Peru</h5>
+					 	<h5>Envios a todo <strong>Perú</strong></h5>
 					</div>
 				</div>
 				<div class="col-sm">
@@ -28,14 +30,16 @@
 			</div>
 		</div>
 	</div>
-	<!-- /top-bar
+	<!-- /top-bar -->
 	<div class="main-header">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
-				--logo
+				<!-- logo -->
 				<div class="col-xl-2 col-6">
+					<!-- TODO:
+						-- Logo automation demo.
+					 -->
 					<a href="<?php echo esc_html( site_url( '/' ) ); ?>">
-						<?php wp_head(); ?>
 					</a>
 				</div>
 				<div id="search-bar" class="col">
