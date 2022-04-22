@@ -28,11 +28,11 @@
 			</div>
 		</div>
 	</div>
-	<!-- /top-bar-->
+	<!-- /top-bar
 	<div class="main-header">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
-				<!-- Logo -->
+				--logo
 				<div class="col-xl-2 col-6">
 					<a href="<?php echo esc_html( site_url( '/' ) ); ?>">
 						<?php wp_head(); ?>
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Bottom Nav Bar -->
+	--Bottom Nav Bar --
 	<div class="bottom-bar bottom-bar-woocommerce">
 		<div class="container">
 			<div class="row align-items-center">
@@ -88,4 +88,5 @@
 			</div>
 		</div>
 	</div>
+	-->
 </div>

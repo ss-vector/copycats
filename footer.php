@@ -1,5 +1,6 @@
 <?php wp_footer(); ?>
-			</div><!-- </main-warpper> -->
+			</div> <!-- /container-fluid -->
+			</div><!-- /main-warpper -->
 			<footer class="site-footer bg-footer">
 				<div class="footer-box">
 					<div class="container py-3">

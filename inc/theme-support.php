@@ -3,10 +3,12 @@
  *  Copycats Theme Support Functions
  * 
  * @package Copycats
+ * @since 1.0.5
+ * 
  * */
 
-	require_once COPYCATS_THEME_DIR . '/inc/template/layout/walker.php';
-	# require $vega_inc_path . '/inc/template/layout/slider-content.php';
+require_once COPYCATS_THEME_DIR . '/inc/template/layout/walker.php';
+require_once COPYCATS_THEME_DIR . '/inc/template/slider/slider-content.php';
 
 /* Nav Menus Options */
 function copycats_register_nav_menu_setup() {

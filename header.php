@@ -18,8 +18,7 @@
 
 	</head>
 
-	<body <?php body_class('copydemo'); ?>>
-		<?php wp_body_open(); ?>
+	<body <?php body_class(''); ?>>
 		<div id="page" class="site">
 			<div class="main-wrapper">
 				<?php get_template_part('inc/partials/header/header_layout'); ?>
