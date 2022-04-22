@@ -4,6 +4,7 @@
 	 * Copycats Template Header
 	 * 
 	 * @package Copycats 
+	 * @since 1.0
 	*/
 ?>
 
@@ -19,13 +20,13 @@
 	</head>
 
 	<body <?php body_class(''); ?>>
+		<?php wp_body_open(); ?>
 		<div id="page" class="site">
 			<div class="main-wrapper">
+			
 				<?php get_template_part('inc/partials/header/header_layout'); ?>
-				<!-- Main Slider -->
-				<?php if(is_front_page() ) : ?>
-					<?php get_template_part( 'inc/template/partials/header/featured' ); ?>
-					<!-- Insert container to display featured boxes -->
-				<?php endif; ?>
-				<!-- Main containers -->
+
+				<!-- TODO: Main Slider -->
+
+				<!-- Main container -->
 				<div class="container-fluid site-content">

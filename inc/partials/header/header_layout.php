@@ -31,16 +31,15 @@
 		</div>
 	</div>
 	<!-- /top-bar -->
+	<!-- Main Header -->
 	<div class="main-header">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<!-- logo -->
 				<div class="col-xl-2 col-6">
 					<!-- TODO:
-						-- Logo automation demo.
+						--Logo automation demo.
 					 -->
-					<a href="<?php echo esc_html( site_url( '/' ) ); ?>">
-					</a>
 				</div>
 				<div id="search-bar" class="col">
 					<div class="search-form-container main-header-right">
@@ -50,21 +49,20 @@
 					</div>
 				</div>
 				<div class="col-xl-2 col-6">
-					<div class="copycats_woocommerce__atributes">
-							<a href="<?php echo get_permalink( wc_get_page_id('cart') ); ?>"><span class="icon-cart"></span></a>
-							<a href="<?php echo $account_url; ?>"><span class="icon-user"></span></a>
-							<span class="icon-heart"></span>
-					</div>
+					<!-- TODO: 
+						--woocommerce categoris nav menu
+					-->
 				</div>
 			</div>
 		</div>
 	</div>
-	--Bottom Nav Bar --
+	<!-- /main-header -->
+	<!--Bottom Nav Bar -->
 	<div class="bottom-bar bottom-bar-woocommerce">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-sm-3 col-md-4 col-lg-3 col-9 woo_categories_menu">
-					<?php get_template_part('vega/partials/navbar/woo_nav'); ?>
+					<?php # get_template_part('vega/partials/navbar/woo_nav'); ?>
 				</div>								
 				<div class="col-lg col-md col-sm-6 col-3">
 					<div class="copycats__mobile wp_is_mobile">
@@ -78,19 +76,18 @@
 	                    <div class="copycats__mobile_content">
 	                        <div class="copycats__mobile_content__inner">
 	                        	<h5>Menu de Navegación</h5>
-								<?php get_template_part( 'vega/partials/header/parts/pages-menu' ); ?>
+								<?php # get_template_part( 'vega/partials/header/parts/pages-menu' ); ?>
 	                        </div>
 	                    </div>
 	                </div>
 
 					<div class="header_main_menu wp_is_not_mobile">
 						<ul class="copycats-pages-menu">
-							<?php get_template_part( 'vega/partials/header/parts/menu' ); ?>
+							<?php # get_template_part( 'vega/partials/header/parts/menu' ); ?>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	-->
 </div>
