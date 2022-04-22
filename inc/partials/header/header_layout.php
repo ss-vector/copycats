@@ -1,5 +1,7 @@
 <?php
-	$account_url = get_permalink(get_option('woocommerce_myaccount_page_id'));
+	/**
+	 * Copycats header template
+	 */
 ?>
 <div id="master" class="site-header">
 	<!-- top-bar-->

@@ -22,7 +22,7 @@
 		<?php wp_body_open(); ?>
 		<div id="page" class="site">
 			<div class="main-wrapper">
-				<?php # get_template_part('inc/partials/header/header_layout'); ?>
+				<?php get_template_part('inc/partials/header/header_layout'); ?>
 				<!-- Main Slider -->
 				<?php if(is_front_page() ) : ?>
 					<?php get_template_part( 'inc/template/partials/header/featured' ); ?>
