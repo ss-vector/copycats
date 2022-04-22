@@ -1,6 +1,6 @@
 <?php
 
-class copycats_walker_template extends Walker {
+class copycats_walker_menu extends Walker {
     /**
      * What the class handles.
      *
