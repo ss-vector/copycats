@@ -36,9 +36,9 @@ add_action( 'wp_enqueue_scripts', 'copycats_primary_theme_setup', 5 );
 
 function copycats_vendor_scripts_setup() {
 
-		# wp_register_style( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap/css/bootstrap.css', false, '5.0.2', 'all'  );
+		wp_register_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, '5.1.3', 'all'  );
 
-		# wp_enqueue_style( 'bootstrap' );
+		wp_enqueue_style( 'bootstrap' );
 
 
 		// Scripts
