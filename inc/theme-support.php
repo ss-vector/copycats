@@ -17,7 +17,7 @@ function copycats_register_nav_menu_setup() {
 
 	register_nav_menu( 'primary-top', 'Top bar Navigation Menu' );
 
-	register_nav_menu( 'header-menu', 'Main Header Menu' );
+	register_nav_menu( 'primary-home-menu', 'Main Header Menu' );
 	register_nav_menu( 'pages-menu', 'Pages Menu' );
 	// Footer Manus: Blocks
 	register_nav_menu( 'footer-block-menu', '1st Footer Navigation Block Menu' );
