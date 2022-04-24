@@ -20,7 +20,7 @@
 						<?php 
 							wp_nav_menu( array(
 								'menu_class'		=> 'nav navbar-nav',
-								'menu-id' 			=> 'primary-top-menu',
+								'menu-id' 			=> 'top-menu',
 								'theme_location' 	=> 'primary-top',
 								'container'			=> false
 							) );
