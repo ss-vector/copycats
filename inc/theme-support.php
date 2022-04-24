@@ -51,14 +51,19 @@ add_action( 'widgets_init', 'copycats_blog_sidebar_setup' );
 
 /* Post Formats */
 add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+add_theme_support( 'custom-logo' );
 
-# Custom Logo
+/** Custom Logo
+ * 
+ * @link https://developer.wordpress.org/themes/functionality/custom-logo/
+ */
+add_image_size( 'custom-size', 220, 180, true );
 
 function copycats_custom_logo_setup() {
 	$defaults = array(
 		'height' 		=> 100,
-		'width' 		=> 400,
-		'flex-height'	=> true,
+		'width' 		=> 220,
+		'flex-height'	=> false,
 		'flex-width' 	=> true,
 	);
 

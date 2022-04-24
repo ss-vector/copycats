@@ -37,9 +37,10 @@
 			<div class="row align-items-center justify-content-between">
 				<!-- logo -->
 				<div class="col-xl-2 col-6">
-					<!-- TODO:
-						--Logo automation demo.
-					 -->
+					<?php if ( function_exists( 'the_custom_logo' ) ) {
+						the_custom_logo( 'custom-size');
+							}
+						?>
 				</div>
 				<div id="search-bar" class="col">
 					<div class="search-form-container main-header-right">
