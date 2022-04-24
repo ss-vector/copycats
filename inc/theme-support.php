@@ -20,8 +20,10 @@ function copycats_register_nav_menu_setup() {
 	register_nav_menu( 'primary-home-menu', 'Main Header Menu' );
 	register_nav_menu( 'pages-menu', 'Pages Menu' );
 	// Footer Manus: Blocks
-	register_nav_menu( 'footer-block-menu', '1st Footer Navigation Block Menu' );
-	register_nav_menu( 'recent-posts-menu', '2nd Footer Navigation Block Menu' );
+	register_nav_menu( 'footer-nav-menu', 'Main Footer Navigation Block Menu' );
+
+	// Rework
+	register_nav_menu( 'recent-posts-menu', 'Footer Navigation Block Menu' );
 
 }
 add_action( 'init', 'copycats_register_nav_menu_setup' );

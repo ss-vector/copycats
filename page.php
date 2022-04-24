@@ -15,8 +15,12 @@ get_header();
         <div class="col-lg-6">
             <div class="section-wrapper">
                 <article>
-                    <h1><?php echo bloginfo( 'title' ); ?></h1>
-                    <p>Sometimes we need text to fill our test.</p>
+                    <?php if( have_posts() ):
+                            while( have_posts() ): the_post(); ?>
+                                <h1><?php the_title( sprintf( '<a href="%s"><h2 class="blog-entry-title">', esc_url( get_permalink() ) ), '</h2></a>' ); ?></h1>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                    <?php endif; ?>
                 </article>
             </div>
         </div>

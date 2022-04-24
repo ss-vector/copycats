@@ -265,6 +265,30 @@
 	position: relative;
 }
 
+/* */
+
+.blog-title {
+  padding: 20px;
+  background-color: #aaee99;
+}
+
+.bg-footer {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.sub-footer {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.top-bar {
+  background-color: #222832;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+
 /* Woocommerce */
 
 .woocommerce span.onsale {

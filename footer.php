@@ -15,9 +15,9 @@
 									<h3>Mapa del Sitio</h3>
 									<?php 
 										wp_nav_menu( array(
-											'menu_class'		=> 'menu block_1',
+											'menu_class'		=> 'menu',
 											'menu-id' 			=> 'block-footer-1',
-											'theme_location' 	=> 'footer-block-menu',
+											'theme_location' 	=> 'footer-nav-menu',
 											'container'			=> false
 										) );
 									?>
