@@ -57,6 +57,7 @@ add_theme_support( 'custom-logo' );
  * 
  * @link https://developer.wordpress.org/themes/functionality/custom-logo/
  */
+
 add_image_size( 'custom-size', 220, 180, true );
 
 function copycats_custom_logo_setup() {
