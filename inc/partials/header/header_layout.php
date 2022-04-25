@@ -77,7 +77,9 @@
 	                    <div class="copycats__mobile_content">
 	                        <div class="copycats__mobile_content__inner">
 	                        	<h5>Menu de Navegación</h5>
-								<?php get_template_part( 'inc/partials/header/parts/pages-menu' ); ?>
+	        					<ul class="copycats-pages-menu">
+									<?php get_template_part( 'inc/partials/header/parts/pages-menu' ); ?>
+								</ul>
 	                        </div>
 	                    </div>
 	                </div>

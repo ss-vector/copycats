@@ -14,7 +14,7 @@
  *
  * @see Walker
  */
-class Walker_Nav_Menu extends Walker {
+class copycats_Nav_Menu extends Walker {
     /**
      * What the class handles.
      *
@@ -132,7 +132,7 @@ class Walker_Nav_Menu extends Walker {
 
         $classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
         $classes[] = 'menu-item-' . $menu_item->ID;
-
+ 
         /**
          * Filters the arguments for a single nav menu item.
          *
@@ -184,6 +184,7 @@ class Walker_Nav_Menu extends Walker {
         }
         $atts['href']         = ! empty( $menu_item->url ) ? $menu_item->url : '';
         $atts['aria-current'] = $menu_item->current ? 'page' : '';
+        $atts['class'] = 'nav-link';
 
         /**
          * Filters the HTML attributes applied to a menu item's anchor element.
@@ -275,3 +276,4 @@ class Walker_Nav_Menu extends Walker {
         }
         $output .= "</li>{$n}";
     }
+}

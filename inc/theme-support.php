@@ -7,7 +7,7 @@
  * 
  * */
 
-# require_once COPYCATS_THEME_DIR . '/inc/template/layout/walker.php';
+require_once COPYCATS_THEME_DIR . '/inc/template/layout/walker.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/slider/slider-content.php';
 
 /* Nav Menus Options */
