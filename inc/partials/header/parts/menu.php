@@ -2,6 +2,8 @@
 	 wp_nav_menu( 
 	 	array(
 				'theme_location' 	=> 'primary-home-menu',
-				'waker'				=> new copycats_Nav_Menu(),
+				'menu_class'		=> 'nav',
+				'container'			=> false,
+				'walker'			=> new copycats_Nav_Menu(),
 		));
 ?>
