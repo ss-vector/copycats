@@ -10,22 +10,22 @@
 	<div class="top-bar">
 		<div class="container">
 			<div class="row align-items-center-justify-content-between">
-				<div class="col-sm">
+				<div class="col-sm-3">
 					<div class="hot-title">
 					 	<h5>Envios a todo <strong>Perú</strong></h5>
 					</div>
 				</div>
 				<div class="col-sm">
-					<nav class="top-bar-menu">
-						<?php 
-							wp_nav_menu( array(
-								'menu_class'		=> 'nav navbar-nav',
-								'menu-id' 			=> 'top-menu',
-								'theme_location' 	=> 'primary-top',
-								'container'			=> false
-							) );
-						?>
-					</nav>
+					<?php 
+						wp_nav_menu( array(
+							'menu' 				=> '',
+							'menu_class'		=>	'nav navbar navbar-expand-lg',
+							'theme_location' 	=> 'top-primary-menu',
+							'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'container'			=> '',
+							'fallback_cb'		=> 'wp_page_menu',
+						) );
+					?>
 				</div>
 			</div>
 		</div>

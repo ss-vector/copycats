@@ -15,7 +15,7 @@ function copycats_register_nav_menu_setup() {
 
 	add_theme_support( 'menus' );
 
-	register_nav_menu( 'primary-top', 'Top bar Navigation Menu' );
+	register_nav_menu( 'top-primary-menu', 'Top bar Navigation Menu' );
 
 	register_nav_menu( 'primary-home-menu', 'Main Header Menu' );
 	register_nav_menu( 'pages-menu', 'Pages Menu' );
