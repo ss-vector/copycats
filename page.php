@@ -12,8 +12,8 @@ get_header();
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6">
-            <div class="section-wrapper">
+        <div class="col-lg-12">
+            <div class="article-wrapper">
                 <article>
                     <?php if( have_posts() ):
                             while( have_posts() ): the_post(); ?>
