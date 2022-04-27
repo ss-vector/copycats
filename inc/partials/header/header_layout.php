@@ -17,6 +17,12 @@
 				</div>
 				<div class="col-sm">
 					<?php 
+					/**
+					 * @subpackage Header Top-Navbar
+					 * IT DOES NOT WORK when you are referring to an inexisting location. 
+					 * e.g. when you copied the code from somewhere else, 
+					 * or you haven't created your menu or location yet in the dasboard.
+					 */ 
 						wp_nav_menu( array(
 							'menu' 				=> '',
 							'menu_class'		=>	'nav navbar navbar-expand-lg',
