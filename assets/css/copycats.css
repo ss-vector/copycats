@@ -38,6 +38,10 @@
 			margin-right: auto;	}
 
 	/* Container */
+	.primary-container {
+		padding: 25px 25px;
+	}
+
 	.article-wrapper {
 		padding: 50px;
 	}

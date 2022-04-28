@@ -6,12 +6,17 @@
 ?>
 
 <div class="container-fluid">
-	<div class="primary container">
+	<div class="primary-container container">
 		
-		<h1>Demo Front-page.php </h1>
+		
 	
 		<div class="article-wrapper">
-			<h2>This is the front page</h2>
+			<article>
+				<h1>Negocios El Triunfo - Lambayeque</h1>
+				<h2>Una comunidad de negocios local</h2>
+				<span></span>
+			</article>
+
 		</div>
 
 	</div>
