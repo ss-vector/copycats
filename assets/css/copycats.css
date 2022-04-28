@@ -38,6 +38,18 @@
 			margin-right: auto;	}
 
 	/* Container */
+
+	/* Main Header Image Widget Display */
+	.cover-display {
+		margin: 0 -.75rem;
+		background-color: #aaee99;
+	}
+
+	.home-featured-content {
+		margin-top: 140px;
+		margin-bottom: 134px;
+	}
+
 	.primary-container {
 		padding: 25px 25px;
 	}
