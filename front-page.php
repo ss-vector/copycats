@@ -21,6 +21,7 @@
 
 		</div>
 	</div>
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/rg-cc-unsplash.jpg' ?>" class="img-fluid">
 </div>
 
 <?php get_footer(); ?>
