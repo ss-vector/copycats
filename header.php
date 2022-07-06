@@ -29,4 +29,4 @@
 				<!-- TODO: Main Slider -->
 
 				<!-- Main container -->
-				<div class="container-fluid site-content">
+				<div class="page-content site-content">

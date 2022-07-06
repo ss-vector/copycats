@@ -7,7 +7,7 @@
 <div class="cover-display">
 	<div class="primary-container">
 	
-		<div class="container">
+		<div class="container-fluid">
 		
 			<div class="article-wrapper">
 				<div class="home-featured-content">
@@ -21,7 +21,11 @@
 
 		</div>
 	</div>
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/rg-cc-unsplash.jpg' ?>" class="img-fluid">
+
+		<?php get_template_part( 'inc/template/sections/contact-section' ); ?>
+
+	<!-- <img src="<?php echo get_template_directory_uri() . '/assets/img/rg-cc-unsplash.jpg' ?>" class="img-fluid"> -->
+	
 </div>
 
 <?php get_footer(); ?>
