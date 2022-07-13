@@ -42,12 +42,16 @@
 	/* Main Header Image Widget Display */
 	.cover-display {
 		margin: 0 -.75rem;
-		background-color: #aaee99;
+		background-image: url('https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg');
+		background-size: cover;
 	}
 
 	.home-featured-content {
 		margin-top: 140px;
 		margin-bottom: 134px;
+	}
+	.home-featured-content .featured-bg {
+
 	}
 
 	.primary-container {
@@ -61,6 +65,9 @@
 	.article-wrapper {
 		padding: 50px;
 	}
+
+/* Backaground */
+
 
 /* Bottom Bar*/
 	.bottom-bar .wp_is_not_mobile .menu-item {

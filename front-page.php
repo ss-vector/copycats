@@ -12,9 +12,11 @@
 			<div class="article-wrapper">
 				<div class="home-featured-content">
 					<article>
+						<div class="featuted-bg">
 						<h1>Negocios El Triunfo - Lambayeque</h1>
 						<h2 class="display-6">Una comunidad local de negocios.</h2>
 						<span></span>
+						</div>
 					</article>
 				</div>
 			</div>
