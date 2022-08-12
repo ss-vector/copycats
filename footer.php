@@ -38,9 +38,13 @@
 							</div>
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<div class="box socials">
-									<h3>Siguenos</h3>
+									<h3>Contacto</h3>
 									<div class="social-links">
-										<?php do_action('copycats_footer_social_block'); ?>
+										<ul class="social-icons p-3">
+											<li>
+											<?php do_action('copycats_footer_social_block'); ?>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>

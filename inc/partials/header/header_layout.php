@@ -62,41 +62,40 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- /main-header -->
-	<!--Bottom Nav Bar -->
-	<div class="bottom-bar bottom-bar-woocommerce">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-sm-3 col-md-4 col-lg-3 col-9 woo_categories_menu">
-					<?php # get_template_part('vega/partials/navbar/woo_nav'); ?>
-				</div>								
-				<div class="col-lg col-md col-sm-6 col-3">
-					<div class="copycats__mobile wp_is_mobile">
-						<div class="copycats__mobile_toggler" data-toggle-selector=".copycats__mobile_content, .copycats__mobile_overlay, body">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+		<div class="bottom-bar bottom-bar-woocommerce">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-sm-3 col-md-4 col-lg-3 col-9 woo_categories_menu">
+						<?php # get_template_part('vega/partials/navbar/woo_nav'); ?>
+					</div>								
+					<div class="col-lg col-md col-sm-6 col-3">
+						<div class="copycats__mobile wp_is_mobile">
+							<div class="copycats__mobile_toggler" data-toggle-selector=".copycats__mobile_content, .copycats__mobile_overlay, body">
+	                            <span></span>
+	                            <span></span>
+	                            <span></span>
+							</div>
+
+							<div class="copycats__mobile_overlay" data-toggle-selector=".copycats__mobile_toggler, .copycats__mobile_content, body"></div>
+		                    <div class="copycats__mobile_content">
+		                        <div class="copycats__mobile_content__inner">
+		                        	<h5>Menu de Navegación</h5>
+		        					<ul class="copycats-pages-menu">
+										<?php get_template_part( 'inc/partials/header/parts/pages-menu' ); ?>
+									</ul>
+		                        </div>
+		                    </div>
+		                </div>
+
+						<div class="header_main_menu wp_is_not_mobile">
+							<ul class="copycats-pages-menu">
+								<?php get_template_part( 'inc/partials/header/parts/menu' ); ?>
+							</ul>
 						</div>
-
-						<div class="copycats__mobile_overlay" data-toggle-selector=".copycats__mobile_toggler, .copycats__mobile_content, body"></div>
-	                    <div class="copycats__mobile_content">
-	                        <div class="copycats__mobile_content__inner">
-	                        	<h5>Menu de Navegación</h5>
-	        					<ul class="copycats-pages-menu">
-									<?php get_template_part( 'inc/partials/header/parts/pages-menu' ); ?>
-								</ul>
-	                        </div>
-	                    </div>
-	                </div>
-
-					<div class="header_main_menu wp_is_not_mobile">
-						<ul class="copycats-pages-menu">
-							<?php get_template_part( 'inc/partials/header/parts/menu' ); ?>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- /main-header -->
 </div>
