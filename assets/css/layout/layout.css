@@ -207,7 +207,6 @@ button[type="submit"] {
 		opacity: 0;	}
 
 /*	Icons */
-
 .main-header .copycats_woocommerce__atributes{
 	line-height: 1.5rem;
 	font-size: 20px; }
@@ -253,8 +252,7 @@ body ul.copycats-pages-menu > li > a {
 
 	.copycats__mobile {
 		display: none; }
-
-
+/* Mobile */
 @media ( max-width: 1025px ) {
 	.copycats__mobile {
 		display: block;	}

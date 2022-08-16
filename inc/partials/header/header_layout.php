@@ -43,10 +43,10 @@
 			<div class="row align-items-center justify-content-between">
 				<!-- logo -->
 				<div class="col-xl-2 col-6">
-					<?php if ( function_exists( 'the_custom_logo' ) ) {
-						the_custom_logo( 'custom-size');
-							}
-						?>
+					<?php if( function_exists( 'the_custom_logo' ) ) {
+						do_action( 'copycats_header' );
+					}
+					?>
 				</div>
 				<div id="search-bar" class="col">
 					<div class="search-form-container main-header-right">

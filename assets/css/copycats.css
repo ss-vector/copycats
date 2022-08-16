@@ -1,14 +1,8 @@
-
-:root {
-	
-}
-
 /* TopBar, Header & Navbar */
 .site-header {
 	position: relative;
 	background-color: #ffffff;
 	z-index: 999; }
-
 	.site-header .top-bar * {
 		color: #d5d9e1;	}
 		.site-header .top-bar-menu .menu-item {
@@ -37,7 +31,7 @@
 			margin-left: auto;
 			margin-right: auto;	}
 
-	/* Container */
+	/* Containers */
 
 	/* Main Header Image Widget Display */
 	.cover-display {
