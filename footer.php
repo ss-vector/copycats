@@ -12,7 +12,7 @@
 							</div>
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<div class="box">
-									<h3>Mapa del Sitio</h3>
+									<h3>Productos</h3>
 									<?php 
 										wp_nav_menu( array(
 											'menu_class'		=> 'menu',
@@ -36,13 +36,31 @@
 									?>
 								</div>
 							</div>
-							<div class="box-footer col-lg-2 col-md-4 mb-3">
-								<div class="box socials">
-									<h3>Contacto</h3>
-									<div class="social-links">
-										<ul class="social-icons p-3">
+							<div class="box-footer col-lg-3 col-md-4 mb-3">
+								<div class="socials">
+									<div class="">
+										<strong>Información de Contacto</strong>
+										<address>Ca. López Vidaurre 1043<br>Lambayeque, Perú</address>
+									</div>
+									<div class="footer-social-icons">
+										<ul class="social-icons nav p-3 align-items-center">
 											<li>
-											<?php do_action('copycats_footer_social_block'); ?>
+												<?php do_action('copycats_footer_social_block'); ?>
+											</li>
+											<li>
+												<a href="https://wa.me/51978861145"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
 											</li>
 										</ul>
 									</div>

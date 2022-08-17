@@ -3,10 +3,12 @@
 	position: relative;
 	background-color: #ffffff;
 	z-index: 999; }
-	.site-header .top-bar * {
-		color: #d5d9e1;	}
+	.site-header .top-bar > * {
+		color: #d5d9e1; }
 		.site-header .top-bar-menu .menu-item {
-			margin: 0 32px;	}
+			padding: 0 32px;	}
+		.site-header .hot-title {
+			margin: .59em 0; }
 
 	.main-header {
 		padding: 20px 0 40px; }
@@ -282,7 +284,9 @@
 	.box ul {
 		display: flex;
 		flex-direction: column;
-		list-style: none;
+		list-style: none; }
+	.box .footer-social-icons .social-icons > ul {
+		flex-direction: row;
 	}
 
 .box-footer {

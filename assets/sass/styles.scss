@@ -18,11 +18,12 @@ $cyan:    #0dcaf0 !default;
 // Theme color palette
 $primary:       $green;
 $shadow:        #222832;
-$light-green:   #ddffaa;
-$leaf-green:    #aaee99;
-$body-bg:       #ffffff;
 $public-yellow: #e8e524;
 $link-color:#546464;
+$desaturated-blue: hsl(224, 23%, 55%);
+$bright-blue: hsl(245, 75%, 52%);
+$bright-blue-hover: hsl(244, 83%, 68%);
+$dark-blue: hsl(223, 47%, 23%);
 
 $cp-footer-bg: rgba(247,247,247,1);
 $sub-footer-bg: #e5e5e5;
@@ -34,7 +35,6 @@ $cp-text-color-light: rgba(247,247,247,1);
 $copycats-theme-colors: (
   "primary":    $primary,
   "featured":   $pink,
-  "secondary":  $leaf-green
 );
 
 // Links color styles
@@ -57,10 +57,8 @@ $container-max-widths: (
     flex-direction: row !important;
 }
 
-
-
 // Option B: Include parts of Bootstrap
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
 
 // Here use functions: Color Functions
 // Shadows
@@ -110,7 +108,7 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
 
 .blog-title {
 	padding: 20px;
-	background-color: $leaf-green;
+	background-color: $teal;
 }
 
 .bg-footer {
@@ -126,6 +124,67 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
 	color: $cp-text-color-light;
   text-align: center;
 }
+// cards
+.card.anouncement {
+  color: $desaturated-blue;
+  margin: 50px auto;
+  overflow: hidden; }
+  .card.anouncement .hero-img {
+    width: 100%; }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px; }
+    .card-container .card-title {
+      color: $dark-blue;
+      font-weight: 900;
+      font-size: 32px; }
+    .card-container strong {
+      color: $dark-blue; }
+    .card-container > * {
+      margin: 13px 0; }
+
+
+// Buttons
+button.proceed-button{
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 12px; }
+  .proceed-button {
+    background-color: $bright-blue;
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245); }
+    .proceed-button:hover {
+      background-color: $bright-blue-hover; }
+
+/* Footer */
+.footer-social-icons .social-icons > ul {
+  flex-direction: row;	}
+	.social-icons > li {
+		display: inline-block; }
+  .social-icons li + li a {
+    margin-left: 26px; }
+
+.menu.block_1 {
+	padding-left: .5rem;
+}
+
+.box {
+	position: relative;
+	padding: 15px;
+	height: 100%; }
+
+	.box ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none; }
+
 
 @media only screen and ( max-width: 550px ){
 

@@ -28,10 +28,8 @@
 
 		</div>
 	</div>
-
-	<!-- <img src="<?php echo get_template_directory_uri() . '/assets/img/rg-cc-unsplash.jpg' ?>" class="img-fluid"> -->
-	
-	<?php get_template_part( 'inc/template/sections/cc-featured-gallery' ); ?>
 </div>
+
+<?php get_template_part( 'inc/template/sections/cc-featured-gallery' ); ?>
 
 <?php get_footer(); ?>
