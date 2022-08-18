@@ -250,11 +250,6 @@ body ul.copycats-pages-menu > li > a {
 	.copycats__mobile {
 		display: none; }
 
-/* Footer */
-
-	.footer-social-icons .social-icons > li {
-		display: inline-block; }
-
 /* Mobile */
 @media ( max-width: 1025px ) {
 	.copycats__mobile {

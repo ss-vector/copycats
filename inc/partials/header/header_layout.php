@@ -16,7 +16,7 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="float-end">
+					<div class="float-end navbar-search">
 						<?php 
 						/**
 						 * @subpackage Header Top-Navbar
@@ -26,10 +26,10 @@
 						 */ 
 							wp_nav_menu( array(
 								'menu' 				=> '',
-								'menu_class'		=>	'nav navbar navbar-expand-lg',
+								'menu_class'		=>	'nav',
 								'theme_location' 	=> 'top-primary-menu',
 								'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-								'container'			=> '',
+								'container'			=> false,
 								'fallback_cb'		=> 'wp_page_menu',
 							) );
 						?>
@@ -83,7 +83,7 @@
 		                        <div class="copycats__mobile_content__inner">
 		                        	<h5>Menu de Navegación</h5>
 		        					<ul class="copycats-pages-menu">
-										<?php get_template_part( 'inc/partials/header/parts/pages-menu' ); ?>
+										<?php get_template_part( 'inc/partials/header/parts/menu' ); ?>
 									</ul>
 		                        </div>
 		                    </div>

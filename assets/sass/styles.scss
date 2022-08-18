@@ -20,6 +20,7 @@ $primary:       $green;
 $shadow:        #222832;
 $public-yellow: #e8e524;
 $link-color:#546464;
+$whatsapp-clr: #4fce5d;
 $desaturated-blue: hsl(224, 23%, 55%);
 $bright-blue: hsl(245, 75%, 52%);
 $bright-blue-hover: hsl(244, 83%, 68%);
@@ -100,9 +101,10 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
 }
 
 @import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';
+@import '../css/copycats.scss';
 
 // 5. Add additional custom code here
-//#ffe30061
+/* Header */
 .fs-box.card {
   background-color: $public-yellow-box;  }
 
@@ -122,8 +124,8 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
 .top-bar {
 	background-color: $shadow-500;
 	color: $cp-text-color-light;
-  text-align: center;
-}
+  text-align: center; }
+
 // cards
 .card.anouncement {
   color: $desaturated-blue;
@@ -166,6 +168,8 @@ button.proceed-button{
 /* Footer */
 .footer-social-icons .social-icons > ul {
   flex-direction: row;	}
+  .footer-social-icons .social-icons .fa-whatsapp:hover {
+    color: $whatsapp-clr; }
 	.social-icons > li {
 		display: inline-block; }
   .social-icons li + li a {

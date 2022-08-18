@@ -25,7 +25,7 @@
 							</div>
 							<div class="box-footer col-lg-4 col-md-8 mb-3">
 								<div class="box ">
-									<h3>Publicaciones Recientes</h3>
+									<h3>Mapa del Sitio</h3>
 									<?php
 										wp_nav_menu( array(
 											'menu_class' 		=> 'menu',
