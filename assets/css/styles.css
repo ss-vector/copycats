@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap");
-.navbar-nav {
-  flex-direction: row !important;
-}
-
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10955,6 +10951,37 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #d63384;
 }
 
+/*  Buttons 
+    @package Copycats Buttons template
+*/
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button[type=submit] {
+  outline: none !important;
+}
+
+button.proceed-button {
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+
+.proceed-button {
+  background-color: hsl(245deg, 75%, 52%);
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
+}
+
+.proceed-button:hover {
+  background-color: hsl(244deg, 83%, 68%);
+}
+
 :root {
   --woocommerce:#a46497;
   --wc-green:#7ad03a;
@@ -13891,7 +13918,7 @@ body:not(.search-results) .twentysixteen .entry-summary {
 
 .site-header .navbar-search .nav a {
   margin-left: 26px;
-  color: rgb(247, 247, 247);
+  color: #d5d9e1;
 }
 
 .main-header {
@@ -13949,7 +13976,6 @@ ul.top-bar {
   padding: 50px;
 }
 
-/* Backaground */
 /* Bottom Bar*/
 .bottom-bar .wp_is_not_mobile .menu-item {
   margin: 0 32px;
@@ -13963,6 +13989,7 @@ ul.top-bar {
   list-style: none;
 }
 
+/* Woocommerce Overrides */
 /* Categories Menu */
 .woo_categories_menu {
   position: relative;
@@ -14250,6 +14277,10 @@ ul.top-bar {
     font-size: 1rem;
   }
 }
+.navbar-nav {
+  flex-direction: row !important;
+}
+
 /* Header */
 .fs-box.card {
   background-color: #f2f080;
@@ -14307,25 +14338,6 @@ ul.top-bar {
 
 .card-container > * {
   margin: 13px 0;
-}
-
-button.proceed-button {
-  width: 100%;
-  border: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 12px;
-}
-
-.proceed-button {
-  background-color: hsl(245deg, 75%, 52%);
-  padding: 1rem 0;
-  color: white;
-  box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
-}
-
-.proceed-button:hover {
-  background-color: hsl(244deg, 83%, 68%);
 }
 
 /* Footer */

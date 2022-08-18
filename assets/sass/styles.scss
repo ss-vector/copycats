@@ -19,12 +19,12 @@ $cyan:    #0dcaf0 !default;
 $primary:       $green;
 $shadow:        #222832;
 $public-yellow: #e8e524;
-$link-color:#546464;
-$whatsapp-clr: #4fce5d;
-$desaturated-blue: hsl(224, 23%, 55%);
-$bright-blue: hsl(245, 75%, 52%);
+$whatsapp-clr:  #4fce5d;
+$test-color: #d5d9e1;
+$desaturated-blue:  hsl(224, 23%, 55%);
+$bright-blue:       hsl(245, 75%, 52%);
 $bright-blue-hover: hsl(244, 83%, 68%);
-$dark-blue: hsl(223, 47%, 23%);
+$dark-blue:         hsl(223, 47%, 23%);
 
 $cp-footer-bg: rgba(247,247,247,1);
 $sub-footer-bg: #e5e5e5;
@@ -54,10 +54,6 @@ $container-max-widths: (
   xxl: 1440px
 );
 
-.navbar-nav {
-    flex-direction: row !important;
-}
-
 // Option B: Include parts of Bootstrap
 @import "../../../../node_modules/bootstrap/scss/bootstrap";
 
@@ -68,13 +64,15 @@ $shadow-500: $shadow;
 $shadow-600: shade-color($shadow, 20%);
 $shadow-900: shade-color($shadow, 80%);
 
-
-
 @each $color, $value in $copycats-theme-colors {
   .cc-btn-#{$color} {
     @include button-variant($value, $value);
   }
 }
+
+// Copycats template import ordered styles
+// cc-buttons
+@import '../../../../node_modules/cc template/buttons';
 
 // Woocommerce Style Overrides
 
@@ -82,36 +80,34 @@ $shadow-900: shade-color($shadow, 80%);
 @import '../../../../plugins/woocommerce/assets/css/woocommerce';
 
 .woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
-	top: 0 !important;
-}
+	top: 0 !important; }
 
 $red-featured: lighten($red, 20%) !default;
 $public-yellow-box: lighten($public-yellow, 20%) !default;
 
-
-
 .woocommerce a.button {
   background-color: $red-featured;
-  color: white;
-}
+  color: white; }
 
 .woo_categories_menu__title {
 	background-color: $red-featured;
-  color: white;
-}
+  color: white; }
 
 @import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';
 @import '../css/copycats.scss';
 
 // 5. Add additional custom code here
+
+.navbar-nav {
+  flex-direction: row !important; }
+
 /* Header */
 .fs-box.card {
   background-color: $public-yellow-box;  }
 
 .blog-title {
 	padding: 20px;
-	background-color: $teal;
-}
+	background-color: $teal; }
 
 .bg-footer {
   background-color: $cp-footer-bg;
@@ -149,22 +145,6 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
     .card-container > * {
       margin: 13px 0; }
 
-
-// Buttons
-button.proceed-button{
-  width: 100%;
-  border: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 12px; }
-  .proceed-button {
-    background-color: $bright-blue;
-    padding: 1rem 0;
-    color: white;
-    box-shadow: 0 20px 30px -8px rgb(197 189 245); }
-    .proceed-button:hover {
-      background-color: $bright-blue-hover; }
-
 /* Footer */
 .footer-social-icons .social-icons > ul {
   flex-direction: row;	}
@@ -176,14 +156,12 @@ button.proceed-button{
     margin-left: 26px; }
 
 .menu.block_1 {
-	padding-left: .5rem;
-}
+	padding-left: .5rem; }
 
 .box {
 	position: relative;
 	padding: 15px;
 	height: 100%; }
-
 	.box ul {
 		display: flex;
 		flex-direction: column;

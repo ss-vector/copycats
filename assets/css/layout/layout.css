@@ -85,13 +85,7 @@ input[type="search"] {
 	color: #555555;
 	outline: navajowhite; }
 
-/* Butons */
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
-	border-style: none;
-	padding: 0; }
-	button[type="submit"] {
-		outline: none !important; }
-
+/* Woocommerce Butons */
 .woo_search button[type="submit"] {
 	background-color: transparent;
 	color:rgba(34, 40, 50, 1); }
@@ -143,19 +137,16 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 	line-height: 33px;
 	color: #a3a3a3;
 	background-color: #fff;
-	cursor: pointer;
-}
-
-.woo_search__categories .woo_search__category.active_category {
-	order: -1;
-	position: relative;
-	top: -2px;
-	border: 0;
-	margin-right: 25px;
-	visibility: visible;
-	opacity: 1;
-	max-width: 100%;
-}
+	cursor: pointer; }
+	.woo_search__categories .woo_search__category.active_category {
+		order: -1;
+		position: relative;
+		top: -2px;
+		border: 0;
+		margin-right: 25px;
+		visibility: visible;
+		opacity: 1;
+		max-width: 100%; }
 
 	.woo_search__category.active_category::before {
 		content: '';

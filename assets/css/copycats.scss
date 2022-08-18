@@ -4,14 +4,14 @@
 	background-color: #ffffff;
 	z-index: 999; }
 	.site-header .top-bar > * {
-		color: #d5d9e1; }
+		color: $test-color; }
 		.site-header .top-bar-menu .menu-item {
 			padding: 0 32px;	}
 		.site-header .hot-title, .site-header .navbar-search {
 			margin: .59em 0; }
 			.site-header .navbar-search .nav a {
 				margin-left: 26px;
-				color: $cp-text-color-light; }
+				color: $test-color; }
 
 	.main-header {
 		padding: 20px 0 40px; }
@@ -48,9 +48,6 @@
 		margin-top: 140px;
 		margin-bottom: 134px;
 	}
-	.home-featured-content .featured-bg {
-
-	}
 
 	.primary-container {
 		padding: 25px 25px;
@@ -64,10 +61,7 @@
 		padding: 50px;
 	}
 
-/* Backaground */
-
-
-/* Bottom Bar*/
+	/* Bottom Bar*/
 	.bottom-bar .wp_is_not_mobile .menu-item {
 		margin: 0 32px;	}
 		.bottom-bar .header_main_menu {
@@ -75,10 +69,10 @@
 		}
 		.bottom-bar .header_main_menu li {
 			list-style: none; }
-
-	/* Categories Menu */
-	.woo_categories_menu {
-		position: relative; }
+/* Woocommerce Overrides */
+/* Categories Menu */
+.woo_categories_menu {
+	position: relative; }
 
 .woo_categories_menu__toggle {
 	position: absolute;
