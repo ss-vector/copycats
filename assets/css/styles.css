@@ -14349,12 +14349,24 @@ ul.top-bar {
   color: #4fce5d;
 }
 
+.social-icons {
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
 .social-icons > li {
   display: inline-block;
 }
 
 .social-icons li + li a {
   margin-left: 26px;
+}
+
+.address-data {
+  padding-left: 3rem;
+  width: 100%;
+  display: inline-block;
 }
 
 .menu.block_1 {

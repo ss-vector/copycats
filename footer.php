@@ -23,7 +23,7 @@
 									?>
 								</div>
 							</div>
-							<div class="box-footer col-lg-4 col-md-8 mb-3">
+							<div class="box-footer col-lg-3 col-md-8 mb-3">
 								<div class="box ">
 									<h3>Mapa del Sitio</h3>
 									<?php
@@ -38,12 +38,12 @@
 							</div>
 							<div class="box-footer col-lg-3 col-md-4 mb-3">
 								<div class="socials">
-									<div class="">
+									<div class="address-data">
 										<strong>Información de Contacto</strong>
 										<address>Ca. López Vidaurre 1043<br>Lambayeque, Perú</address>
 									</div>
 									<div class="footer-social-icons">
-										<ul class="social-icons nav p-3 align-items-center">
+										<ul class="social-icons nav p-3">
 											<li>
 												<?php do_action('copycats_footer_social_block'); ?>
 											</li>

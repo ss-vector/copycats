@@ -150,10 +150,18 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
   flex-direction: row;	}
   .footer-social-icons .social-icons .fa-whatsapp:hover {
     color: $whatsapp-clr; }
-	.social-icons > li {
-		display: inline-block; }
-  .social-icons li + li a {
-    margin-left: 26px; }
+  .social-icons {
+    align-items: center;
+    justify-content: center;
+    margin: 1rem; }
+    .social-icons > li {
+      display: inline-block; }
+    .social-icons li + li a {
+      margin-left: 26px; }
+  .address-data {
+    padding-left: 3rem;
+    width: 100%;
+    display: inline-block; }
 
 .menu.block_1 {
 	padding-left: .5rem; }
