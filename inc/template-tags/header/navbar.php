@@ -1,6 +1,6 @@
 <?php
 /**
- * @see Theme functions for navbars
+ * Template functions hooked in 'home'
  */
 
 if (! function_exists( 'copycats_departments_menu' ) ) {
@@ -19,9 +19,9 @@ if (! function_exists( 'copycats_departments_menu' ) ) {
 						wp_nav_menu( array(
 							'theme_location'	=> 	'departments-menu',
 							'container'			=>	false,
-							'menu_class'		=>	'dropdown-menu yamm'
-							'fallback_cb'		=>	'wp_bootstrap_navwalker::fallback',
-							'walker'			=>	new WP_Bootstrap_Navwalker()
+							'menu_class'		=>	'dropdown-menu yamm',
+							'fallback_cb'		=>	'WP_Bootstrap_Navwalker::fallback',
+							'walker'			=>	new WP_Bootstrap_Navwalker(),
 						) );
 					?>
 				</div>

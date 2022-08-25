@@ -58,9 +58,9 @@
 					</div>
 				</div>
 				<div class="col-xl-2 col-6">
-					<!-- TODO: 
-						--woocommerce categoris nav menu
-					-->
+					<?php
+						do_action( 'copycats_homepage' );
+					?>
 				</div>
 			</div>
 		</div>

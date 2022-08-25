@@ -1,9 +1,13 @@
 <?php
-	/**
-	 * 
-	 * @package Copycats
-	 * Copycats Template Functions
-	 * **/
+/**
+ * 
+ * @package Copycats
+ * 
+ * Copycats Template Functions
+ */
+require_once get_template_directory() . '/inc/functions/header.php';
+require_once get_template_directory() . '/inc/template-tags/home.php';
+
 if ( !function_exists( 'copycats_site_branding' ) ) {
 
 	function copycats_site_branding() {

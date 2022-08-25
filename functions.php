@@ -1,7 +1,7 @@
 <?php 
 
 /**
- * Main theme functions	
+ * Main theme engine setup
  * 
  * @package Copycats
 **/
@@ -16,9 +16,10 @@ define( 'COPYCATS_THEME_VERSION', '1.1.9' );
 define( 'COPYCATS_SETTING', 'copycats-settings' );
 define( 'COPYCATS_THEME_DIR', trailingslashit( get_template_directory() ) );
 
+require_once COPYCATS_THEME_DIR . '/inc/init.php';
 require_once COPYCATS_THEME_DIR . '/inc/theme-support.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
-require_once COPYCATS_THEME_DIR . '/inc/template/cc-template-functions.php';
+
 
 
 function copycats_primary_theme_setup() {
