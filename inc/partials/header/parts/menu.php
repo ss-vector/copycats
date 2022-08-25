@@ -4,6 +4,6 @@
 				'theme_location' 	=> 'primary-home-menu',
 				'menu_class'		=> 'nav',
 				'container'			=> false,
-				'walker'			=> new copycats_Nav_Menu(),
+				'walker'			=> new WP_Bootstrap_Navwalker()
 		));
 ?>
