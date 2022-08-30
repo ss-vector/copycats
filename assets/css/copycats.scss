@@ -12,9 +12,6 @@
 			.site-header .navbar-search .nav a {
 				margin-left: 26px;
 				color: $test-color; }
-
-	.main-header {
-		padding: 20px 0 40px; }
 	
 	ul.navbar-nav li a {
 		font-size: 13px;
@@ -61,14 +58,6 @@
 		padding: 50px;
 	}
 
-	/* Bottom Bar*/
-	.bottom-bar .wp_is_not_mobile .menu-item {
-		margin: 0 32px;	}
-		.bottom-bar .header_main_menu {
-			flex-grow: 1;
-		}
-		.bottom-bar .header_main_menu li {
-			list-style: none; }
 /* Woocommerce Overrides */
 /* Categories Menu */
 .woo_categories_menu {

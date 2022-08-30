@@ -10,20 +10,25 @@
 require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/slider/slider-content.php';
 
+/* Post Formats */
+add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+add_theme_support( 'custom-logo' );
+
 /* Nav Menus Options */
 function copycats_register_nav_menu_setup() {
-
+	
 	add_theme_support( 'menus' );
 
-	register_nav_menu( 'top-primary-menu', 'Top bar Navigation Menu' );
+	$nav_menus = array(
+		'departments-menu'	=> esc_html( 'Menu de Categorías', 'copycats' ),
+		'top-primary-menu'	=> esc_html( 'Menu principal de cabecera', 'copycats' ),
+		'primary-home-menu'	=> esc_html( 'Menu principal', 'copycats' ),
+		'pages-menu'		=> esc_html( 'Menu de varias páginas', 'copycats' ),
+		'footer-nav-menu'	=> esc_html( 'Menu de navegación en Footer', 'copycats' ),
+		'recent-posts-menu'	=> esc_html( 'Menu de publicaciones recientes' ,'copycats' ),
+	);
 
-	register_nav_menu( 'primary-home-menu', 'Main Header Menu' );
-	register_nav_menu( 'pages-menu', 'Pages Menu' );
-	// Footer Manus: Blocks
-	register_nav_menu( 'footer-nav-menu', 'Main Footer Navigation Block Menu' );
-
-	// Rework
-	register_nav_menu( 'recent-posts-menu', 'Footer Navigation Block Menu' );
+	register_nav_menus( $nav_menus );
 
 }
 add_action( 'init', 'copycats_register_nav_menu_setup' );
@@ -49,17 +54,11 @@ function copycats_blog_sidebar_setup() {
 }
 add_action( 'widgets_init', 'copycats_blog_sidebar_setup' );
 
-/* Post Formats */
-add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-add_theme_support( 'custom-logo' );
-
 /** Custom Logo
  * 
  * @link https://developer.wordpress.org/themes/functionality/custom-logo/
  */
-
 add_image_size( 'custom-size', 220, 180, true );
-
 function copycats_custom_logo_setup() {
 	$defaults = array(
 		'height' 		=> 100,
@@ -74,3 +73,19 @@ add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
 
 /* HTML5 */
 add_theme_support( 'html5', array( 'search-form' ) );
+
+add_action( 'after_setup_theme', 'copycats_woocommerce_support' );
+
+function copycats_woocommerce_support() {
+		add_theme_support( 'woocommerce', array(
+			'thumbnail_image_width' => 270,
+			'thumbnail_image_crop' 	=> false,
+			'single_image_width' 	=> 300,
+			'single_image_crop' 	=> false,
+			'product_grid' => array(
+				'default_rows' 		=> 4,
+				'max_rows'			=> 4,
+				'default_columns' 	=> 4,
+			),
+		) );
+}

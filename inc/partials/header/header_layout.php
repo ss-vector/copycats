@@ -12,7 +12,7 @@
 			<div class="row align-items-center-justify-content-between">
 				<div class="col">
 					<div class="hot-title float-start">
-					 	<span>Envios a todo <strong>Perú</strong></span>
+					 	<span>Conectando negocios en el <strong>Perú</strong></span>
 					</div>
 				</div>
 				<div class="col">
@@ -42,7 +42,7 @@
 	<!-- Main Header -->
 	<div class="main-header">
 		<div class="container">
-			<div class="row align-items-center justify-content-between">
+			<div class="row align-items-center justify-content-between copycats-navbar">
 				<!-- logo -->
 				<div class="col-xl-2 col-6">
 					<?php if( function_exists( 'the_custom_logo' ) ) {
@@ -58,17 +58,17 @@
 					</div>
 				</div>
 				<div class="col-xl-2 col-6">
-					<?php
-						do_action( 'copycats_homepage' );
-					?>
+
 				</div>
 			</div>
 		</div>
 		<div class="bottom-bar bottom-bar-woocommerce">
 			<div class="container">
-				<div class="row align-items-center">
+				<div class="row copycats-nav-row align-items-center">
 					<div class="col-sm-3 col-md-4 col-lg-3 col-9 woo_categories_menu">
-						<?php # get_template_part('vega/partials/navbar/woo_nav'); ?>
+						<?php
+							do_action( 'copycats_homepage' );
+						?>
 					</div>								
 					<div class="col-lg col-md col-sm-6 col-3">
 						<div class="copycats__mobile wp_is_mobile">

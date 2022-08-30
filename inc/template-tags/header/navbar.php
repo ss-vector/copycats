@@ -10,8 +10,8 @@ if (! function_exists( 'copycats_departments_menu' ) ) {
 		<div class="categories-list-menu">
 			<div class="departments-menu">
 				<div class="dropdown show-dropdown">
-					<div class="departments-menu-title">
-						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="departments-menu-toggle">
+					<div>
+						<a class="departments-menu-title" href="#" data-bs-toggle="dropdown" id="departments-menu-toggle">
 							<?php _e( 'Categorias', 'copycats' ); ?>
 						</a>
 					</div>
