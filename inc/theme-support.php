@@ -74,6 +74,8 @@ add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
 /* HTML5 */
 add_theme_support( 'html5', array( 'search-form' ) );
 
+/* Woocommerce config */
+
 add_action( 'after_setup_theme', 'copycats_woocommerce_support' );
 
 function copycats_woocommerce_support() {
@@ -116,3 +118,6 @@ function copycats_theme_wrapper_end() {
 
 add_action( 'woocommerce_before_main_content', 'copycats_theme_wrapper_start', 10 );
 add_action( 'woocommerce_after_main_content', 'copycats_theme_wrapper_end', 10 );
+
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
