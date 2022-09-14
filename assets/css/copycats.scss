@@ -186,27 +186,23 @@
 		.featured.card-img-overlay {
 			padding: .5rem;
 			top: 75%;
-			background-color: #fff;
-		}
+			background-color: #fff; }
 
 	.item {
-		overflow: hidden;
-	}
+		overflow: hidden; }
 
 	.slide-2 .slide-grid-featured .item-1 {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 3;
-		background: #fff;
-	}
+		background: #fff; }
 	.slide-2 .slide-grid-featured .item-2 {
 		grid-column-start: 2;
 		grid-column-end: 3;
 		grid-row-start: 1;
 		grid-row-end: 3;
-		background: rgb(228, 228, 228);
-	}
+		background: rgb(228, 228, 228); }
 
 /* Blog Styles */
 	.single_post_layout {
@@ -220,8 +216,7 @@
 		background-color: #fff;
 		padding: 40px 32px;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-		transition: .3s ease;
-	}
+		transition: .3s ease; }
 
 		.copycats_news_list:hover {
 			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);

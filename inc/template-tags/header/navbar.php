@@ -12,6 +12,7 @@ if (! function_exists( 'copycats_departments_menu' ) ) {
 				<div class="dropdown show-dropdown">
 					<div>
 						<a class="departments-menu-title" href="#" data-bs-toggle="dropdown" id="departments-menu-toggle">
+							<!-- <i class="fa fa-list fa-1x">-->
 							<?php _e( 'Categorias', 'copycats' ); ?>
 						</a>
 					</div>

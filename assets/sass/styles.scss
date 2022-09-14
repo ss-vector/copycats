@@ -29,6 +29,21 @@ $container-max-widths: (
   xxl: 1440px
 );
 
+ .home .dropdown > .dropdown-menu {
+  border: 2px solid transparent;
+  border-top: none;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  padding: .5em 0;
+  box-shadow: none;
+  min-width: 270px;
+  top: 100% !important;
+  background-clip: padding-box;
+  background-color: #fff; }
+
 // Option B: Include parts of Bootstrap
 @import '../../../../../../modules/bootstrap/scss/bootstrap.scss';
 
@@ -79,6 +94,23 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
 /* Header */
 .copycats-navbar {
   padding: 2.286em 0 1.857em; }
+.home .departments-menu .dropdown >.yamm {
+  visibility: visible; }
+  .home .show-dropdown > .dropdown-menu {
+    display: block; }
+.departments-menu .dropdown-menu > li {
+  padding: 0 1em; }
+  .departments-menu .dropdown-menu > li > a {
+    padding: 6.5px 0 6.5px 5px;
+    line-height: 1.5;
+    white-space: normal;
+    border-bottom: 1px solid #ddd; }
+  .departments-menu .dropdown-menu > li:last-child > a {
+    border-bottom: none; }
+  .departments-menu .dropdown-menu > li:hover > a {
+    font-weight: 700;
+    background-color: $test-color; }
+
 .copycats-nav-row {
   padding-top: 1rem; }
   .copycats-nav-row .departments-menu-title {
@@ -114,6 +146,19 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
 	background-color: $shadow-500;
 	color: $cp-text-color-light;
   text-align: center; }
+
+  /* Sections */
+
+  // News Section
+  .section-title {
+    margin: 1rem 25px; }
+    .section-title h3 {
+      font-weight: 700; 
+      text-align: center; }
+  .cc-news-section .entry-title a {
+    color: $bright-blue;
+  }
+  
 
   /* Bottom Bar*/
 	.bottom-bar .wp_is_not_mobile .menu-item {

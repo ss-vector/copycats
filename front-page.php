@@ -30,6 +30,6 @@
 	</div>
 </div>
 
-<?php get_template_part( 'inc/template/sections/cc-featured-gallery' ); ?>
+<?php get_template_part( 'inc/template/sections/cc-recent-posts' ); ?>
 
 <?php get_footer(); ?>
