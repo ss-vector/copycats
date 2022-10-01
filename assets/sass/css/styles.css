@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap");
-.home .dropdown > .dropdown-menu {
+.dropdown > .dropdown-menu {
   border: 2px solid transparent;
   border-top: none;
   width: 100%;
@@ -13984,10 +13984,6 @@ ul.top-bar {
   padding: 25px;
 }
 
-.article-wrapper {
-  padding: 50px;
-}
-
 /* Woocommerce Overrides */
 /* Categories Menu */
 .woo_categories_menu {
@@ -14083,7 +14079,6 @@ ul.top-bar {
   height: 300px;
 }
 
-/* Main Slider Styles */
 .inner-slider-wrapper {
   height: 100%;
   width: 100%;
@@ -14158,7 +14153,10 @@ ul.top-bar {
 
 /* Blog Styles */
 .single_post_layout {
+  padding: 39px 38px 40px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin: 0 0 30px;
+  border-top: solid 1px #e5e5e5;
 }
 
 .blog .main-wrapper {
@@ -14285,12 +14283,20 @@ ul.top-bar {
   padding: 2.286em 0 1.857em;
 }
 
-.home .departments-menu .dropdown > .yamm {
+.departments-menu .dropdown > .yamm {
+  visibility: hidden;
+}
+
+.departments-menu .dropdown:hover > .yamm {
   visibility: visible;
 }
 
-.home .show-dropdown > .dropdown-menu {
+.show-dropdown > .dropdown-menu {
   display: block;
+}
+
+.dropdown > .dropdown-menu.yamm {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.28);
 }
 
 .departments-menu .dropdown-menu > li {
@@ -14479,6 +14485,7 @@ ul.top-bar {
   list-style: none;
 }
 
+/* Mobile */
 @media only screen and (max-width: 550px) {
   .categories-column {
     padding-left: 0;

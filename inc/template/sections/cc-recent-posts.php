@@ -9,7 +9,7 @@
 	);
 	?>
 
-	<div class="cc-news-section">
+	<div class="cc-news-section p-5">
 
 			<div class="section-title">
 				<h3>Últimas Publicaciones</h3>

@@ -83,7 +83,7 @@
 		                        <div class="copycats__mobile_content__inner">
 		                        	<h5>Menu de Navegación</h5>
 		        					<ul class="copycats-pages-menu">
-										<?php get_template_part( 'inc/partials/header/parts/menu' ); ?>
+										<?php get_template_part( 'inc/partials/header/parts/cc-home-menu' ); ?>
 									</ul>
 		                        </div>
 		                    </div>
@@ -91,7 +91,7 @@
 
 						<div class="header_main_menu wp_is_not_mobile">
 							<ul class="copycats-pages-menu">
-								<?php get_template_part( 'inc/partials/header/parts/menu' ); ?>
+								<?php get_template_part( 'inc/partials/header/parts/cc-home-menu' ); ?>
 							</ul>
 						</div>
 					</div>

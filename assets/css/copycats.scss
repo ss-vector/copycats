@@ -49,14 +49,7 @@
 	.primary-container {
 		padding: 25px 25px;
 	}
-
-	.section-wrapper {
-		padding: 25px;
-	}
-
-	.article-wrapper {
-		padding: 50px;
-	}
+	//.article-wrapper {}, .article-wrapper {}
 
 /* Woocommerce Overrides */
 /* Categories Menu */
@@ -146,7 +139,7 @@
 	.featured-sgv img {
 		height: 300px;
 	}
-/* Main Slider Styles */
+// Main Slider Styles
 
 .inner-slider-wrapper {
 	height: 100%;
@@ -206,8 +199,10 @@
 
 /* Blog Styles */
 	.single_post_layout {
+		padding: 39px 38px 40px;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-	}
+		margin: 0 0 30px;
+		border-top: solid 1px $sub-footer-bg; }
 	.blog .main-wrapper {
 		background: #dcf3e5; }
 	.copycats_news_list {
@@ -249,32 +244,23 @@
         color: #fff; }
 
 .box-footer {
-	position: relative;
-}
+	position: relative; }
 
 /* */
 
 .blog-title {
   padding: 20px;
-  background-color: #aaee99;
-}
-
+  background-color: #aaee99; }
 .bg-footer {
   background-color: #f7f7f7;
-  color: #333333;
-}
-
+  color: #333333; }
 .sub-footer {
   background-color: #e5e5e5;
-  text-align: center;
-}
-
+  text-align: center; }
 .top-bar {
   background-color: #222832;
   color: #f7f7f7;
-  text-align: center;
-}
-
+  text-align: center; }
 
 /* Woocommerce */
 

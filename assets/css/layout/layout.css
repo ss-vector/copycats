@@ -1,3 +1,5 @@
+
+
 /*
 	Layout overrides for theme Copycats
 */
@@ -237,7 +239,7 @@ body ul.copycats-pages-menu > li > a {
 			text-align: left; }
 		ul.copycats-pages-menu > li .sub-menu {
 			display: none; }
-	.copycats-pages-menu .nav {
+	.copycats__mobile_content .copycats-pages-menu .nav {
 		display: block;	}
 	.copycats-pages-menu .nav .menu-item a{
 		font-weight: 350;
