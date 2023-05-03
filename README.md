@@ -1,5 +1,5 @@
 # Copycats Template for Wordpress
-Wordpress template experimental themes courses and related.
+*Wordpress template* created with experimental and learning purposes,  courses and related.
 
 ## Files:
 
