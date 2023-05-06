@@ -32,4 +32,8 @@
 
 <?php get_template_part( 'inc/template/sections/cc-recent-posts' ); ?>
 
+<!-- TODO: Add local business links -->
+
+<?php get_template_part( 'inc/template/sections/cc-featured-section' ); ?>
+
 <?php get_footer(); ?>
