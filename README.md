@@ -3,17 +3,8 @@
 
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/ss-vector/copycats)
 
-## Files:
+## Objective
 
-- 404.php
-- index.php
-- functions.php
-- header.php
-- footer.php
+## Features
 
-## Folders:
-
-- inc/
-	template parts.
-- assets/
-	css styles, admin assets, fonts, images, js, sass
+## Notes
