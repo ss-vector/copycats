@@ -5,6 +5,11 @@
 
 ## Objective
 
+	Create a structured woocommerce theme for my store.
+	Identify primary products and categories.
+
 ## Features
+
+	SCSS suported
 
 ## Notes
