@@ -1,20 +1,22 @@
 
+/* Blog */
 
-/*
-	Layout overrides for theme Copycats
-*/
 .posted-on {
 	display: inline-block;
 }
+
+/* Featured Section container */
 
 .fs-container {
 	display: block; }
 	.swiper-container {
 		height: 600px;
-		width: 100%; }
-		.swiper-container .btn.cc-btn-featured {
+
 			outline: 2px solid #ed217c;
 			outline-offset: 2px; }
+
+/* Swiper SLide */
+
 	.swiper-slide {
 		display: flex;
 		justify-content: center;
@@ -25,6 +27,7 @@
 		text-transform: uppercase;
 		border-radius: 26px;
 		letter-spacing: 1px; }
+
 		/*fs-section*/
 		.fs-section .fs-box.card p {
 			margin: 0px 20px; }
@@ -40,6 +43,8 @@
 		.fs-box.card {
 			height: 200px;
 			width: 20%;	 }
+
+/* Map */
 
 .map-responsive {
 	overflow: hidden;
@@ -71,6 +76,7 @@
 
 /*
 	Woocomerce Overrides
+  TODO: Separate Woocommerce CSS overrides in different file.
 */
 
 .cp_product_title {
@@ -100,6 +106,7 @@ input[type="search"] {
 	outline: navajowhite; }
 
 /* Woocommerce Butons */
+
 .woo_search button[type="submit"] {
 	background-color: transparent;
 	color:rgba(34, 40, 50, 1); }
