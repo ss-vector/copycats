@@ -34,6 +34,7 @@ add_action( 'wp_enqueue_scripts', 'copycats_primary_theme_setup', 5 );
 
 function copycats_vendor_scripts_setup() {
 
+		// Aditional fonts
 		wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.css', false, '6.1.2', 'all' );
 		wp_register_style( 'font-electro', get_template_directory_uri() . '/assets/css/font-copycats.css', false, '1.0', 'all' );
 

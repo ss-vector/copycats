@@ -11849,6 +11849,368 @@ button.proceed-button {
   background-color: #736af1;
 }
 
+/* TopBar, Header & Navbar */
+.site-header {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.site-header .top-bar > * {
+  color: #f5f5f5;
+}
+
+.site-header .top-bar-menu .menu-item {
+  padding: 0 32px;
+}
+
+.site-header .hot-title, .site-header .navbar-search {
+  margin: 0.59em 0;
+}
+
+.site-header .navbar-search .nav a {
+  margin-left: 26px;
+  color: #f5f5f5;
+}
+
+ul.navbar-nav li a {
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.4px;
+}
+
+ul.top-bar {
+  list-style: none;
+}
+
+.hot-title h5, .hot-title .h5 {
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+.main-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header .main-header-right .woo_search_with_cats {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Containers */
+/* Main Header Image Widget Display */
+.cover-display {
+  background-image: url("https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg");
+  background-size: cover;
+}
+
+.home-featured-content {
+  margin-top: 140px;
+  margin-bottom: 134px;
+}
+
+.primary-container {
+  padding: 25px 25px;
+}
+
+/* Woocommerce Overrides */
+/* Categories Menu */
+.woo_categories_menu {
+  position: relative;
+}
+
+.woo_categories_menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.woo_categories_menu__title {
+  position: relative;
+  padding: 0 80px 0 27px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2.6px;
+}
+
+.woo_categories_menu__list {
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  right: 15px;
+  min-width: 286px;
+  box-shadow: 0 2px 3px 0 rgba(18, 16, 11, 0.15);
+  z-index: 99999;
+}
+
+.woo_categories_menu__list a.woo_category,
+.woo_categories_menu__list .woo_category {
+  display: block;
+  padding: 0 !important;
+  background-color: #fff;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.woo_categories_menu__list a.woo_category > a,
+.woo_categories_menu__list .woo_category > a {
+  display: block;
+  position: relative;
+  padding: 13px 15px 9px 30px;
+  color: #4d4d4d;
+}
+
+.header_woo_categories.active .woo_category {
+  height: 51px;
+  opacity: 1;
+  border-bottom: 1px solid #f2f2f2;
+  visibility: visible;
+}
+
+/* Sliders Featured Main SVG */
+.featured-wrapper {
+  display: grid;
+  margin-top: 10px;
+  color: #fff;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.featured-item {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.woocommerce .featured-img img {
+  height: 350px;
+  object-fit: contain;
+  object-position: top;
+}
+
+.card .featured.price {
+  float: right;
+  padding: 0.375rem 0.75rem;
+  border-radius: 26px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #d5d9e1;
+  background-color: #000;
+}
+
+.featured-sgv img {
+  height: 300px;
+}
+
+.inner-slider-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.inner-slider-wrapper h1, .inner-slider-wrapper .h1 {
+  font-family: "Inter", sans-serif;
+}
+
+.inner-slider-wrapper.main-slide {
+  background-color: #212129;
+}
+
+.inner-slider-wrapper.slide-1 {
+  background-color: #ddffaa;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23AE9' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+}
+
+.inner-slider-wrapper.slide-2 {
+  background-color: #ff5959;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23ff8a8a' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+}
+
+.inner-slider-wrapper.slide-3 {
+  background-color: #C9ECF6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%2366DBee' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+}
+
+.slide-2 .slide-grid-featured {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+/* Grid Template Items Demo Layout*/
+.slide-grid-featured {
+  height: 600px;
+  width: auto;
+  padding: 1.5rem;
+}
+
+.featured.card {
+  height: 100%;
+}
+
+.featured.card-img-overlay {
+  padding: 0.5rem;
+  top: 75%;
+  background-color: #fff;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.slide-2 .slide-grid-featured .item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: #fff;
+}
+
+.slide-2 .slide-grid-featured .item-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: #e4e4e4;
+}
+
+/* Blog Styles */
+.single_post_layout {
+  padding: 39px 38px 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin: 0 0 30px;
+  border-top: solid 1px #e5e5e5;
+}
+
+.blog .main-wrapper {
+  background: #dcf3e5;
+}
+
+.copycats_news_list {
+  width: 100%;
+  margin: 0 0 30px;
+  background-color: #fff;
+  padding: 40px 32px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.copycats_news_list:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.copycats_news_list .blog-entry-title h2, .copycats_news_list .blog-entry-title .h2 {
+  margin-bottom: 20px;
+  font-size: 33px;
+  line-height: 35px;
+}
+
+.copycats_news_list .read-more {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 30px;
+  font-size: 11px;
+  line-height: 22px;
+  color: #474747;
+  border: 1px solid #474747;
+  border-radius: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.copycats_news_list .read-more:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.box-footer {
+  position: relative;
+}
+
+/* */
+.blog-title {
+  padding: 20px;
+  background-color: #aaee99;
+}
+
+.bg-footer {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.sub-footer {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.top-bar {
+  background-color: #222832;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+/* Woocommerce */
+.woocommerce span.onsale {
+  border-radius: unset;
+}
+
+@media only screen and (max-width: 550px) {
+  #search-bar {
+    display: none;
+  }
+
+  .inner-slider-wrapper .card {
+    margin: 0 20px 0 20px;
+  }
+
+  .slide-2 .slide-grid-featured {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+
+  /* Grid Template Items Demo Layout*/
+  .slide-grid-featured {
+    height: 600px;
+    width: auto;
+    padding: 1.5rem;
+  }
+
+  .slide-2 .slide-grid-featured .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .slide-2 .slide-grid-featured .item-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /* Featured: Card Images */
+  .featured.card-img-overlay {
+    padding: 0.2rem;
+    border-radius: 0;
+    top: 65%;
+  }
+
+  .featured.card-img-overlay h5, .featured.card-img-overlay .h5 {
+    font-size: 1rem;
+  }
+}
 :root {
   --woocommerce:#a46497;
   --wc-green:#7ad03a;
@@ -14198,20 +14560,6 @@ body:not(.search-results) .twentysixteen .entry-summary {
   color: inherit;
 }
 
-.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
-  top: 0 !important;
-}
-
-.woocommerce a.button {
-  background-color: #eb8c95;
-  color: white;
-}
-
-.woo_categories_menu__title {
-  background-color: #eb8c95;
-  color: white;
-}
-
 :root {
   --woocommerce:#a46497;
   --wc-green:#7ad03a;
@@ -14778,368 +15126,6 @@ body:not(.search-results) .twentysixteen .entry-summary {
   float: left;
 }
 
-/* TopBar, Header & Navbar */
-.site-header {
-  position: relative;
-  background-color: #ffffff;
-  z-index: 999;
-}
-
-.site-header .top-bar > * {
-  color: #f5f5f5;
-}
-
-.site-header .top-bar-menu .menu-item {
-  padding: 0 32px;
-}
-
-.site-header .hot-title, .site-header .navbar-search {
-  margin: 0.59em 0;
-}
-
-.site-header .navbar-search .nav a {
-  margin-left: 26px;
-  color: #f5f5f5;
-}
-
-ul.navbar-nav li a {
-  font-size: 13px;
-  line-height: 19px;
-  letter-spacing: 0.4px;
-}
-
-ul.top-bar {
-  list-style: none;
-}
-
-.hot-title h5, .hot-title .h5 {
-  margin: 0;
-  letter-spacing: 0.5px;
-  font-size: 13px;
-}
-
-.main-header-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.main-header .main-header-right .woo_search_with_cats {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Containers */
-/* Main Header Image Widget Display */
-.cover-display {
-  background-image: url("https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg");
-  background-size: cover;
-}
-
-.home-featured-content {
-  margin-top: 140px;
-  margin-bottom: 134px;
-}
-
-.primary-container {
-  padding: 25px 25px;
-}
-
-/* Woocommerce Overrides */
-/* Categories Menu */
-.woo_categories_menu {
-  position: relative;
-}
-
-.woo_categories_menu__toggle {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-.woo_categories_menu__title {
-  position: relative;
-  padding: 0 80px 0 27px;
-  line-height: 50px;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2.6px;
-}
-
-.woo_categories_menu__list {
-  position: absolute;
-  top: 100%;
-  left: 15px;
-  right: 15px;
-  min-width: 286px;
-  box-shadow: 0 2px 3px 0 rgba(18, 16, 11, 0.15);
-  z-index: 99999;
-}
-
-.woo_categories_menu__list a.woo_category,
-.woo_categories_menu__list .woo_category {
-  display: block;
-  padding: 0 !important;
-  background-color: #fff;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-.woo_categories_menu__list a.woo_category > a,
-.woo_categories_menu__list .woo_category > a {
-  display: block;
-  position: relative;
-  padding: 13px 15px 9px 30px;
-  color: #4d4d4d;
-}
-
-.header_woo_categories.active .woo_category {
-  height: 51px;
-  opacity: 1;
-  border-bottom: 1px solid #f2f2f2;
-  visibility: visible;
-}
-
-/* Sliders Featured Main SVG */
-.featured-wrapper {
-  display: grid;
-  margin-top: 10px;
-  color: #fff;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-}
-
-.featured-item {
-  grid-column-start: 3;
-  grid-column-end: 6;
-}
-
-.woocommerce .featured-img img {
-  height: 350px;
-  object-fit: contain;
-  object-position: top;
-}
-
-.card .featured.price {
-  float: right;
-  padding: 0.375rem 0.75rem;
-  border-radius: 26px;
-  vertical-align: middle;
-  font-size: 16px;
-  color: #d5d9e1;
-  background-color: #000;
-}
-
-.featured-sgv img {
-  height: 300px;
-}
-
-.inner-slider-wrapper {
-  height: 100%;
-  width: 100%;
-}
-
-.inner-slider-wrapper h1, .inner-slider-wrapper .h1 {
-  font-family: "Inter", sans-serif;
-}
-
-.inner-slider-wrapper.main-slide {
-  background-color: #212129;
-}
-
-.inner-slider-wrapper.slide-1 {
-  background-color: #ddffaa;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23AE9' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
-}
-
-.inner-slider-wrapper.slide-2 {
-  background-color: #ff5959;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23ff8a8a' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
-}
-
-.inner-slider-wrapper.slide-3 {
-  background-color: #C9ECF6;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%2366DBee' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
-}
-
-.slide-2 .slide-grid-featured {
-  display: grid;
-  grid-gap: 0.5rem;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-}
-
-/* Grid Template Items Demo Layout*/
-.slide-grid-featured {
-  height: 600px;
-  width: auto;
-  padding: 1.5rem;
-}
-
-.featured.card {
-  height: 100%;
-}
-
-.featured.card-img-overlay {
-  padding: 0.5rem;
-  top: 75%;
-  background-color: #fff;
-}
-
-.item {
-  overflow: hidden;
-}
-
-.slide-2 .slide-grid-featured .item-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background: #fff;
-}
-
-.slide-2 .slide-grid-featured .item-2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background: #e4e4e4;
-}
-
-/* Blog Styles */
-.single_post_layout {
-  padding: 39px 38px 40px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-  margin: 0 0 30px;
-  border-top: solid 1px #e5e5e5;
-}
-
-.blog .main-wrapper {
-  background: #dcf3e5;
-}
-
-.copycats_news_list {
-  width: 100%;
-  margin: 0 0 30px;
-  background-color: #fff;
-  padding: 40px 32px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease;
-}
-
-.copycats_news_list:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.copycats_news_list .blog-entry-title h2, .copycats_news_list .blog-entry-title .h2 {
-  margin-bottom: 20px;
-  font-size: 33px;
-  line-height: 35px;
-}
-
-.copycats_news_list .read-more {
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px 30px;
-  font-size: 11px;
-  line-height: 22px;
-  color: #474747;
-  border: 1px solid #474747;
-  border-radius: 26px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-color: #0d6efd;
-  color: #0d6efd;
-}
-
-.copycats_news_list .read-more:hover {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  color: #fff;
-}
-
-.box-footer {
-  position: relative;
-}
-
-/* */
-.blog-title {
-  padding: 20px;
-  background-color: #aaee99;
-}
-
-.bg-footer {
-  background-color: #f7f7f7;
-  color: #333333;
-}
-
-.sub-footer {
-  background-color: #e5e5e5;
-  text-align: center;
-}
-
-.top-bar {
-  background-color: #222832;
-  color: #f7f7f7;
-  text-align: center;
-}
-
-/* Woocommerce */
-.woocommerce span.onsale {
-  border-radius: unset;
-}
-
-@media only screen and (max-width: 550px) {
-  #search-bar {
-    display: none;
-  }
-
-  .inner-slider-wrapper .card {
-    margin: 0 20px 0 20px;
-  }
-
-  .slide-2 .slide-grid-featured {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-  }
-
-  /* Grid Template Items Demo Layout*/
-  .slide-grid-featured {
-    height: 600px;
-    width: auto;
-    padding: 1.5rem;
-  }
-
-  .slide-2 .slide-grid-featured .item-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .slide-2 .slide-grid-featured .item-2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  /* Featured: Card Images */
-  .featured.card-img-overlay {
-    padding: 0.2rem;
-    border-radius: 0;
-    top: 65%;
-  }
-
-  .featured.card-img-overlay h5, .featured.card-img-overlay .h5 {
-    font-size: 1rem;
-  }
-}
 .navbar-nav {
   flex-direction: row !important;
 }

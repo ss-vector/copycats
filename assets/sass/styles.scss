@@ -69,22 +69,9 @@ $shadow-900: shade-color($shadow, 80%);
 @import '../../../../../../modules/cc template/cc-woo-layout.css';
 
 // Utilizing WooCommerce Styles
-@import '../css/copycats.scss';
+@import 'copycats.scss';
+
 @import '../../../../plugins/woocommerce/assets/css/woocommerce';
-
-.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
-	top: 0 !important; }
-
-$red-featured: lighten($red, 20%) !default;
-$public-yellow-box: lighten($public-yellow, 20%) !default;
-
-.woocommerce a.button {
-  background-color: $red-featured;
-  color: white; }
-
-.woo_categories_menu__title {
-	background-color: $red-featured;
-  color: white; }
 
 @import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';
 
