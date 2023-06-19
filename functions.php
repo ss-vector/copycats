@@ -24,8 +24,8 @@ require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
 
 function copycats_primary_theme_setup() {
 
-		wp_register_style( 'template_css', get_template_directory_uri() . '/assets/sass/css/styles.css', false, '1.0.2', 'all' );
-		wp_register_style( 'copycats_layout', get_template_directory_uri() . '/assets/css/layout/layout.css', false, '1.0.1', 'all' );
+		wp_register_style( 'template_css', get_template_directory_uri() . '/assets/css/styles.css', false, '1.0.2', 'all' );
+		wp_register_style( 'copycats_layout', get_template_directory_uri() . '/assets/css/layout.css', false, '1.0.1', 'all' );
 
 		wp_enqueue_style( 'template_css' );
 		wp_enqueue_style( 'copycats_layout' );
