@@ -71,6 +71,8 @@ $shadow-900: shade-color($shadow, 80%);
 // Utilizing WooCommerce Styles
 @import 'copycats.scss';
 
+
+// Import Woocommerce
 @import '../../../../plugins/woocommerce/assets/css/woocommerce';
 
 @import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';

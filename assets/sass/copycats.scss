@@ -1,7 +1,7 @@
 /* TopBar, Header & Navbar */
 .site-header {
 	position: relative;
-	background-color: #ffffff;
+	background-color: #fff;
 	z-index: 999; }
 	.site-header .top-bar > * {
 		color: $test-color; }
@@ -52,6 +52,7 @@
 	//.article-wrapper {}, .article-wrapper {}
 
 /* Woocommerce Overrides */
+
 /* Categories Menu */
 .woo_categories_menu {
 	position: relative; }
@@ -259,27 +260,11 @@
   text-align: center; }
 .top-bar {
   background-color: #222832;
-  color: #f7f7f7;
-  text-align: center; }
-
-/* Woocommerce */
-
-.woocommerce span.onsale {
-	border-radius: unset;
-}
-
+  color: #f7f7f7
+  
 @media only screen and ( max-width:550px ) {
 
-	#search-bar { 
-		display: none; }
-
-		.inner-slider-wrapper .card {
-			margin: 0 20px 0 20px; }
-
-			.slide-2 .slide-grid-featured {
-				display: grid;
-				grid-template-columns: 50% 50%;
-				grid-template-rows: 50% 50%; }
+	#search-bar0% 50%; }
 
 		/* Grid Template Items Demo Layout*/
 
