@@ -42,7 +42,7 @@ $container-max-widths: (
   min-width: 270px;
   top: 100% !important;
   background-clip: padding-box;
-  background-color: #fff; }
+  background-color: $cp-footer-bg; }
 
 // Option B: Include parts of Bootstrap
 @import '../../../../../../modules/bootstrap/scss/bootstrap.scss';
@@ -64,9 +64,12 @@ $shadow-900: shade-color($shadow, 80%);
 // cc-buttons
 @import '../../../../../../modules/cc template/buttons.scss';
 
+
 // Woocommerce Style Overrides
+@import '../../../../../../modules/cc template/cc-woo-layout.css';
 
 // Utilizing WooCommerce Styles
+@import '../css/copycats.scss';
 @import '../../../../plugins/woocommerce/assets/css/woocommerce';
 
 .woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
@@ -84,7 +87,7 @@ $public-yellow-box: lighten($public-yellow, 20%) !default;
   color: white; }
 
 @import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';
-@import '../css/copycats.scss';
+
 
 // 5. Add additional custom code here
 
