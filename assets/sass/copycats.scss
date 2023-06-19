@@ -1,4 +1,7 @@
-/* TopBar, Header & Navbar */
+/* Site Header - TopBar, Header & Navbar */
+
+.copycats-navbar {
+	padding: 2.286em 0 1.857em; }
 .site-header {
 	position: relative;
 	background-color: #fff;
@@ -38,75 +41,14 @@
 	/* Main Header Image Widget Display */
 	.cover-display {
 		background-image: url('https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg');
-		background-size: cover;
-	}
+		background-size: cover;	}
 
 	.home-featured-content {
 		margin-top: 140px;
-		margin-bottom: 134px;
-	}
+		margin-bottom: 134px; }
 
 	.primary-container {
-		padding: 25px 25px;
-	}
-	//.article-wrapper {}, .article-wrapper {}
-
-/* Woocommerce Overrides */
-
-/* Categories Menu */
-.woo_categories_menu {
-	position: relative; }
-
-.woo_categories_menu__toggle {
-	position: absolute;
-	top: 0;
-	right: 30px;
-	cursor: pointer;
-	font-size: 30px;
-}
-
-.woo_categories_menu__title {
-	position: relative;
-	padding: 0 80px 0 27px;
-	line-height: 50px;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 2.6px;
-}
-
-.woo_categories_menu__list {
-	position: absolute;
-	top: 100%;
-	left: 15px;
-	right: 15px;
-	min-width: 286px;
-	box-shadow: 0 2px 3px 0 rgba(18, 16, 11, 0.15);
-	z-index: 99999;
-}
-.woo_categories_menu__list a.woo_category,
-.woo_categories_menu__list .woo_category {
-	display: block;
-	padding: 0 !important;
-	background-color: #fff;
-	height: 0;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.5s cubic-bezier(.77, 0.2, 0.05, 1);
-}
-	.woo_categories_menu__list a.woo_category > a,
-	.woo_categories_menu__list .woo_category > a {
-		display: block;
-		position: relative;
-		padding: 13px 15px 9px 30px;
-		color: #4d4d4d;
-	}		
-
-	.header_woo_categories.active .woo_category {
-		height: 51px;
-		opacity: 1;
-		border-bottom: 1px solid #f2f2f2;
-		visibility: visible;
-	}
+		padding: 25px 25px;	}
 
 /* Sliders Featured Main SVG */
 	.featured-wrapper {
@@ -117,14 +59,7 @@
 		grid-template-rows: repeat(9, 1fr);	}
 		.featured-item {
 			grid-column-start: 3;
-			grid-column-end: 6;
-		}
-
-	.woocommerce .featured-img img {
-		height: 350px;
-		object-fit: contain;
-		object-position: top;
-	} 
+			grid-column-end: 6;	}
 
 	.card .featured.price {
 		float: right;
@@ -133,19 +68,16 @@
 		vertical-align: middle;
 		font-size: 16px;
 		color: #d5d9e1;
-		background-color: #000;
-
-	}
+		background-color: #000; }
 
 	.featured-sgv img {
-		height: 300px;
-	}
+		height: 300px; }
+
 // Main Slider Styles
 
 .inner-slider-wrapper {
 	height: 100%;
-	width: 100%;
-}
+	width: 100%; }
 
 .inner-slider-wrapper h1 {
 	font-family: 'Inter', sans-serif; }
@@ -172,8 +104,7 @@
 	.slide-grid-featured {
 		height: 600px;
 		width: auto;
-		padding: 1.5rem;
-	}
+		padding: 1.5rem; }
 
 	.featured.card {
 		height: 100%; }
@@ -213,89 +144,95 @@
 		padding: 40px 32px;
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 		transition: .3s ease; }
-
 		.copycats_news_list:hover {
-			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-		}
-
-	.copycats_news_list .blog-entry-title h2 {
-		margin-bottom: 20px;
-		font-size: 33px;
-		line-height: 35px;
-	}
-
-	.copycats_news_list .read-more {
-		display: inline-block;
-		vertical-align: top;
-		padding: 10px 30px;
-		font-size: 11px;
-		line-height: 22px;
-		color: #474747;
-		border: 1px solid #474747;
-		border-radius: 26px;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		border-color: #0d6efd;
-		color: #0d6efd;
-	}
-
-	.copycats_news_list .read-more:hover {
-        background-color: #0d6efd;
-        border-color: #0d6efd;
-        color: #fff; }
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+		.copycats_news_list .blog-entry-title h2 {
+			margin-bottom: 20px;
+			font-size: 33px;
+			line-height: 35px;	}
+		.copycats_news_list .read-more {
+			display: inline-block;
+			vertical-align: top;
+			padding: 10px 30px;
+			font-size: 11px;
+			line-height: 22px;
+			color: #474747;
+			border: 1px solid #474747;
+			border-radius: 26px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			border-color: #0d6efd;
+			color: #0d6efd; }
+		.copycats_news_list .read-more:hover {
+			background-color: #0d6efd;
+			border-color: #0d6efd;
+			color: #fff; }
 
 .box-footer {
 	position: relative; }
 
 /* */
 
-.blog-title {
-  padding: 20px;
-  background-color: #aaee99; }
-.bg-footer {
-  background-color: #f7f7f7;
-  color: #333333; }
-.sub-footer {
-  background-color: #e5e5e5;
-  text-align: center; }
-.top-bar {
-  background-color: #222832;
-  color: #f7f7f7
+
+/* Copycats */
+  .copycats-nav-row {
+	padding-top: 1rem; }
+	.copycats-nav-row .departments-menu-title {
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0; }
+  .fs-box.card {
+	background-color: $public-yellow;  }
+  .categories-list-menu a {
+	color: $cc-text-color-dark; }
+  .departments-menu-title {
+	background-color: $public-yellow; 
+	font-weight: 700;
+	font-size: 1em;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding: 0 calc(1.143em + 8px);
+	border-radius: .5em; }
   
 @media only screen and ( max-width:550px ) {
 
-	#search-bar0% 50%; }
+	#search-bar { 
+		display: none; }
+
+		.inner-slider-wrapper .card {
+			margin: 0 20px 0 20px; }
+
+			.slide-2 .slide-grid-featured {
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-template-rows: 50% 50%; }
 
 		/* Grid Template Items Demo Layout*/
 
 		.slide-grid-featured {
 			height: 600px;
 			width: auto;
-			padding: 1.5rem;
-		}
+			padding: 1.5rem; }
 
 		.slide-2 .slide-grid-featured .item-1 {
 			grid-column-start: 1;
 			grid-column-end: 3;
 			grid-row-start: 1;
-			grid-row-end: 2;
-		}
+			grid-row-end: 2; }
+
 		.slide-2 .slide-grid-featured .item-2 {
 			grid-column-start: 1;
 			grid-column-end: 3;
 			grid-row-start: 2;
-			grid-row-end: 3;
-		}
+			grid-row-end: 3; }
 
 	/* Featured: Card Images */
 
 	.featured.card-img-overlay {
 		padding: .2rem;
 		border-radius: 0;
-		top: 65%;
-	}
-	.featured.card-img-overlay h5 {
-		font-size: 1rem;
-	}
+		top: 65%; }
+		.featured.card-img-overlay h5 {
+			font-size: 1rem; }
 
 }

@@ -80,12 +80,8 @@ $shadow-900: shade-color($shadow, 80%);
 
 // 5. Add additional custom code here
 
-.navbar-nav {
-  flex-direction: row !important; }
-
 /* Header */
-.copycats-navbar {
-  padding: 2.286em 0 1.857em; }
+
   .departments-menu .dropdown > .yamm {
     visibility: hidden; }
   .departments-menu .dropdown:hover > .yamm {
@@ -106,29 +102,6 @@ $shadow-900: shade-color($shadow, 80%);
   .departments-menu .dropdown-menu > li:hover > a {
     font-weight: 700;
     background-color: $test-color; }
-
-.copycats-nav-row {
-  padding-top: 1rem; }
-  .copycats-nav-row .departments-menu-title {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
-.fs-box.card {
-  background-color: $public-yellow;  }
-.categories-list-menu a {
-  color: $cc-text-color-dark; }
-.departments-menu-title {
-  background-color: $public-yellow; 
-  font-weight: 700;
-  font-size: 1em;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  padding: 0 calc(1.143em + 8px);
-  border-radius: .5em; }
-
-.blog-title {
-	padding: 20px;
-	background-color: $teal; }
 
 .bg-footer {
   background-color: $cp-footer-bg;
