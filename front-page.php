@@ -36,8 +36,8 @@
 
 <?php get_template_part( 'inc/template/sections/cc-featured-section' ); ?>
 
-<!-- TODO: Add responsive location map -->
-
 <?php get_template_part( 'inc/template/sections/cc-map-section' ); ?>
+
+<?php get_template_part( 'inc/template/sections/cc-newsletter' ); ?>
 
 <?php get_footer(); ?>
