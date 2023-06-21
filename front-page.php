@@ -38,6 +38,6 @@
 
 <?php get_template_part( 'inc/template/sections/cc-map-section' ); ?>
 
-<?php get_template_part( 'inc/template/sections/cc-newsletter' ); ?>
+<?php # get_template_part( 'inc/template/sections/cc-newsletter' ); ?>
 
 <?php get_footer(); ?>
