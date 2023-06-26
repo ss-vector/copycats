@@ -20,8 +20,6 @@ require_once COPYCATS_THEME_DIR . '/inc/init.php';
 require_once COPYCATS_THEME_DIR . '/inc/theme-support.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
 
-
-
 function copycats_primary_theme_setup() {
 
 		wp_register_style( 'template_css', get_template_directory_uri() . '/assets/css/styles.css', false, '1.0.2', 'all' );

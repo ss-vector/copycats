@@ -14,6 +14,12 @@ require_once COPYCATS_THEME_DIR . '/inc/template/slider/slider-content.php';
 add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
 add_theme_support( 'custom-logo' );
 
+/* Structure */
+add_theme_support( 'title-tag' );
+add_theme_support( 'align-wide' );
+
+add_theme_support( 'customize-selective-refresh-widgets' );
+
 /* Nav Menus Options */
 function copycats_register_nav_menu_setup() {
 	
@@ -72,7 +78,18 @@ function copycats_custom_logo_setup() {
 add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
 
 /* HTML5 */
-add_theme_support( 'html5', array( 'search-form' ) );
+add_theme_support( 
+	'html5',
+	[ 
+		'search-form',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
+		'script',
+		'style',
+	]
+);
 
 /* Woocommerce config */
 
