@@ -5,8 +5,8 @@
 	 * @package Copycats  
 	 */
 ?>
-<div id="master" class="site-header">
-	<!-- top-bar-->
+<header id="master" class="site-header">
+	<!-- top-bar -->
 	<div class="top-bar">
 		<div class="container">
 			<div class="row align-items-center-justify-content-between">
@@ -50,6 +50,7 @@
 					}
 					?>
 				</div>
+				<!-- Search bar -->
 				<div id="search-bar" class="col">
 					<div class="search-form-container main-header-right">
 						<div class="woo_search woo_search_with_cats">
@@ -62,6 +63,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- Bottom bar header -->
 		<div class="bottom-bar bottom-bar-woocommerce">
 			<div class="container">
 				<div class="row copycats-nav-row align-items-center">
@@ -99,5 +101,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- /main-header -->
-</div>
+	<!-- /Main Header -->
+</header>

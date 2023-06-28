@@ -4,17 +4,24 @@
 	padding: 2.286em 0 1.857em; }
 .site-header {
 	position: relative;
-	background-color: #fff;
+	background-color: var(--wp--preset--color--luminous-vivid-amber);
 	z-index: 999; }
+	.site-header .top-bar {
+		text-align: center; } 	
 	.site-header .top-bar > * {
-		color: $test-color; }
+		color: $cc-text-color-dark; }
 		.site-header .top-bar-menu .menu-item {
 			padding: 0 32px;	}
 		.site-header .hot-title, .site-header .navbar-search {
 			margin: .59em 0; }
-			.site-header .navbar-search .nav a {
-				margin-left: 26px;
-				color: $test-color; }
+
+	.site-header .navbar-search {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%; }
+		.site-header .navbar-search .nav a {
+			margin-left: 26px;
+			color: $test-color; }
 	
 	ul.navbar-nav li a {
 		font-size: 13px;

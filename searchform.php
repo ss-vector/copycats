@@ -1,5 +1,5 @@
 <div class="woo_search woo_search_with_cats">
-	<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+	<form role="search" class="navbar-search" method="get" action="<?php echo home_url( '/' ); ?>">
 		<input 	type="search"
 				class="woo_search__input"
 				placeholder="<?php _e('Busque aqui...', 'copycats'); ?>"
@@ -8,7 +8,7 @@
 				title="Search"
 		/>
 		<!-- insert if condition here -->
-		<div class="woo_search__categories">
+		<div class="input-group">
 		    <div class="woo_search__category active_category" data-category="">
 		        <span><?php esc_attr_e('Todo', 'copycats'); ?></span>
 		    </div>
