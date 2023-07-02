@@ -22,6 +22,33 @@
 		.site-header .navbar-search .nav a {
 			margin-left: 26px;
 			color: $test-color; }
+
+.navbar-search .input-group .input-group-btn {
+	// review scss function
+	font-size: 1.066em; }
+	.navbar-search .search-categories {
+		padding-right: 4.875em;	}
+
+.input-group-btn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// lookup: input-group
+	position: relative;
+	white-space: nowrap; }
+
+.input-group-addon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// REV
+	padding: 0.5rem .75rem;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center;
+}
 	
 	ul.navbar-nav li a {
 		font-size: 13px;
