@@ -23,19 +23,47 @@
 			margin-left: 26px;
 			color: $test-color; }
 
-.navbar-search .input-group .input-group-btn {
-	// review scss function
-	font-size: 1.066em; }
+	.navbar-search .input-group {
+		height: 41px; }
+
+		.navbar-search .input-group .input-group-btn {
+			// review scss function
+			font-size: 1.066em; }
+		
+	.navbar-search .input-search-field {
+		display: flex;
+		flex-grow: 1;
+		flex-basis: 0; }
+
 	.navbar-search .search-categories {
 		padding-right: 4.875em;	}
+		.navbar-search .search-categories > select {
+			border-width: 0; }
 
-.input-group-btn{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	// lookup: input-group
+	.form-select, select {
+		width: 100%;
+		font-weight: 400;
+		line-height: 1.714;
+		background-color: white;
+		border: 1px solid #ddd;
+		border-radius: 1.375rem;
+		box-shadow: 0;
+		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	}
+
+.input-group {
 	position: relative;
-	white-space: nowrap; }
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%; }
+	.input-group-btn{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// lookup: input-group
+		position: relative;
+		white-space: nowrap; }
 
 .input-group-addon {
 	display: flex;
