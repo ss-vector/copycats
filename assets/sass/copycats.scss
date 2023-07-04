@@ -21,7 +21,7 @@
 		max-width: 100%; }
 		.site-header .navbar-search .nav a {
 			margin-left: 26px;
-			color: $test-color; }
+			color: $shadow-a; }
 
 	.navbar-search .input-group {
 		height: 41px; }
@@ -41,6 +41,7 @@
 			border-width: 0; }
 
 	.form-select, select {
+		padding: .25rem 2.2rem .25rem .75rem;
 		width: 100%;
 		font-weight: 400;
 		line-height: 1.714;
@@ -116,7 +117,7 @@
 	.featured-wrapper {
 		display: grid;
 		margin-top: 10px;
-		color: #fff;
+		color: white;
 		grid-template-columns: repeat(9, 1fr);
 		grid-template-rows: repeat(9, 1fr);	}
 		.featured-item {
@@ -130,7 +131,7 @@
 		vertical-align: middle;
 		font-size: 16px;
 		color: #d5d9e1;
-		background-color: #000; }
+		background-color: black; }
 
 	.featured-sgv img {
 		height: 300px; }

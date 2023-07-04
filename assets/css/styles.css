@@ -11884,7 +11884,7 @@ button.proceed-button {
 
 .site-header .navbar-search .nav a {
   margin-left: 26px;
-  color: #f5f5f5;
+  color: #333e48;
 }
 
 .navbar-search .input-group {
@@ -11910,6 +11910,7 @@ button.proceed-button {
 }
 
 .form-select, select {
+  padding: 0.25rem 2.2rem 0.25rem 0.75rem;
   width: 100%;
   font-weight: 400;
   line-height: 1.714;
@@ -11995,7 +11996,7 @@ ul.top-bar {
 .featured-wrapper {
   display: grid;
   margin-top: 10px;
-  color: #fff;
+  color: white;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
 }
@@ -12012,7 +12013,7 @@ ul.top-bar {
   vertical-align: middle;
   font-size: 16px;
   color: #d5d9e1;
-  background-color: #000;
+  background-color: black;
 }
 
 .featured-sgv img {
