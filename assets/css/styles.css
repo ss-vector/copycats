@@ -11887,8 +11887,23 @@ button.proceed-button {
   color: #333e48;
 }
 
+.site-header .navbar-search .btn {
+  background: #333e48;
+  color: white;
+}
+
+.navbar-search .form-control {
+  padding: 0.3em 2.134em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .navbar-search .input-group {
   height: 41px;
+}
+
+.navbar-search .input-group > div {
+  height: 100%;
 }
 
 .navbar-search .input-group .input-group-btn {
@@ -11903,13 +11918,22 @@ button.proceed-button {
 
 .navbar-search .search-categories {
   padding-right: 4.875em;
+  background: white;
 }
 
 .navbar-search .search-categories > select {
   border-width: 0;
 }
 
+.navbar-search .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 100%;
+  padding: 0.34em 1rem;
+}
+
 .form-select, select {
+  display: block;
   padding: 0.25rem 2.2rem 0.25rem 0.75rem;
   width: 100%;
   font-weight: 400;
@@ -11921,20 +11945,20 @@ button.proceed-button {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.btn, button {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  border-radius: 1.375rem;
+}
+
 .input-group {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
-}
-
-.input-group-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  white-space: nowrap;
 }
 
 .input-group-addon {
@@ -15621,22 +15645,14 @@ body:not(.search-results) .twentysixteen .entry-summary {
 }
 
 /* Header */
-.departments-menu .dropdown > .yamm {
-  visibility: hidden;
-}
-
-.departments-menu .dropdown:hover > .yamm {
-  visibility: visible;
-}
-
-.show-dropdown > .dropdown-menu {
-  display: block;
-}
-
-.dropdown > .dropdown-menu.yamm {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.28);
-}
-
+/*  .departments-menu .dropdown > .yamm {
+    visibility: hidden; }
+  .departments-menu .dropdown:hover > .yamm {
+    visibility: visible;  }
+  .show-dropdown > .dropdown-menu {
+    display: block; }
+  .dropdown > .dropdown-menu.yamm {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.28) } */
 .departments-menu .dropdown-menu > li {
   padding: 0 1em;
 }

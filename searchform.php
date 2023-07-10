@@ -19,7 +19,9 @@
 		        </select>
 		    </div>
 		    <div class="input-group-btn">
-				<button type="submit" class="btn btn-primary"><span class="search-btn">Buscar</span></button>
+				<button type="submit" class="btn btn-primary">
+					<i class="ec ec-search"></i>
+				</button>
 		    </div>
 
 		</div>
