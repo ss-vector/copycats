@@ -8,33 +8,6 @@
 require_once get_template_directory() . '/inc/functions/header.php';
 require_once get_template_directory() . '/inc/template-tags/home.php';
 
-if ( !function_exists( 'copycats_site_branding' ) ) {
-
-	function copycats_site_branding() {
-		?>
-		<div class="site-branding">
-		 <?php copycats_brand_logo(); ?>
-		</div>
-		<?php
-	}
-}
-add_action( 'copycats_header', 'copycats_site_branding', 10 );
-
-function copycats_brand_logo( $echo = true ) {
-	if( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
-		$logo = get_custom_logo();
-		$html = is_home() ? '<span class="logo">' . $logo . '</span>': $logo;
-	} else {
-		# Please edit this later!
-		$html = 'No logo defined';
-	}
-
-	if ( ! $echo ) {
-		return $html;
-	}
-
-	echo $html;
-}
 
 # Footer Link Functions
 function copycats_social_media_links() {

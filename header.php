@@ -20,7 +20,10 @@
 	</head>
 
 	<body <?php body_class('copycats'); ?>>
-		<?php wp_body_open(); ?>
+		<?php 
+			wp_body_open();
+			do_action( 'cc_tags_html' );
+		?>
 		<div id="page" class="site">
 			<div class="main-wrapper">
 			
