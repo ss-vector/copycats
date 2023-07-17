@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap");
-@import '../../../../../../modules/cc template/cc-woo-layout.css';
 .dropdown > .dropdown-menu {
   border: 2px solid transparent;
   border-top: none;
@@ -11847,6 +11846,230 @@ button.proceed-button {
 
 .proceed-button:hover {
   background-color: #736af1;
+}
+
+/*# sourceMappingURL=colors.css.map */
+/*
+	Woocomerce Overrides
+    TODO: Separate Woocommerce CSS overrides in different file.
+*/
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
+  top: 0 !important;
+}
+
+.woocommerce a.button {
+  background-color: #eb8c95;
+  color: white;
+}
+
+.woocommerce .featured-img img {
+  height: 350px;
+  object-fit: contain;
+  object-position: top;
+}
+
+.woo_categories_menu__title {
+  background-color: #eb8c95;
+  color: white;
+}
+
+.cp_product_title {
+  font-size: 20px;
+}
+
+/* Search Box */
+.woo_search {
+  position: relative;
+}
+
+.woo_search_with_cats {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Woocommerce Butons */
+.woo_search button[type=submit] {
+  background-color: transparent;
+  color: #222832;
+}
+
+.woo_search button[type=submit] {
+  position: absolute;
+  width: 60px;
+  border: 0;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.woo_search button[type=submit]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -8px 0 0;
+  height: 15px;
+  width: 1px;
+  background-color: #eee;
+}
+
+.woo_search__categories {
+  max-width: 167px;
+}
+
+.woo_search_with_cats [type=search] {
+  min-width: 450px;
+  padding-right: 235px;
+}
+
+.woo_search__categories {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 167px;
+  right: 60px;
+  top: 6px;
+  height: 30px;
+  z-index: 999;
+}
+
+.woo_search__categories .woo_search__category {
+  flex: 0 0 100%;
+  padding: 0 15px 0 15px;
+  font-size: 13px;
+  line-height: 33px;
+  color: #a3a3a3;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.woo_search__categories .woo_search__category.active_category {
+  order: -1;
+  position: relative;
+  top: -2px;
+  border: 0;
+  margin-right: 25px;
+  visibility: visible;
+  opacity: 1;
+  max-width: 100%;
+}
+
+.woo_search__category.active_category::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  height: 15px;
+  width: 1px;
+  background-color: #eee;
+}
+
+.woo_search__categories .woo_search__category.woo_search__category span {
+  color: #3a3a3b;
+  text-transform: uppercase;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.woo_search__categories .woo_search__category::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 50%;
+  bottom: -3px;
+  background-color: #ffc400;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 10;
+}
+
+.woo_search__category span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  margin-top: -3px;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #a2a2a2;
+  border-bottom: 0;
+  border-left: 0;
+  transform: rotate(135deg);
+  opacity: 0;
+}
+
+/* Woocommerce Overrides */
+/* Categories Menu */
+.woo_categories_menu {
+  position: relative;
+}
+
+.woo_categories_menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.woo_categories_menu__title {
+  position: relative;
+  padding: 0 80px 0 27px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2.6px;
+}
+
+.woo_categories_menu__list {
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  right: 15px;
+  min-width: 286px;
+  box-shadow: 0 2px 3px 0 rgba(18, 16, 11, 0.15);
+  z-index: 99999;
+}
+
+.woo_categories_menu__list a.woo_category,
+.woo_categories_menu__list .woo_category {
+  display: block;
+  padding: 0 !important;
+  background-color: #fff;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.woo_categories_menu__list a.woo_category > a,
+.woo_categories_menu__list .woo_category > a {
+  display: block;
+  position: relative;
+  padding: 13px 15px 9px 30px;
+  color: #4d4d4d;
+}
+
+.header_woo_categories.active .woo_category {
+  height: 51px;
+  opacity: 1;
+  border-bottom: 1px solid #f2f2f2;
+  visibility: visible;
+}
+
+.woo_search_with_cats [type=search] {
+  min-width: 150px;
 }
 
 /* Site Header - TopBar, Header & Navbar */
