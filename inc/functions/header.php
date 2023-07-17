@@ -1,6 +1,6 @@
 <?php
 /**
- * 
+ *
 */
 
 if ( !function_exists( 'copycats_site_branding' ) ) {
@@ -20,7 +20,6 @@ function copycats_brand_logo( $echo = true ) {
         $logo = get_custom_logo();
         $html = is_home() ? '<span class="logo">' . $logo . '</span>': $logo;
     } else {
-        # Please edit this later!
         $html = 'No logo defined';
     }
 
@@ -33,18 +32,7 @@ function copycats_brand_logo( $echo = true ) {
 
     /* GOOGLE TAG MANAGER Inline script printed on the header */
     add_action( 'wp_head', 'copycats_google_tag_manager_script' );
-    function copycats_google_tag_manager_script() {
-        ?>
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TPLMMVL');
-    </script>
 
-        <?php
-    }
     add_action( 'cc_tags_html', 'copycats_google_tag_manager_html' );
     function copycats_google_tag_manager_html() {
         ?>
