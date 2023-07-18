@@ -5,11 +5,19 @@
 
 ## Objective
 
-	Create a structured woocommerce theme for my store.
-	Identify primary products and categories.
+    Learn about Wordpress and Woocommerce
+    Learn about UI/UX
+    Create a full theme from scracht.
+	Create a block structured Woocommerce theme.
 
 ## Features
 
-	SCSS suported
+	Slider
+    Flexible header menu
+    Search bar.
+    Blog
 
 ## Notes
+
+    TODO:
+    - PHP server side rendering.
