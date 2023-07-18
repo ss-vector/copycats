@@ -1,6 +1,7 @@
 <<?php
 /**
  * Singleton concept
+ *
  * @package Copycats
  *
  */
