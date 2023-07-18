@@ -8,7 +8,6 @@
  * */
 
 require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
-require_once COPYCATS_THEME_DIR . '/inc/template/slider/slider-content.php';
 
 /* Post Formats */
 add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );

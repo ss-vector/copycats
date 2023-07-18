@@ -16,7 +16,6 @@ if ( ! defined( 'COPYCATS_THEME_DIR' ) ) {
 	define( 'COPYCATS_THEME_DIR', trailingslashit( get_template_directory() ) );
 }
 
-
 define( 'COPYCATS_THEME_VERSION', '1.1.9' );
 define( 'COPYCATS_SETTING', 'copycats-settings' );
 
