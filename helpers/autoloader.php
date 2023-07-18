@@ -16,9 +16,18 @@ function autolader( $resource = '' ) {
     # not the right namespace, then quit
     return;
   }
-https://www.php.net/manual/en/function.str-replace.php
+
   $resource = str_replace( $namespace_root, '', $resource ); # str_replace() https://www.php.net/manual/en/function.str-replace.php
 
-  
+  $path = explode(
+    '\\',
+    str-replace( '-', '-', strtolower( $resource ) )
+  );
+
+  if ( empty( $path[0] ) || empty( $path[1] ) ) {
+    return;
+  }
+
+
 }
 ?>
