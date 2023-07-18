@@ -1,10 +1,10 @@
 <?php
 /**
  *  Copycats Theme Support Functions
- * 
+ *
  * @package Copycats
  * @since 1.0.5
- * 
+ *
  * */
 
 require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
@@ -22,21 +22,10 @@ add_theme_support( 'customize-selective-refresh-widgets' );
 
 /* Nav Menus Options */
 function copycats_register_nav_menu_setup() {
-	
+
 	add_theme_support( 'menus' );
-
-	$nav_menus = array(
-		'departments-menu'	=> esc_html( 'Menu de Categorías', 'copycats' ),
-		'top-primary-menu'	=> esc_html( 'Menu principal de cabecera', 'copycats' ),
-		'primary-home-menu'	=> esc_html( 'Menu principal', 'copycats' ),
-		'pages-menu'		=> esc_html( 'Menu de varias páginas', 'copycats' ),
-		'footer-nav-menu'	=> esc_html( 'Menu de navegación en Footer', 'copycats' ),
-		'recent-posts-menu'	=> esc_html( 'Menu de publicaciones recientes' ,'copycats' ),
-	);
-
-	register_nav_menus( $nav_menus );
-
 }
+
 add_action( 'init', 'copycats_register_nav_menu_setup' );
 
 /* Sidebar Functions */
@@ -54,14 +43,14 @@ function copycats_blog_sidebar_setup() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	);
-	
+
 	register_sidebar( $blog_sidebar);
-	
+
 }
 add_action( 'widgets_init', 'copycats_blog_sidebar_setup' );
 
 /** Custom Logo
- * 
+ *
  * @link https://developer.wordpress.org/themes/functionality/custom-logo/
  */
 add_image_size( 'custom-size', 220, 180, true );
@@ -78,9 +67,9 @@ function copycats_custom_logo_setup() {
 add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
 
 /* HTML5 */
-add_theme_support( 
+add_theme_support(
 	'html5',
-	[ 
+	[
 		'search-form',
 		'comment-form',
 		'comment-list',
