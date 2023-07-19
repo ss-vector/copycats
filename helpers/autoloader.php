@@ -27,6 +27,13 @@ function autolader( $resource = '' ) {
   if ( empty( $path[0] ) || empty( $path[1] ) ) {
     return;
   }
+  
+  $is_valid_file = validate_file( $resource_path ); # WOrdpress
+
+
+  if ( ! is_empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
+    require_one( $resource_path );
+  }
 
 
 }
