@@ -11,7 +11,7 @@ namespace COPYCATS_THEME\Inc\Helpers;
 
 function autoloader( $resource = '' ) {
   $resource_path  = false;
-  $namespace_root = 'COPYCATS_THEME\\'; # str| 
+  $namespace_root = 'COPYCATS_THEME\\'; # str|
   $resource       = trim( $resource, '\\' );
 
   if ( empty( $resource ) || strpos( $resource, '\\' ) === false || strpos( $resource, $namespace_root ) !== 0 ) {
@@ -29,7 +29,7 @@ function autoloader( $resource = '' ) {
   if ( empty( $path[0] ) || empty( $path[1] ) ) {
     return;
   }
-  
+
   $directory = '';
   $file_name = '';
 
@@ -59,7 +59,7 @@ function autoloader( $resource = '' ) {
 
   $is_valid_file = validate_file( $resource_path ); # Wordpress function
 
-  if ( ! empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
+  if ( ! empty( $resource_path ) && file_exists( $resource_path ) && ( 0 === $is_valid_file || 2 === $is_valid_file ) ) {
     require_once( $resource_path );
   }
 

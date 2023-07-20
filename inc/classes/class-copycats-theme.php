@@ -10,6 +10,7 @@ namespace COPYCATS_THEME\Inc;
 use COPYCATS_THEME\Inc\Traits\Singleton;
 
 class COPYCATS_THEME {
+	
 	use Singleton;
 
 	protected function __construct() {
@@ -34,6 +35,6 @@ class COPYCATS_THEME {
 
 		add_theme_support( 'title-tag' );
 
-		
+
 	}
 }

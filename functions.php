@@ -84,7 +84,7 @@ add_action('get_header', 'wp_maintenance_mode');
 */
 
 function copycats_get_theme_instance() {
-	# \COPYCATS_THEME\Inc\COPYCATS_THEME::get_instance();
+	\COPYCATS_THEME\Inc\COPYCATS_THEME::get_instance();
 }
 
 copycats_get_theme_instance();

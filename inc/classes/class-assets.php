@@ -11,7 +11,7 @@ namespace COPYCATS_THEME\Inc;
 
 use COPYCATS_THEME\Inc\Traits\Singleton;
 
-class Assets () {
+class Assets {
   use Singleton;
 
   protected function __construct() {
