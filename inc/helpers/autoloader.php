@@ -11,7 +11,7 @@ namespace COPYCATS_THEME\Inc\Helpers;
 
 function autoloader( $resource = '' ) {
   $resource_path  = false;
-  $namespace_root = 'COPYCATS_THEME\\'; # ??
+  $namespace_root = 'COPYCATS_THEME\\'; # str| 
   $resource       = trim( $resource, '\\' );
 
   if ( empty( $resource ) || strpos( $resource, '\\' ) === false || strpos( $resource, $namespace_root ) !== 0 ) {
@@ -23,7 +23,7 @@ function autoloader( $resource = '' ) {
 
   $path = explode(
     '\\',
-    str_replace( '-', '-', strtolower( $resource ) )
+    str_replace( '_', '-', strtolower( $resource ) )
   );
 
   if ( empty( $path[0] ) || empty( $path[1] ) ) {
