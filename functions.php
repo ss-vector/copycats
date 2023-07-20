@@ -25,16 +25,6 @@ require_once COPYCATS_THEME_DIR . '/inc/init.php';
 require_once COPYCATS_THEME_DIR . '/inc/theme-support.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
 
-function copycats_main_theme_setup() {
-
-		wp_register_style( 'template_css', get_template_directory_uri() . '/assets/css/styles.css', false, '1.0.2', 'all' );
-		wp_register_style( 'copycats_layout', get_template_directory_uri() . '/assets/css/layout.css', false, '1.0.1', 'all' );
-
-		wp_enqueue_style( 'template_css' );
-		wp_enqueue_style( 'copycats_layout' );
-}
-add_action( 'wp_enqueue_scripts', 'copycats_main_theme_setup', 5 );
-
 function copycats_vendor_scripts_setup() {
 
 		// Aditional fonts
