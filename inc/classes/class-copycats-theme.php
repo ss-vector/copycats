@@ -14,7 +14,10 @@ class COPYCATS_THEME {
 
 	protected function __construct() {
 
-		//Load classes
+    //Load classes
+    Assets::get_instance();
+
+    $this->setup_hooks();
 
 	}
 
