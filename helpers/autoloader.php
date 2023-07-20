@@ -28,6 +28,31 @@ function autolader( $resource = '' ) {
     return;
   }
 
+  $directory = '';
+  $file_name = '';
+
+  if ( 'inc' === $path[0] ) {
+
+    switch ( $path[1] ) {
+      case 'traits':
+            $directory = 'traits';
+            $file_name = sprintf( 'trait-%s', trim( strtolower( $path[2] ) ) );
+            break;
+      case 'widgets':
+      case 'blocks':
+            if ( ! empty( $path[2] ) ) {
+                  $directory = sprintf( 'classes/%s', $path[1] );
+                  $file_name = sprintf( 'class-%s', trim( strtolower( $path[2] ) ) );
+                  break;
+            }
+      default:
+            $directory = 'classes';
+            $file_name = sprintf( 'class-%s', trim( strtolower( $path[1] ) ) );
+            break;
+    }
+
+    $resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( COPYCATS_THEME_DIR ) );
+  }
 
 }
 ?>
