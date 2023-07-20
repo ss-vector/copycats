@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Define constants
  */
 if ( ! defined( 'COPYCATS_THEME_DIR' ) ) {
-	define( 'COPYCATS_THEME_DIR', trailingslashit( get_template_directory() ) );
+	define( 'COPYCATS_THEME_DIR', untrailingslashit( get_template_directory() ) );
 }
 
 define( 'COPYCATS_THEME_VERSION', '1.1.9' );
@@ -25,7 +25,7 @@ require_once COPYCATS_THEME_DIR . '/inc/init.php';
 require_once COPYCATS_THEME_DIR . '/inc/theme-support.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
 
-function copycats_primary_theme_setup() {
+function copycats_main_theme_setup() {
 
 		wp_register_style( 'template_css', get_template_directory_uri() . '/assets/css/styles.css', false, '1.0.2', 'all' );
 		wp_register_style( 'copycats_layout', get_template_directory_uri() . '/assets/css/layout.css', false, '1.0.1', 'all' );
@@ -33,7 +33,7 @@ function copycats_primary_theme_setup() {
 		wp_enqueue_style( 'template_css' );
 		wp_enqueue_style( 'copycats_layout' );
 }
-add_action( 'wp_enqueue_scripts', 'copycats_primary_theme_setup', 5 );
+add_action( 'wp_enqueue_scripts', 'copycats_main_theme_setup', 5 );
 
 function copycats_vendor_scripts_setup() {
 
@@ -94,7 +94,7 @@ add_action('get_header', 'wp_maintenance_mode');
 */
 
 function copycats_get_theme_instance() {
-	\COPYCATS_THEME\Inc\COPYCATS_THEME::get_instance();
+	# \COPYCATS_THEME\Inc\COPYCATS_THEME::get_instance();
 }
 
 copycats_get_theme_instance();
