@@ -30,19 +30,6 @@ function autoloader( $resource = '' ) {
     return;
   }
   
-  $is_valid_file = validate_file( $resource_path ); # WOrdpress
-
-
-  if ( ! is_empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
-    require_one( $resource_path );
-  }
-
-  $is_valid_file = validate_file( $resource_path ); # WOrdpress
-
-  if ( ! empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
-    require_once( $resource_path );
-  }
-
   $directory = '';
   $file_name = '';
 
