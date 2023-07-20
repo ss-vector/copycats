@@ -10,13 +10,14 @@ namespace COPYCATS_THEME\Inc;
 use COPYCATS_THEME\Inc\Traits\Singleton;
 
 class COPYCATS_THEME {
-	
+
 	use Singleton;
 
 	protected function __construct() {
 
     //Load classes
     Assets::get_instance();
+		Menus::get_instance();
 
     $this->setup_hooks();
 
@@ -34,6 +35,21 @@ class COPYCATS_THEME {
 	public function setup_theme() {
 
 		add_theme_support( 'title-tag' );
+
+		/* Post Formats */
+		add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+		add_theme_support( 'custom-logo' );
+
+		/* Structure */
+		add_theme_support( 'align-wide' );
+
+		add_theme_support( 'customize-selective-refresh-widgets' );
+
+		/** Woocommerce */
+		if ( class_exists( 'Woocommerce' ) ) {
+			/* Woocommerce Support */
+			# require_once $vega_inc_path . "/template/woo/woocommerce-config.php";
+		}
 
 
 	}

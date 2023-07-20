@@ -1,14 +1,17 @@
 <?php
-
 /**
  *
+ * Copycats Theme Menus
  * @package Copycats
  */
 
+namespace COPYCATS_THEME\Inc;
 
+use COPYCATS_THEME\Inc\Traits\Singleton;
 
 class Menus {
-  // Create singleton
+
+  use Singleton;
 
   protected function __construct()
   {
@@ -29,7 +32,7 @@ class Menus {
       'pages-menu'		    => esc_html( 'Menu de varias páginas', 'copycats' ),
       'footer-nav-menu'	  => esc_html( 'Menu de navegación en Footer', 'copycats' ),
       'recent-posts-menu'	=> esc_html( 'Menu de publicaciones recientes' ,'copycats' ),
-    ])
+    ]);
   }
 
 }

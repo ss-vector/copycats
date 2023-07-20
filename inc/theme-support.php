@@ -9,16 +9,6 @@
 
 require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
 
-/* Post Formats */
-add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-add_theme_support( 'custom-logo' );
-
-/* Structure */
-add_theme_support( 'title-tag' );
-add_theme_support( 'align-wide' );
-
-add_theme_support( 'customize-selective-refresh-widgets' );
-
 /* Nav Menus Options */
 function copycats_register_nav_menu_setup() {
 
@@ -96,6 +86,14 @@ function copycats_woocommerce_support() {
 			),
 		) );
 }
+
+/* Creating Custom Menu*/
+function copycats_woo_custom_menu() {
+
+	register_nav_menu( 'woocommerce-menu', __('Woocommerce Custom Menu', 'woocommercecustommenu' ));
+}
+add_action( 'init', 'copycats_woo_custom_menu' );
+
 
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
