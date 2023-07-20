@@ -7,7 +7,9 @@
  * @version 1.2
  */
 
-function autolader( $resource = '' ) {
+namespace COPYCATS_THEME\Inc\Helpers;
+
+function autoloader( $resource = '' ) {
   $resource_path  = false;
   $namespace_root = 'COPYCATS_THEME\\'; # ??
   $resource       = trim( $resource, '\\' );
@@ -21,18 +23,17 @@ function autolader( $resource = '' ) {
 
   $path = explode(
     '\\',
-    str-replace( '-', '-', strtolower( $resource ) )
+    str_replace( '-', '-', strtolower( $resource ) )
   );
 
   if ( empty( $path[0] ) || empty( $path[1] ) ) {
     return;
   }
-  
+
   $is_valid_file = validate_file( $resource_path ); # WOrdpress
 
-
-  if ( ! is_empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
-    require_one( $resource_path );
+  if ( ! empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
+    require_once( $resource_path );
   }
 
   $directory = '';
@@ -58,8 +59,16 @@ function autolader( $resource = '' ) {
             break;
     }
 
-    $resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( COPYCATS_THEME_DIR ) );
+    $resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( COPYCATS_THEME_DIR ), $directory, $file_name );
+
+  }
+
+  $is_valid_file = validate_file( $resource_path ); # Wordpress function
+
+  if ( ! empty( $resource_path ) && file_exists( $resource_path ) && ($is_valid_file === 0 && $is_valid_file === 2 ) ) {
+    require_once( $resource_path );
   }
 
 }
-?>
+
+spl_autoload_register( 'COPYCATS_THEME\Inc\Helpers\autoloader' );

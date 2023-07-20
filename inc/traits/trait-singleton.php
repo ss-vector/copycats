@@ -9,10 +9,11 @@
 namespace COPYCATS_THEME\Inc\Traits;
 
 trait Singleton {
-    function __construct() {
+
+    protected function __construct() {
     }
 
-    public function __clone() {
+    final protected function __clone() {
     }
 
     final public static function get_instance() {
@@ -22,6 +23,7 @@ trait Singleton {
       $called_class = get_called_class();
 
       if ( ! isset( $instance[ $called_class ] ) ) {
+        
         $instance[  $called_class ] = new $called_class();
 
         do_action( sprintf( 'copycats_theme_init_%s', $called_class ) );

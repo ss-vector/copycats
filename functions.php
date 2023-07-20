@@ -19,7 +19,9 @@ if ( ! defined( 'COPYCATS_THEME_DIR' ) ) {
 define( 'COPYCATS_THEME_VERSION', '1.1.9' );
 define( 'COPYCATS_SETTING', 'copycats-settings' );
 
+require_once COPYCATS_THEME_DIR . '/inc/helpers/autoloader.php';
 require_once COPYCATS_THEME_DIR . '/inc/init.php';
+
 require_once COPYCATS_THEME_DIR . '/inc/theme-support.php';
 require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
 
@@ -57,7 +59,6 @@ add_action( 'wp_enqueue_scripts', 'copycats_vendor_scripts_setup', 20 );
 
 function copycats_theme_setup() {
 
-
 	# wp_register_style( 'swiper_bundle', get_template_directory_uri() . '/plugins/swiper/swiper-bundle.min.css', false, '6.7.5' ,'all' );
 	# wp_register_style( 'iconmoon_font', get_template_directory_uri() . '/assets/fonts/fonts.css', false, '1.0.3' ,'all' );
 
@@ -91,3 +92,9 @@ wp_die('<h1>En mantenimiento</h1><br />Nos encontramos trabajando en el sitio. T
 }
 add_action('get_header', 'wp_maintenance_mode');
 */
+
+function copycats_get_theme_instance() {
+	\COPYCATS_THEME\Inc\COPYCATS_THEME::get_instance();
+}
+
+copycats_get_theme_instance();
