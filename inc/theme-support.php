@@ -87,7 +87,7 @@ function copycats_woocommerce_support() {
 		) );
 }
 
-/* Creating Custom Menu*/
+/* Creating a Woocommerce Custom Menu*/
 function copycats_woo_custom_menu() {
 
 	register_nav_menu( 'woocommerce-menu', __('Woocommerce Custom Menu', 'woocommercecustommenu' ));

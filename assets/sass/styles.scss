@@ -29,20 +29,7 @@ $container-max-widths: (
   xxl: 1440px
 );
 
- .dropdown > .dropdown-menu {
-  border: 2px solid transparent;
-  border-top: none;
-  width: 100%;
-  margin: 0;
-  border-radius: 0;
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
-  padding: .5em 0;
-  box-shadow: none;
-  min-width: 270px;
-  top: 100% !important;
-  background-clip: padding-box;
-  background-color: $cp-footer-bg; }
+
 
 // Option B: Include parts of Bootstrap
 @import '../../../../../../modules/bootstrap/scss/bootstrap.scss';
@@ -80,29 +67,6 @@ $shadow-900: shade-color($shadow, 80%);
 
 // 5. Add additional custom code here
 
-/* Header */
-
-/*  .departments-menu .dropdown > .yamm {
-    visibility: hidden; }
-  .departments-menu .dropdown:hover > .yamm {
-    visibility: visible;  }
-  .show-dropdown > .dropdown-menu {
-    display: block; }
-  .dropdown > .dropdown-menu.yamm {
-    box-shadow:0 2px 5px 0 rgba(0,0,0,.28) } */ 
-.departments-menu .dropdown-menu > li {
-  padding: 0 1em; }
-  .departments-menu .dropdown-menu > li > a {
-    padding: 6.5px 0 6.5px 5px;
-    line-height: 1.5;
-    white-space: normal;
-    border-bottom: 1px solid #ddd; }
-  .departments-menu .dropdown-menu > li:last-child > a {
-    border-bottom: none; }
-  .departments-menu .dropdown-menu > li:hover > a {
-    font-weight: 700;
-    background-color: $test-color; }
-
 .bg-footer {
   background-color: $cp-footer-bg;
   color: $cc-text-color-dark; }
@@ -117,13 +81,11 @@ $shadow-900: shade-color($shadow, 80%);
   .section-title {
     margin: 1rem 25px; }
     .section-title h3 {
-      font-weight: 700; 
+      font-weight: 700;
       text-align: center; }
   .cc-news-section .entry-title a {
-    color: $bright-blue;
-  }
-  
-
+    color: $bright-blue;  }
+    
   /* Bottom Bar*/
 	.bottom-bar .wp_is_not_mobile .menu-item {
 		margin: 0 32px;	}
