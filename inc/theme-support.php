@@ -87,14 +87,6 @@ function copycats_woocommerce_support() {
 		) );
 }
 
-/* Creating a Woocommerce Custom Menu*/
-function copycats_woo_custom_menu() {
-
-	register_nav_menu( 'woocommerce-menu', __('Woocommerce Custom Menu', 'woocommercecustommenu' ));
-}
-add_action( 'init', 'copycats_woo_custom_menu' );
-
-
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );

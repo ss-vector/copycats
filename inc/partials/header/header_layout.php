@@ -1,8 +1,8 @@
 <?php
 	/**
 	 * Copycats header template
-	 * 
-	 * @package Copycats  
+	 *
+	 * @package Copycats
 	 */
 ?>
 <header id="master" class="site-header">
@@ -17,13 +17,13 @@
 				</div>
 				<div class="col">
 					<div class="float-end navbar-search">
-						<?php 
+						<?php
 						/**
 						 * @subpackage Header Top-Navbar
-						 * IT DOES NOT WORK when you are referring to an inexisting location. 
-						 * e.g. when you copied the code from somewhere else, 
+						 * IT DOES NOT WORK when you are referring to an inexisting location.
+						 * e.g. when you copied the code from somewhere else,
 						 * or you haven't created your menu or location yet in the dasboard.
-						 */ 
+						 */
 							wp_nav_menu( array(
 								'menu' 				=> '',
 								'menu_class'		=>	'nav',
@@ -72,7 +72,7 @@
 						<?php
 							do_action( 'copycats_homepage' );
 						?>
-					</div>								
+					</div>
 					<div class="col-lg col-md col-sm-6 col-3">
 						<div class="copycats__mobile wp_is_mobile">
 							<div class="copycats__mobile_toggler" data-toggle-selector=".copycats__mobile_content, .copycats__mobile_overlay, body">
@@ -93,6 +93,14 @@
 		                </div>
 
 						<div class="header_main_menu wp_is_not_mobile">
+						<?php
+						/**
+						*
+						*	@subpackage Main navigation Menu
+						*	If its not mobile version of website/browser
+						*
+						**/
+						?>
 							<ul class="copycats-pages-menu">
 								<?php get_template_part( 'inc/partials/header/parts/cc-home-menu' ); ?>
 							</ul>

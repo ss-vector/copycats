@@ -21,7 +21,7 @@ class Menus {
 
   protected function setup_hooks() {
 
-    add_action( 'init', [$this, 'register_menus'] );
+    add_action( 'init', [ $this, 'register_menus' ] );
   }
 
   public function register_menus() {
@@ -32,10 +32,9 @@ class Menus {
       'pages-menu'		    => esc_html( 'Menu de varias páginas', 'copycats' ),
       'footer-nav-menu'	  => esc_html( 'Menu de navegación en Footer', 'copycats' ),
       'recent-posts-menu'	=> esc_html( 'Menu de publicaciones recientes' ,'copycats' ),
+      /* Creating a Woocommerce Custom Menu*/
+      'woocommerce-menu' => esc_html( 'Woocommerce Custom Menu', 'copycats' ),
     ]);
   }
-
 }
-
-
  ?>
