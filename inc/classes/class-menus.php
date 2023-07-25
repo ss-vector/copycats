@@ -39,7 +39,16 @@ class Menus {
 
   public function get_menu_id( $location ) {
     // Wordpress function: get_nav_menu_lcoations()
-    $location = get_nav_menu_lcoations();
+    $locations = get_nav_menu_locations();
+
+    // Getting the object id by location
+    $menu_id = $locations[ $location ];
+
+    return ! empty( $menu_id ) ? $menu_id : '';
+  }
+
+  public function get_child_menu_items( $menu_array, $parent_id ) {
+    $child_menus = [];
   }
 }
  ?>
