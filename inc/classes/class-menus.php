@@ -36,5 +36,10 @@ class Menus {
       'woocommerce-menu' => esc_html( 'Woocommerce Custom Menu', 'copycats' ),
     ]);
   }
+
+  public function get_menu_id( $location ) {
+    // Wordpress function: get_nav_menu_lcoations()
+    $location = get_nav_menu_lcoations();
+  }
 }
  ?>

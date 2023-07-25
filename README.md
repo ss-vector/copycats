@@ -11,7 +11,10 @@
 	Create a block structured Woocommerce theme.
 
 ## Features
-
+    
+    Autoloader:
+    Woocommerce ready
+    Admin functions
 	Slider
     Flexible header menu
     Search bar.
@@ -21,3 +24,4 @@
 
     TODO:
     - PHP server side rendering.
+    - Implement blocks to theme.
