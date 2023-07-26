@@ -48,7 +48,7 @@ class Assets {
 		// Scripts
     wp_enqueue_script( 'coppycats_app', COPYCATS_THEME_URI . '/assets/js/app.js', array('jquery'), '1.0.0', true );
 		wp_enqueue_script( 'jquery' );
-		# wp_enqueue_script( 'bootstrap_js', COPYCATS_THEME_URI . '/vendor/bootstrap/js/bootstrap.bundle.min.js', array(), '5.0.2', true );
+		wp_enqueue_script( 'bootstrap_js', COPYCATS_THEME_URI . '/assets/js/bootstrap.bundle.min.js', array(), '5.2', true );
 		# wp_enqueue_script( 'responsive_slides_js', COPYCATS_THEME_URI . '/vendor/responsive-slides/responsiveslides.min.js', array( 'jquery' ), '1.11.2', true );
 
 		# wp_enqueue_script( 'custom_js', COPYCATS_THEME_URI . '/assets/js/custom.js', array( 'jquery' ), '1.0.0', true );

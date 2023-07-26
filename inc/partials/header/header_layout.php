@@ -101,9 +101,14 @@
 						*
 						**/
 						?>
-							<ul class="copycats-pages-menu">
-								<?php get_template_part( 'inc/partials/header/parts/cc-home-menu' ); ?>
-							</ul>
+						<nav class="navbar navbar-expand-lg">
+							<div class="container-fluid">
+								<ul class="copycats-pages-menu">
+									<?php get_template_part( 'inc/partials/header/parts/cc-home-menu' ); ?>
+								</ul>
+							</div>
+						</nav>
+
 						</div>
 					</div>
 				</div>
