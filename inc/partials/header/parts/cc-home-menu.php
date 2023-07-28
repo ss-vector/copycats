@@ -44,14 +44,14 @@
 
                   <li class="nav-item dropdown">
                     <a  class="nav-link dropdown-toggle"
-                        href="<?php esc_url( $menu_item->url ); ?>"
+                        href="<?php echo esc_url( $menu_item->url ); ?>"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-                        target="<?php esc_html( $link_target ); ?>"
-                        title="<?php esc_attr( $menu_item->title ); ?>" >
+                        target="<?php echo esc_html( $link_target ); ?>"
+                        title="<?php echo esc_attr( $menu_item->title ); ?>" >
 
-                      <?php esc_html( $menu_item->title ); ?>
+                      <?php echo esc_html( $menu_item->title ); ?>
 
                     </a>
                     <div  class="dropdown-menu"
