@@ -48,8 +48,9 @@ $shadow-900: shade-color($shadow, 80%);
 }
 
 // Copycats template import ordered styles
-// cc-buttons
+// Buttons, Wordpress sections
 @import '../../../../../../modules/cc template/buttons.scss';
+@import '../../../../../../modules/cc template/sections.scss';
 
 
 // Woocommerce Style Overrides
