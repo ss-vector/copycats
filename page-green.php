@@ -8,19 +8,22 @@
 
 get_header();
 
-$page_query = new WP_Query(
+$page_query_featured = new WP_Query(
   array(
     'type' => 'post',
     'cat' => 45,
     'posts_per_page' => 2,
   )
 );
+
+$page_posts_feed = new WP_Query( $feed );
+
 ?>
 
 <div class="container">
 
-    <?php if( $page_query->have_posts() ):
-            while( $page_query->have_posts() ): $page_query->the_post(); ?>
+    <?php if( $page_query_featured->have_posts() ):
+            while( $page_query_featured->have_posts() ): $page_query_featured->the_post(); ?>
 
     <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
       <div class="col-lg-6 px-0">
@@ -51,7 +54,7 @@ $page_query = new WP_Query(
           </div>
         </div>
       </div>
-
+;
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
