@@ -43,6 +43,9 @@ class COPYCATS_THEME {
 		/* Structure */
 		add_theme_support( 'align-wide' );
 
+		# Register image sizes
+		add_iamge_size( 'blog-feed-image', 200, 250 );
+
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/** Woocommerce */
