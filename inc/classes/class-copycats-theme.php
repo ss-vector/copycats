@@ -36,17 +36,54 @@ class COPYCATS_THEME {
 
 		add_theme_support( 'title-tag' );
 
+		// Revisit this section on the logo
+		function copycats_custom_logo_setup() {
+			$defaults = array(
+				'height' 		=> 100,
+				'width' 		=> 220,
+				'flex-height'	=> false,
+				'flex-width' 	=> true,
+			);
+
+			add_theme_support( 'custom-logo', $defaults );
+		}
+
+		add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
+
+		add_theme_support( 'post-thumbnails' );
+
+		if ( function_exists( add_image_size ) ) {
+			/* Register image sizes */
+			add_image_size( "blog_thumbnail", 250, 200 );
+		}
+
 		/* Post Formats */
 		add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-		add_theme_support( 'custom-logo' );
 
 		/* Structure */
 		add_theme_support( 'align-wide' );
 
-		# Register image sizes
-		add_iamge_size( 'blog-feed-image', 200, 250 );
-
 		add_theme_support( 'customize-selective-refresh-widgets' );
+
+		add_theme_support( 'automatic-feed-links' );
+
+		/* HTML5 */
+		add_theme_support(
+			'html5',
+			[
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'script',
+				'style',
+			]
+		);
+
+		add_editor_style();
+
+		add_theme_support( 'wp-block-styles' );
 
 		/** Woocommerce */
 		if ( class_exists( 'Woocommerce' ) ) {

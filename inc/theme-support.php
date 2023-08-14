@@ -1,7 +1,7 @@
 <?php
 /**
  *  Copycats Theme Support Functions
- *
+ * TODO: Merge with Main Theme Class
  * @package Copycats
  * @since 1.0.5
  *
@@ -42,32 +42,6 @@ add_action( 'widgets_init', 'copycats_blog_sidebar_setup' );
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-logo/
  */
-add_image_size( 'custom-size', 220, 180, true );
-function copycats_custom_logo_setup() {
-	$defaults = array(
-		'height' 		=> 100,
-		'width' 		=> 220,
-		'flex-height'	=> false,
-		'flex-width' 	=> true,
-	);
-
-	add_theme_support( 'custom-logo', $defaults );
-}
-add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
-
-/* HTML5 */
-add_theme_support(
-	'html5',
-	[
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-		'script',
-		'style',
-	]
-);
 
 /* Woocommerce config */
 

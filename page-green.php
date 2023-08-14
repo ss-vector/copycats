@@ -58,15 +58,25 @@ $page_query_featured = new WP_Query( $featured );
     <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+            <span class="newsletter-categories">
+            
+              <?php
+                $categories = get_the_category( $post->ID );
+
+                if ( ! empty( $categories ) ){
+                  echo '<strong class="d-inline-block mb-2 text-primary-emphasis">' . esc_html( $categories[0]->cat_name ) . '</strong>';
+                }
+              ?>
+
+            </span>
             <h3 class="mb-0"><?php the_title(); ?></h3>
-            <div class="mb-1 text-body-secondary">Nov 12</div>
-            <p class="card-text mb-auto"><?php the_excerpt(); ?></p>
-            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            <div class="mb-1 text-body-secondary"><?php the_date(); ?></div>
+            <p class="card-text mb-auto"><?php echo the_excerpt(); ?></p>
+            <a href="<?php echo esc_url( get_permalink() ); ?>" class="icon-link gap-1 icon-link-hover stretched-link">
 
-              <?php _e( 'Continuar leyendo...', 'copycats' ); ?>
+              <?php _e( 'Continuar leyendo ...', 'copycats' ); ?>
 
-              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+              <!--svg class="bi"><use xlink:href="#chevron-right"/></svg-->
             </a>
           </div>
 
@@ -75,10 +85,18 @@ $page_query_featured = new WP_Query( $featured );
           <div class="col-auto d-none d-lg-block">
             <div class="thumbnail">
 
-              <?php the_post_thumbnail( 'blog-feed-image' ); ?>
+              <?php the_post_custom_thumbnail(
+                  get_the_ID(),
+                  'woocommerce_thumbnail',
+                  [
+                    'sizes' => '(max-width: 200px), 200px, 250px',
+                    'class' => 'demo-thumbnail'
+                  ]
+                );
+              ?>
 
             </div>
-            <!--svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg-->
+
           </div>
         <?php endif; ?>
         </div>

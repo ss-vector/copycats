@@ -1,7 +1,7 @@
 <?php
 /**
  *  Copycats Last Blog Posts
- * 
+ *
 */
 	$args = array(
 		'type'				=> 'post',
@@ -12,13 +12,13 @@
 	<div class="cc-news-section p-5">
 
 			<div class="section-title">
-				<h3>Últimas Publicaciones</h3>
+				<h2>Últimas Publicaciones del Blog</h2>
 			</div>
 		<div class="container">
 			<div class="row justify-content-center">
 
 			<?php
-			
+
 			$lastBlogPosts = new WP_Query( $args );
 
 			if( $lastBlogPosts->have_posts() ):
@@ -36,4 +36,4 @@
 
 			</div>
 		</div>
-	</div> 
+	</div>

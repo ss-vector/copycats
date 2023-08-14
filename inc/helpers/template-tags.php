@@ -1,6 +1,13 @@
 <?php
+/*
+  * Copycats Template Tags
+  *
+  *
+*/
 
-function get_post_custom_thumbnail( $post_id, $size = 'featured-image', $additional_attributes = [] ) {
+	# wp_register_style( 'swiper_bundle', COPYCATS_THEME_URI . '/plugins/swiper/swiper-bundle.min.css', false, '6.7.5' ,'all' );
+
+function get_post_custom_thumbnail( $post_id, $size = 'blog-thumbnail', $additional_attributes = [] ) {
   $custom_thumbnail = '';
 
   if ( null === $post_id ) {
@@ -12,7 +19,7 @@ function get_post_custom_thumbnail( $post_id, $size = 'featured-image', $additio
       'loading' => 'lazy'
     ];
 
-    $attibutes = array_merge( $additional_attributes, $default_attributes );
+    $attributes = array_merge( $additional_attributes, $default_attributes );
 
     $custom_thumbnail = wp_get_attachment_image(
       get_post_thumbnail_id( $post_id ),
@@ -21,7 +28,9 @@ function get_post_custom_thumbnail( $post_id, $size = 'featured-image', $additio
       $attributes
     );
   }
+
 return $custom_thumbnail;
+
 }
 
 /**
@@ -31,8 +40,8 @@ return $custom_thumbnail;
 * @param string $size                  The registered image size.
 * @param array  $additional_attributes Additional attributes.
 */
-function the_post_custom_thumbnail( $post_id, $size = 'featured-thumbnail', $additional_attributes = [] ) {
-echo get_the_post_custom_thumbnail( $post_id, $size, $additional_attributes );
+function the_post_custom_thumbnail( $post_id, $size = 'blog-thumbnail', $additional_attributes = [] ) {
+echo get_post_custom_thumbnail( $post_id, $size, $additional_attributes );
 }
 
  ?>
