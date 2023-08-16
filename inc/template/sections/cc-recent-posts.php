@@ -9,13 +9,13 @@
 	);
 	?>
 
-	<div class="cc-news-section p-5">
+	<div class="cc-news-section py-5 bg-body-tertiary">
 
 			<div class="section-title">
 				<h2>Últimas Publicaciones del Blog</h2>
 			</div>
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 			<?php
 
@@ -24,7 +24,7 @@
 			if( $lastBlogPosts->have_posts() ):
 				while( $lastBlogPosts->have_posts() ): $lastBlogPosts->the_post(); ?>
 
-					<?php get_template_part( 'inc/template/layout/content-featured' ); ?>
+					<?php get_template_part( 'inc/template/layout/content-album' ); # content-featured ?>
 
 				<?php endwhile;
 

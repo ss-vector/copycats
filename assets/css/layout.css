@@ -26,6 +26,19 @@
 		outline: 2px solid #ed217c;
 		outline-offset: 2px; }
 
+.thumbnail-section {
+	position: absolute;
+	bottom: 5px;
+}
+
+.fixed-tittle{
+	bottom: 5px;
+}
+
+.
+
+.
+
 /* Swiper Slide */
 
 	.swiper-slide {

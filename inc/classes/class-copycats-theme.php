@@ -28,7 +28,7 @@ class COPYCATS_THEME {
 		* Actions
 		*/
 
-		add_action( 'after_setup_teme', [ $this, 'setup_theme' ] );
+		add_action( 'after_setup_theme', [ $this, 'setup_theme' ] );
 
 	}
 
@@ -52,10 +52,11 @@ class COPYCATS_THEME {
 
 		add_theme_support( 'post-thumbnails' );
 
-		if ( function_exists( add_image_size ) ) {
-			/* Register image sizes */
-			add_image_size( "blog_thumbnail", 250, 200 );
-		}
+		/* Register image sizes */
+		add_image_size( "blog_thumbnail", 250, 200 );
+		add_image_size( 'gallery_thumbnail', 500, 300, true );
+		add_image_size( 'homepage-thumb', 220, 180 );
+
 
 		/* Post Formats */
 		add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );

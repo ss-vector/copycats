@@ -41,7 +41,17 @@ return $custom_thumbnail;
 * @param array  $additional_attributes Additional attributes.
 */
 function the_post_custom_thumbnail( $post_id, $size = 'blog-thumbnail', $additional_attributes = [] ) {
-echo get_post_custom_thumbnail( $post_id, $size, $additional_attributes );
+  echo get_post_custom_thumbnail( $post_id, $size, $additional_attributes );
 }
+
+function post_image_sizes($sizes){
+    $custom_sizes = array(
+        'gallery_thumbnail
+        ' => 'Grey Article'
+    );
+    return array_merge( $sizes, $custom_sizes );
+}
+add_filter('image_size_names_choose', 'post_image_sizes');
+
 
  ?>

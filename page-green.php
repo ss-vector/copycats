@@ -59,7 +59,7 @@ $page_query_featured = new WP_Query( $featured );
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <span class="newsletter-categories">
-            
+
               <?php
                 $categories = get_the_category( $post->ID );
 
