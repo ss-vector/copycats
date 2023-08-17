@@ -1,6 +1,6 @@
   <div class="col">
     <div class="card shadow-sm">
-      <div class="col-auto d-none d-lg-block overflow-hidden">
+      <div class="col-auto d-lg-block overflow-hidden">
         <div class="thumbnail-section">
 
         <?php if ( has_post_thumbnail() ): ?>
@@ -10,14 +10,14 @@
               'gallery_thumbnail',
               [
                 'sizes' => '(max-width: 200px), 200px, 250px',
-                'class' => 'gallery-thumbnail card-img-top'
+                'class' => 'gallery-thumbnail card-img-top z-3'
               ]
             );
           ?>
 
         <?php endif; ?>
 
-        <span class="card-title fixed-title">
+        <span class="card-title fixed-title text-light">
           <h3 class="px-4 mb-0"><?php the_title(); ?></h3>
         </span>
       </div>

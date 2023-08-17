@@ -27,17 +27,12 @@
 		outline-offset: 2px; }
 
 .thumbnail-section {
+	position: relative; }
+
+.fixed-title {
 	position: absolute;
-	bottom: 5px;
-}
-
-.fixed-tittle{
-	bottom: 5px;
-}
-
-.
-
-.
+	left: 0;
+	bottom: 5px; }
 
 /* Swiper Slide */
 
