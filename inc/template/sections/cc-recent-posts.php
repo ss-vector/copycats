@@ -11,7 +11,7 @@
 
 	<div class="cc-news-section py-5 bg-body-tertiary">
 
-			<div class="section-title">
+			<div class="section-title text-center">
 				<h2>Últimas Publicaciones del Blog</h2>
 			</div>
 		<div class="container">
