@@ -55,7 +55,5 @@
 	  	<div class="swiper-scrollbar"></div>
 	</div>
 
-	<?php get_template_part( 'vega/inc/template/layout/featured-boxes' ); ?>
-
-</div>
+	</div>
 

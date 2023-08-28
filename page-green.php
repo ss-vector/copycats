@@ -11,11 +11,14 @@ get_header();
 global $post;
 
 $post_slug = $post->post_name;
-$cc_demo_page_ID = get_page_id_from_slug( $post_slug );
+if ( $post_slug = 'green' ) {
+  $page_posts_categories = 'Jardineria';
+  $post_category_ID = get_category_by_slug( $page_posts_categories ); 
+}
 
 $featured = array(
     'type' => 'post',
-    'cat' => $cc_demo_page_ID,
+    'cat' => $post_category_ID,
     'posts_per_page' => 1,
     );
 
@@ -51,7 +54,7 @@ $page_query_featured = new WP_Query( $featured );
     <?php
       $feed = array(
         'type'          => 'post',
-        'cat'           => $cc_demo_page_ID,
+        'cat'           => $post_category_ID,
         'post_per_page' => 2,
         'offset'        => 1,
       );
