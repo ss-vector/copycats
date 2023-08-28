@@ -53,5 +53,14 @@ function post_image_sizes($sizes){
 }
 add_filter('image_size_names_choose', 'post_image_sizes');
 
+function get_page_id_from_slug( $page_slug ) {
+  $page = get_page_by_path( $page_slug );
+
+  if ( $page ) {
+    return $page->ID;
+  } else {
+    return null;
+  }
+}
 
  ?>

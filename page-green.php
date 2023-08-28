@@ -8,11 +8,18 @@
 
 get_header();
 
+global $post;
+
+$post_slug = $post->post_name;
+$cc_demo_page_ID = get_page_id_from_slug( $post_slug );
+
 $featured = array(
     'type' => 'post',
-    'cat' => 45,
+    'cat' => $cc_demo_page_ID,
     'posts_per_page' => 1,
     );
+
+
 
 $page_query_featured = new WP_Query( $featured );
 
@@ -44,7 +51,7 @@ $page_query_featured = new WP_Query( $featured );
     <?php
       $feed = array(
         'type'          => 'post',
-        'cat'           => 45,
+        'cat'           => $cc_demo_page_ID,
         'post_per_page' => 2,
         'offset'        => 1,
       );

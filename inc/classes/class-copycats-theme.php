@@ -36,17 +36,20 @@ class COPYCATS_THEME {
 
 		add_theme_support( 'title-tag' );
 
-		// Revisit this section on the logo
-		function copycats_custom_logo_setup() {
-			$defaults = array(
-				'height' 		=> 100,
-				'width' 		=> 220,
-				'flex-height'	=> false,
-				'flex-width' 	=> true,
-			);
 
-			add_theme_support( 'custom-logo', $defaults );
-		}
+		add_theme_support(
+			'custom-logo',
+			[
+				'header-text' => [
+					'site-title',
+					'site-description',
+				],
+				'height'      => 100,
+				'width'       => 220,
+				'flex-height' => true,
+				'flex-width'  => true,
+			]
+		);
 
 		add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
 
