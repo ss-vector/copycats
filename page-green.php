@@ -12,8 +12,8 @@ global $post;
 
 $post_slug = $post->post_name;
 if ( $post_slug = 'green' ) {
-  $page_posts_categories = 'Jardineria';
-  $post_category_ID = get_category_by_slug( $page_posts_categories ); 
+  $page_posts_categories = 'jardineria';
+  $post_category_ID = get_cat_ID( $page_posts_categories );
 }
 
 $featured = array(
@@ -21,8 +21,6 @@ $featured = array(
     'cat' => $post_category_ID,
     'posts_per_page' => 1,
     );
-
-
 
 $page_query_featured = new WP_Query( $featured );
 
