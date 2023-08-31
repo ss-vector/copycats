@@ -10,7 +10,7 @@
   $header_menus = wp_get_nav_menu_items( $header_menu_id );
 
 ?>
-    <!-- TODO: change id name -->
+    
     <div class="navbar-collapse" id="navbarSupportedContent">
 
       <?php if ( ! empty( $header_menus ) && is_array( $header_menus ) ) {

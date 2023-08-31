@@ -25,12 +25,12 @@
 						 * or you haven't created your menu or location yet in the dasboard.
 						 */
 							wp_nav_menu( array(
-								'menu' 				=> '',
-								'menu_class'		=>	'nav',
+								'menu' 						=> '',
+								'menu_class'			=>	'nav',
 								'theme_location' 	=> 'top-primary-menu',
-								'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-								'container'			=> false,
-								'fallback_cb'		=> 'wp_page_menu',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'container'				=> false,
+								'fallback_cb'			=> 'wp_page_menu',
 							) );
 						?>
 					</div>

@@ -5,9 +5,9 @@
 
     toggler();
     menuChilds();
-
+    featuredFrontPageCarousel;
   });
-  
+
 	var toggler = function toggler() {
     var selector = $('[data-toggle-selector]');
     selector.on('click', function () {
@@ -34,5 +34,15 @@
     });
   };
 
+  var featuredFrontPageCarousel = function carouselInit() {
+    const myCarouselElement = document.querySelector( '#fetaruredCarouselFade' );
 
-})(jQuery);
+    const carousel = new bootstrap.Carousel( myCarouselElement, {
+      interval: 2000,
+      touch: false
+
+      console.log("working");
+    });
+  }
+
+  } )(jQuery);

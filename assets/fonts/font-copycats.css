@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "font-electro";
-  src:url("../fonts/font-electro.eot");
-  src:url("../fonts/font-electro.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/font-electro.woff") format("woff"),
-    url("../fonts/font-electro.ttf") format("truetype"),
-    url("../fonts/font-electro.svg#font-electro") format("svg");
+  src:url("font-electro.eot");
+  src:url("font-electro.eot?#iefix") format("embedded-opentype"),
+    url("font-electro.woff") format("woff"),
+    url("font-electro.ttf") format("truetype"),
+    url("font-electro.svg#font-electro") format("svg");
   font-weight: normal;
   font-style: normal;
 
