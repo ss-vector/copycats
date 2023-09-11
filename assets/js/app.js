@@ -5,7 +5,7 @@
 
     toggler();
     menuChilds();
-    featuredFrontPageCarousel;
+    carouselInit();
   });
 
 	var toggler = function toggler() {
@@ -34,15 +34,15 @@
     });
   };
 
-  var featuredFrontPageCarousel = function carouselInit() {
-    const myCarouselElement = document.querySelector( '#fetaruredCarouselFade' );
+  var carouselInit = function carouselInit() {
+    const myCarouselElement = document.querySelector( '#featuredCarouselFade' );
 
     const carousel = new bootstrap.Carousel( myCarouselElement, {
       interval: 2000,
-      touch: false
-
-      console.log("working");
+      touch: true
     });
+
+    console.log( myCarouselElement );
   }
 
   } )(jQuery);
