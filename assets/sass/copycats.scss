@@ -114,8 +114,17 @@
 
 	/* Main Header Image Widget Display */
 	.cover-display {
-		background-image: url('https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg');
-		background-size: cover;	}
+		background-size: cover;	
+		height: 450px; 
+		display: block; }
+
+		.main-banner {
+			background-image: url('https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg');
+		}
+
+	.hardware-banner {
+		background-image: url('https://firebasestorage.googleapis.com/v0/b/isetbase.appspot.com/o/3918.jpg?alt=media&token=eeb1ba9c-7074-4e33-9772-040651c44148');
+	}
 
 	.fs-slider-content {
 		margin-top: 140px;
