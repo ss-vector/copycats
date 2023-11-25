@@ -16,7 +16,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="copycats-dir">
+<<<<<<< HEAD
 					<span> <?php _e( 'Orden del archivo de publicaciones:', 'copycats' ) ?></span>
+=======
+        <span><?php _e( 'Orden del archivo de publicaciones:', 'copycats' ); ?></span>
+>>>>>>> ea8a326c6685129f2cbf23c0af038a823c96b414
 				</div>
 				<div class="col-xl-9">
 					<?php
