@@ -12,13 +12,13 @@
 
 ## Features
     
-    Autoloader:
-    Woocommerce ready
-    Admin functions
-	Slider
-    Flexible header menu
-    Search bar.
-    Blog
+    * Autoloader:
+    * Woocommerce ready
+    * Admin functions
+	* Slider
+    * Flexible header menu
+    * Search bar.
+    * Blog
 
 ## Notes
 

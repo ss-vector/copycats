@@ -12,7 +12,7 @@
 							</div>
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<div class="box">
-									<h3>Productos</h3>
+                  <h3><?php _e( 'Productos','copycats' ); ?></h3>
 									<?php 
 										wp_nav_menu( array(
 											'menu_class'		=> 'menu',
@@ -25,7 +25,7 @@
 							</div>
 							<div class="box-footer col-lg-3 col-md-8 mb-3">
 								<div class="box ">
-									<h3>Mapa del Sitio</h3>
+                <h3><?php _e( 'Mapa del Sitio', 'copycats' ); ?></h3>
 									<?php
 										wp_nav_menu( array(
 											'menu_class' 		=> 'menu',
