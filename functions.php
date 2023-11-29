@@ -33,9 +33,3 @@ function copycats_get_theme_instance() {
 }
 
 copycats_get_theme_instance();
-
-function copycats_woocommerce_account_content() {
-	global $current_user;
-
-	echo '<p>' . __( "Tested and working", "woocommerce") . '</p>';
-}

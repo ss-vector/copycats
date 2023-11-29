@@ -19,7 +19,7 @@ class COPYCATS_THEME {
     Assets::get_instance();
 		Menus::get_instance();
 		WooCommerce::get_instance();
-		
+
     $this->setup_hooks();
 
 	}
@@ -88,7 +88,7 @@ class COPYCATS_THEME {
 
 		add_editor_style();
 
-		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'wp-block-styles' );
 
 		/** Woocommerce */
 		if ( class_exists( 'Woocommerce' ) ) {
