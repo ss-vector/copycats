@@ -13,7 +13,7 @@
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<div class="box">
                   <h3><?php _e( 'Productos','copycats' ); ?></h3>
-									<?php 
+									<?php
 										wp_nav_menu( array(
 											'menu_class'		=> 'menu',
 											'menu-id' 			=> 'block-footer-1',
@@ -31,15 +31,15 @@
 											'menu_class' 		=> 'menu',
 											'menu-id' 			=> 'block-footer-2',
 											'theme_location'	=> 'recent-posts-menu',
-											'container'			=> false											
-										) ); 
+											'container'			=> false
+										) );
 									?>
 								</div>
 							</div>
 							<div class="box-footer col-lg-3 col-md-4 mb-3">
 								<div class="socials">
 									<div class="address-data">
-										<strong>Información de Contacto</strong>
+										<strong><?php __( 'Información de Contacto', 'copycats' ); ?></strong>
 										<address>Ca. López Vidaurre 1043<br>Lambayeque, Perú</address>
 									</div>
 									<div class="footer-social-icons">
@@ -76,7 +76,7 @@
 						<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://github.com/ss-vector">ss-Vector</a><strong></span>
 					</div>
 				</div>
-	
+
 			</footer>
 		</div><!-- </container-fluid> -->
 	</body>
