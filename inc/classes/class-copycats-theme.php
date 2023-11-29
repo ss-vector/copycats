@@ -92,9 +92,8 @@ class COPYCATS_THEME {
 
 		/** Woocommerce */
 		if ( class_exists( 'Woocommerce' ) ) {
-			/* Woocommerce Support */
-      # require_once $vega_inc_path . "/template/woo/woocommerce-config.php";
 
+			/* Woocommerce Support */
       add_theme_support( 'woocommerce' );
 		}
 
