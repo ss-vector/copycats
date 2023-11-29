@@ -88,12 +88,14 @@ class COPYCATS_THEME {
 
 		add_editor_style();
 
-		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'wp-block-styles' );
 
 		/** Woocommerce */
 		if ( class_exists( 'Woocommerce' ) ) {
 			/* Woocommerce Support */
-			# require_once $vega_inc_path . "/template/woo/woocommerce-config.php";
+      # require_once $vega_inc_path . "/template/woo/woocommerce-config.php";
+
+      add_theme_support( 'woocommerce' );
 		}
 
 
