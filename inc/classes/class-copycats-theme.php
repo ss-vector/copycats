@@ -91,7 +91,7 @@ class COPYCATS_THEME {
 		add_theme_support( 'wp-block-styles' );
 
 		/** Woocommerce */
-		if ( class_exists( 'Woocommerce' ) ) {
+		if ( class_exists( 'WooCommerce' ) ) {
 
 			/* Woocommerce Support */
       add_theme_support( 'woocommerce' );
