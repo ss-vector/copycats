@@ -28,6 +28,7 @@ class WooCommerce {
 
   public function woocommerce_setup() {
 
+
   }
 
   function copycats_woocommerce_account_content() {

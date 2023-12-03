@@ -13,13 +13,13 @@
                 <div class="container">
                   <div class="row">
 
-                    <article class="float-end">
+                    <section class="float-end">
 
     									<h1 class="display-5 text-white fw-bold">Negocios El Triunfo - Lambayeque</h1>
     									<h2 class="display-6 text-light">Una comunidad local de negocios.</h2>
                       <button type="submit">Visitar</button>
 
-    								</article>
+    								</section>
 
                   </div>
 
@@ -36,38 +36,42 @@
     </div>
 
     <div class="carousel-item">
-      <div class="cover-display hardware-banner">
-        <div class="container">
-          <div class="row">
+        <div class="cover-display hardware-banner">
+          <div class="primary-container">
+          		<div class="container-fluid">
+                <div class="article-wrapper">
+                  <div class="home fs-slider-content">
+                    <div class="container">
+                      <div class="row">
 
-            <div class="featured-box m-5">
-              <h1>Material Eléctrico</h1>
-              <p>Pedidos al <strong>978 861 145</strong> </p>
+                <section class="float-end">
+                  <h1 class="display-5 text-white fw-bold">Contruye con Nosotros</h1>
+                  <p class="display-6 text-light">Conce nuestro catálogo de <stroing>Materiales para construcción</strong></p>
+                  <button type="submit">Más información</button>
 
-              <?php
-                  if ( is_user_logged_in() ) {
-                  global $current_user;
-                  get_currentuserinfo();
+                <?php
+                    if ( is_user_logged_in() ) {
+                    global $current_user;
+                    get_currentuserinfo();
 
-                  echo '<ul id="mem" class="clearfix">
-                              <li><a href="#">'. esc_html__( 'Inició sesión como: ', 'copycats' ) . '<strong>' . $current_user->display_name . '</strong></a></li>
-                              <li><a href="#">Logout</a></li>
-                          </ul>';
-                  } else {
-                  echo '<ul id="mem" class="clearfix">
-                              <li><a href="#">Register</a></li>
-                              <li><a href="#">Login</a></li>
-                          </ul>';
-                  }
-              ?>
+                    echo '<ul id="mem" class="clearfix">
+                                <li><a href="#">'. esc_html__( 'Inició sesión como: ', 'copycats' ) . '<strong>' . $current_user->display_name . '</strong></a></li>
+                            </ul>';
+                    } else {
 
+                    }
+                ?>
+
+              </section>
+
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-
     <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarouselFade" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
