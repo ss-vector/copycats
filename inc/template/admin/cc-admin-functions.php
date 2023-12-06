@@ -1,15 +1,15 @@
-<?php 
+<?php
 	/**
  	* Copycats Admin Page Functions
- 	* @package Copycats 
- 	* 
+ 	* @package Copycats
+ 	*
 	**/
 
 function copycats_admin_page() {
 
 	add_menu_page( 'Copycats Options Page', 'Copycats', 'manage_options', 'copycats_admin', 'copycats_theme_create_page', 'dashicons-edit-large', 110 );
 
-	// Copycats submanu pages
+	// Copycats submenu pages
 	add_submenu_page( 'copycats_admin', 'Copycats Theme Settings','Settings', 'manage_options', 'copycats_theme_settings', 'copycats_theme_create_page' );
 	add_submenu_page( 'copycats_admin', 'Copycats Options', 'General', 'manage_options', 'copycats_main_config', 'copycats_theme_settings_page' );
 	// ...
@@ -43,7 +43,7 @@ function copycats_layout_options() {
 
 // Theme Settings Page
 function copycats_theme_settings_page() {
-	echo '<h3>' . _e( 'Layout', 'copycatstheme' ) . '</h3>';
+	echo '<h3>' . _e( 'Layout', 'copycats' ) . '</h3>';
 }
 
 function copycats_theme_create_page() {

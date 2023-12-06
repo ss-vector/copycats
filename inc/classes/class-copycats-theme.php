@@ -2,7 +2,7 @@
  /**
   *
   * @package Copycats
-  *
+  * @since 1.5
   */
 
 namespace COPYCATS_THEME\Inc;
@@ -18,6 +18,7 @@ class COPYCATS_THEME {
     //Load classes
     Assets::get_instance();
 		Menus::get_instance();
+		Sidebars::get_instance();
 		WooCommerce::get_instance();
 
     $this->setup_hooks();
@@ -35,9 +36,14 @@ class COPYCATS_THEME {
 
 	public function setup_theme() {
 
+		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
+
 		add_theme_support( 'title-tag' );
 
-
+		/** Custom Logo
+		 *
+		 * @link https://developer.wordpress.org/themes/functionality/custom-logo/
+		 */
 		add_theme_support(
 			'custom-logo',
 			[
@@ -94,9 +100,35 @@ class COPYCATS_THEME {
 		if ( class_exists( 'WooCommerce' ) ) {
 
 			/* Woocommerce Support */
-      add_theme_support( 'woocommerce' );
+			add_theme_support( 'woocommerce', array(
+				'thumbnail_image_width' => 270,
+				'thumbnail_image_crop' 	=> false,
+				'single_image_width' 	=> 300,
+				'single_image_crop' 	=> false,
+				'product_grid' => array(
+					'default_rows' 		=> 4,
+					'max_rows'			=> 4,
+					'default_columns' 	=> 4,
+				),
+			) );
 
 	  	}
 
+	}
+
+	function copycats_theme_wrapper_start() {
+		$theme_html = '<div class="container">';
+		$theme_html .= '<div class="row">';
+	   	$theme_html .= '<div class="col-lg-12">';
+
+	   	echo $theme_html;
+	}
+
+	function copycats_theme_wrapper_end() {
+		$theme_html = '</div>';
+		$theme_html .= '</div>';
+		$theme_html .= '</div>';
+
+		echo $theme_html;
 	}
 }

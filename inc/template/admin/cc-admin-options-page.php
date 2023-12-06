@@ -1,12 +1,13 @@
 <h1>Copycats Theme Options</h1>
 <?php settings_errors(); ?>
 <h3>Main Configuration</h3>
-	<?php 
-	# -from: copycats-admin-functions.php
+	<?php
+	/* @see copycats-admin-functions.php
+	*/
 	$layoutName = esc_attr(get_option( 'layout_name' ));
 	?>
 <div class="cp-wrapper">
-	<p>Asigned as Layout Name: <span><?php print $layoutName; ?></span></p>
+	<p>Asigned as Layout Name: <span><?php echo $layoutName; ?></span></p>
 	<span><?php _e( 'Fix admin template', 'copycats' ); ?></span>
 </div>
 <h3>Home slider Test Options</h3>

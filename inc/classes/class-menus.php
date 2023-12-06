@@ -21,7 +21,9 @@ class Menus {
 
   protected function setup_hooks() {
 
+    add_action( 'init', [ $this, 'copycats_menu_configuration' ] );
     add_action( 'init', [ $this, 'register_menus' ] );
+
   }
 
   public function register_menus() {
@@ -37,6 +39,12 @@ class Menus {
     ]);
   }
 
+  public function copycats_menu_configuration() {
+
+		add_theme_support( 'menus' );
+
+  }
+
   public function get_menu_id( $location ) {
     // Wordpress function: get_nav_menu_lcoations()
     $locations = get_nav_menu_locations();
@@ -49,7 +57,7 @@ class Menus {
 
   public function get_child_menu_items( $menu_array, $parent_id ) {
     $child_menus = [];
-  
+
     if ( ! empty( $menu_array ) && is_array( $menu_array ) ) {
       foreach ( $menu_array as $menu ) {
         if ( intval( $menu->menu_item_parent ) === $parent_id ) {
