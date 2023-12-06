@@ -40,7 +40,7 @@
 								<div class="socials">
 									<div class="address-data">
 										<strong><?php __( 'Información de Contacto', 'copycats' ); ?></strong>
-										<address>Ca. López Vidaurre 1043<br>Lambayeque, Perú</address>
+										<address>Calle López Vidaurre 1043<br>Lambayeque, Perú</address>
 									</div>
 									<div class="footer-social-icons">
 										<ul class="social-icons nav p-3">

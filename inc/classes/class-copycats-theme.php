@@ -38,6 +38,8 @@ class COPYCATS_THEME {
 
 		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
 
+		add_action('copycats_footer_social_block', [ $this, 'copycats_social_media_links'], 10 );
+
 		add_theme_support( 'title-tag' );
 
 		/** Custom Logo
@@ -115,7 +117,9 @@ class COPYCATS_THEME {
 	  	}
 
 	}
-
+	/*
+	 * Other theme functions
+	*/
 	function copycats_theme_wrapper_start() {
 		$theme_html = '<div class="container">';
 		$theme_html .= '<div class="row">';
@@ -130,5 +134,16 @@ class COPYCATS_THEME {
 		$theme_html .= '</div>';
 
 		echo $theme_html;
+	}
+
+	# Template Tags: Footer Link Functions
+	function copycats_social_media_links() {
+		// Retrieve Link Options from: copycats-admin-functions
+		$fblink = esc_attr(get_option( 'fb_link' ));
+		# $instalink = esc_attr(get_option( 'instagram_link' ));
+		$a_link = '<a href="' . $fblink . '" target="_blank"><i class="fa-brands fa-facebook fa-xl">' . '</i></a>';
+
+		echo $a_link;
+
 	}
 }

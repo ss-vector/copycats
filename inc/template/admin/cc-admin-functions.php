@@ -33,7 +33,8 @@ function copycats_custom_settings() {
 
 // Copycats layout Options
 function copycats_layout_options() {
-	echo 'edit layout options experimental';
+	echo '	<h3>Social Link Options</h3>';
+		echo '<p>edit layout options experimental</p>';
 }
 
 	function copycats_fb_link() {
