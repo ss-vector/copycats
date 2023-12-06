@@ -232,49 +232,53 @@ body ul.copycats-pages-menu > li > a {
 				display: block;	}
 
 	/* Mobile Menu */
-
-	.copycats__mobile ul.copycats-pages-menu {
+	.copycats__mobile ul {
+		list-style: none;
+		font-weight: 300;
+		line-height: 60px;
+	}
+	.copycats__mobile ul.gn-menu {
 		display: block;	}
-		.copycats__mobile ul.copycats-pages-menu > li {
+		.copycats__mobile ul.gn-menu > li {
 			position: relative;
 			width: 100%;
 			text-align: left; }
-			.copycats__mobile ul.copycats-pages-menu > li:before {
+			.copycats__mobile ul.gn-menu > li:before {
 				display: none !important; }
-			.copycats__mobile ul.copycats-pages-menu > li:hover > .sub-menu {
+			.copycats__mobile ul.gn-menu > li:hover > .sub-menu {
 				display: none; }
-			.copycats__mobile ul.copycats-pages-menu > li > a {
+			.copycats__mobile ul.gn-menu > li > a {
 				font-weight: 700; }
-			.copycats__mobile ul.copycats-pages-menu > li a {
+			.copycats__mobile ul.gn-menu > li a {
 				padding-left: 0;
 				color: rgba(34, 40, 50, 1) !important;
 				font-size: 12px;
 				text-transform: uppercase; }
-			.copycats__mobile ul.copycats-pages-menu > li ul.sub-menu {
+			.copycats__mobile ul.gn-menu > li div.sub-menu {
 				padding: 0;
 				width: auto !important;
 				position: static;
 				display: none;
 				box-shadow: none !important;
 				transition: none !important; }
-				.copycats__mobile ul.copycats-pages-menu > li ul.sub-menu.active {
+				.copycats__mobile ul.gn-menu > li div.sub-menu.active {
 					display: block; }
-				.copycats__mobile ul.copycats-pages-menu > li ul.sub-menu li a {
+				.copycats__mobile ul.gn-menu > li div.sub-menu li a {
 					padding-left: 0;
 					border: 0 !important;
 					color: #696969;
 					font-size: 13px;
 					text-transform: none; }
-			.copycats__mobile ul.copycats-pages-menu > li > ul {
+			.copycats__mobile ul.gn-menu > li > div {
 				display: none;
 				padding-left: 30px !important; }
-				.copycats__mobile ul.copycats-pages-menu > li > ul > li > a {
+				.copycats__mobile ul.gn-menu > li > ul > li > a {
 					font-weight: 600; }
-				.copycats__mobile ul.copycats-pages-menu > li > ul ul {
+				.copycats__mobile ul.gn-menu > li > ul ul {
 					padding-left: 30px !important; }
-					.copycats__mobile ul.copycats-pages-menu > li > ul ul li a {
+					.copycats__mobile ul.gn-menu > li > ul ul li a {
 						padding: 7px 0 !important; }
-			.copycats__mobile ul.copycats-pages-menu > li .mobile_trigger {
+			.copycats__mobile ul.gn-menu > li .mobile_trigger {
 				position: absolute;
 				width: 50px;
 				height: 50px;
@@ -282,7 +286,7 @@ body ul.copycats-pages-menu > li > a {
 				right: 0;
 				display: block;
 				z-index: 99; }
-				.copycats__mobile ul.copycats-pages-menu > li .mobile_trigger:before {
+				.copycats__mobile ul.gn-menu > li .mobile_trigger:before {
 					content: '';
 					position: absolute;
 					top: 50%;

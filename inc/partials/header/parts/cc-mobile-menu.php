@@ -1,7 +1,7 @@
 <?php
 /*
  *
- * @subpackage Main Menu
+ * @subpackage Mobile Main Menu
  */
 
   $menu_class = \Copycats_Theme\Inc\Menus::get_instance();
@@ -16,7 +16,7 @@
       <?php if ( ! empty( $header_menus ) && is_array( $header_menus ) ) {
       ?>
 
-        <ul class="navbar-nav me-auto">
+        <ul class="gn-menu">
           <?php
             foreach ( $header_menus as $menu_item ) {
 
@@ -41,7 +41,7 @@
                 <?php
                 } else {
                   ?>
-                  <!-- Toggler for the mobile dropdown menu                    
+                  <!-- Toggler for the mobile dropdown menu
                   -->
                   <li class="nav-item dropdown">
                     <a  class="nav-link dropdown-toggle"

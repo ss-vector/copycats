@@ -12,7 +12,7 @@
 			<div class="row align-items-center-justify-content-between">
 				<div class="col">
 					<div class="hot-title float-start">
-					 	<span>Conectando negocios en el <strong>Perú</strong></span>
+					 	<span><?php _e( 'Conectando negocios en el <strong>Perú</strong>', 'copycats' ); ?></span>
 					</div>
 				</div>
 				<div class="col">
@@ -59,9 +59,6 @@
 					</div>
 				</div>
 				<!-- TODO:	-->
-				<div class="col-xl-2 col-6">
-
-				</div>
 			</div>
 		</div>
 		<!-- Bottom bar header -->
@@ -84,10 +81,18 @@
 							<div class="copycats__mobile_overlay" data-toggle-selector=".copycats__mobile_toggler, .copycats__mobile_content, body"></div>
 		                    <div class="copycats__mobile_content">
 		                        <div class="copycats__mobile_content__inner">
-		                        	<h5>Menu de Navegación</h5>
-		        					<ul class="copycats-pages-menu">
-										<?php get_template_part( 'inc/partials/header/parts/cc-home-menu' ); ?>
-									</ul>
+		                        	<h5><? _e( 'Mapa del sitio', 'copycats' ); ?></h5>
+						        					<div class="copycats-pages-menu">
+																<?php
+																/**
+																*
+																*	@subpackage Responsive mobile version of Main Menu
+																*	If its not mobile version of website/browser
+																*
+																**/
+														 		get_template_part( 'inc/partials/header/parts/cc-mobile-menu' ); ?>
+
+															</div>
 		                        </div>
 		                    </div>
 		                </div>

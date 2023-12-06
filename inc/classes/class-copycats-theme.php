@@ -52,7 +52,7 @@ class COPYCATS_THEME {
 			]
 		);
 
-		add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
+		# add_action( 'after_setup_theme', 'copycats_custom_logo_setup' );
 
 		add_theme_support( 'post-thumbnails' );
 
@@ -64,9 +64,6 @@ class COPYCATS_THEME {
 
 		/* Post Formats */
 		add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-
-		/* Structure */
-		add_theme_support( 'align-wide' );
 
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -86,9 +83,12 @@ class COPYCATS_THEME {
 			]
 		);
 
+		/* Gutenberg Structure */
 		add_editor_style();
 
 		add_theme_support( 'wp-block-styles' );
+
+		add_theme_support( 'align-wide' );
 
 		/** Woocommerce */
 		if ( class_exists( 'WooCommerce' ) ) {

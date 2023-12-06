@@ -45,7 +45,7 @@
                       <div class="row">
 
                 <section class="float-end">
-                  <h1 class="display-5 text-white fw-bold">Contruye con Nosotros</h1>
+                  <h1 class="display-5 text-white fw-bold">Construye con Nosotros</h1>
                   <p class="display-6 text-light">Conce nuestro catálogo de <stroing>Materiales para construcción</strong></p>
                   <button type="submit">Más información</button>
 

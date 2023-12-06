@@ -12255,7 +12255,8 @@ ul.top-bar {
 }
 
 .hardware-banner {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/isetbase.appspot.com/o/3918.jpg?alt=media&token=eeb1ba9c-7074-4e33-9772-040651c44148");
+  /* Images Uploaded to Hostinger File Manager*/
+  background-image: url("/wordpress/assets/construction-in-progress.jpg");
 }
 
 .fs-slider-content {
@@ -12625,7 +12626,7 @@ ul.top-bar {
  * WooCommerce CSS Variables
  */
 :root {
-  --woocommerce: #a46497;
+  --woocommerce: #7F54B3;
   --wc-green: #198754;
   --wc-red: #dc3545;
   --wc-orange: #fd7e14;
@@ -15219,7 +15220,7 @@ body:not(.search-results) .twentysixteen .entry-summary {
  * WooCommerce CSS Variables
  */
 :root {
-  --woocommerce: #a46497;
+  --woocommerce: #7F54B3;
   --wc-green: #198754;
   --wc-red: #dc3545;
   --wc-orange: #fd7e14;
