@@ -11,11 +11,12 @@
 	<span><?php _e( 'Fix admin template', 'copycats' ); ?></span>
 </div>
 
-<div class="cp-wrapper">
 	<form method="post" action="options.php">
-		<?php settings_fields( 'copycats-settings-group' ); ?>
-		<?php do_settings_sections( 'copycats_admin' ); ?>
-		<?php submit_button(); ?>
+		<?php 
+					settings_fields( 'cc-social-links-group' );
+		 			do_settings_sections( 'copycats_admin' );
+		 			submit_button( 'Guardar' );
+		?>
 	</form>
-</div>
+
 <!-- Social Media Links -->

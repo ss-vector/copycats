@@ -7,28 +7,73 @@
 
 function copycats_admin_page() {
 
-	add_menu_page( 'Copycats Options Page', 'Copycats', 'manage_options', 'copycats_admin', 'copycats_theme_create_page', 'dashicons-edit-large', 110 );
+	add_menu_page(
+		__( 'Copycats Options Page', 'copycats' ),
+		'Copycats',
+		'manage_options',
+		'copycats_admin',
+		'copycats_theme_create_page',
+		'dashicons-edit-large',
+		110 );
 
 	// Copycats submenu pages
 	add_submenu_page( 'copycats_admin', 'Copycats Theme Settings','Settings', 'manage_options', 'copycats_theme_settings', 'copycats_theme_create_page' );
 	add_submenu_page( 'copycats_admin', 'Copycats Options', 'General', 'manage_options', 'copycats_main_config', 'copycats_theme_settings_page' );
 	// ...
 
-	// Activate custom settings
-	add_action( 'admin_init', 'copycats_custom_settings' );
-
 }
 add_action( 'admin_menu', 'copycats_admin_page', $priority = 10, $accepted_args = 1 );
 
-function copycats_custom_settings() {
-	// Register setting
-	register_setting( 'copycats-settings-group', 'fb-link' );
+// Activate custom settings
+add_action( 'admin_init', 'copycats_custom_settings' );
 
+function copycats_custom_settings() {
 	// Add settings section
-	add_settings_section( 'copycats-layout-options', 'Layout Options', 'copycats_layout_options', 'copycats_admin' );
+	add_settings_section(
+		'copycats-layout-options',
+		'Layout Options',
+		'copycats_layout_options',
+		'copycats_admin' );
 
 	// Adding settings fields
-	add_settings_field( 'fb-link', 'Facebook', 'copycats_fb_link', 'copycats_admin', 'copycats-layout-options' );
+	add_settings_field(
+		'fb-link',
+		'Facebook',
+		'copycats_fb_link',
+		'copycats_admin',
+		'copycats-layout-options',
+		array(
+			'fb-link'
+		)
+	 );
+
+	add_settings_field(
+		'cc_slider_link',
+		'Main Slider Link',
+		'copycats_textbox_callback',
+		'copycats_admin',
+		'copycats-layout-options',
+		array(
+			'cc_slider_link'
+		)
+	);
+
+	add_settings_field(
+		'cc_slider_image',
+		'Main Slider Image',
+		'copycats_textbox_callback',
+		'copycats_admin',
+		'copycats-layout-options',
+		array(
+			'cc_slider_image'
+		)
+	);
+
+	// Register setting
+	register_setting( 'cc-social-links-group', 'fb_link', 'esc_attr' );
+	register_setting( 'cc-social-links-group', 'cc_slider_link', 'esc_attr' );
+	register_setting( 'cc-social-links-group', 'cc_slider_image', 'esc_attr' );
+
 }
 
 // Copycats layout Options
@@ -41,6 +86,11 @@ function copycats_layout_options() {
 		$fblink = esc_attr(get_option( 'fb_link' ));
 		echo '<input type="text" name="fb_link" value="' . $fblink . '" placeholder="Paste link here">';
 	}
+
+function copycats_textbox_callback($args) {
+	$option = get_option($args[0]);
+	echo '<input type="text" id="'. $args[0] .'" name="'. $args[0] .'" value="' . $option . '" />';
+}
 
 // Theme Settings Page
 function copycats_theme_settings_page() {
