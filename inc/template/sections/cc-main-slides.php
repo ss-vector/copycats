@@ -1,39 +1,7 @@
 <div id="featuredCarouselFade"  class="carousel slide carousel-fade">
   <div class="carousel-inner">
 
-    <div class="carousel-item active">
-      <div class="cover-display main-banner">
-      	<div class="primary-container">
-
-      		<div class="container-fluid">
-
-      			<div class="article-wrapper">
-
-      				<div class="home fs-slider-content">
-                <div class="container">
-                  <div class="row">
-
-                    <section class="float-end">
-
-    									<h1 class="display-5 text-white fw-bold">Negocios El Triunfo - Lambayeque</h1>
-    									<h2 class="display-6 text-light">Una comunidad local de negocios.</h2>
-                      <button type="submit">Visitar</button>
-
-    								</section>
-
-                  </div>
-
-                </div>
-
-      				</div>
-
-      			</div>
-
-      		</div>
-      	</div>
-      </div>
-
-    </div>
+    <?php do_action( 'copycats_slider_init' ); ?>
 
     <div class="carousel-item">
         <div class="cover-display hardware-banner">

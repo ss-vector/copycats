@@ -45,7 +45,7 @@
 									<div class="footer-social-icons">
 										<ul class="social-icons nav p-3">
 											<li>
-												<?php do_action('copycats_footer_social_block'); ?>
+												<?php do_action( 'copycats_footer_social_block' ); ?>
 											</li>
 											<li>
 												<a href="https://wa.me/51978861145"><i class="fa-brands fa-whatsapp fa-xl"></i></a>

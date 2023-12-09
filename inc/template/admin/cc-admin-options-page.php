@@ -10,13 +10,14 @@
 	<p>Asigned as Layout Name: <span><?php echo $layoutName; ?></span></p>
 	<span><?php _e( 'Fix admin template', 'copycats' ); ?></span>
 </div>
-
-	<form method="post" action="options.php">
-		<?php 
-					settings_fields( 'cc-social-links-group' );
-		 			do_settings_sections( 'copycats_admin' );
-		 			submit_button( 'Guardar' );
-		?>
-	</form>
-
+	<div>
+		<?php print $GLOBALS['title']; ?>
+		<form method="post" action="options.php">
+			<?php
+						settings_fields( 'cc-social-links-group' );
+			 			do_settings_sections( 'copycats_admin' );
+			 			submit_button( 'Guardar' );
+			?>
+		</form>
+	</div>
 <!-- Social Media Links -->
