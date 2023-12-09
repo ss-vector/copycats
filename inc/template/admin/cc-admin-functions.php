@@ -80,6 +80,17 @@ function copycats_custom_settings() {
 		 )
 		);
 
+		add_settings_field(
+			'cc_slider_excerpt',
+			'Main Slider Excerpt',
+			'copycats_textbox_callback',
+			'copycats_admin',
+			'copycats-layout-options',
+			array(
+				'cc_slider_excerpt'
+			)
+		 );
+
 	add_settings_field(
 		'cc_slider_link',
 		'Main Slider Link',
@@ -119,6 +130,7 @@ function copycats_custom_settings() {
 	// Register setting
 	register_setting( 'cc-social-links-group', 'social_site_link', 'esc_attr' );
 	register_setting( 'cc-social-links-group', 'cc_slider_title', 'esc_attr' );
+	register_setting( 'cc-social-links-group', 'cc_slider_excerpt', 'esc_attr' );
 	register_setting( 'cc-social-links-group', 'cc_slider_link', 'esc_attr' );
 	register_setting( 'cc-social-links-group', 'cc_slider_image', 'esc_attr' );
 

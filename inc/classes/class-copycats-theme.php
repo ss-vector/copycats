@@ -150,18 +150,19 @@ class COPYCATS_THEME {
 
 	function copycats_main_slider() {
 
-		$slide_title 		= esc_attr( get_option( 'cc_slider_title' ) );
-		$slide_link 		= esc_attr( get_option( 'cc_slider_link' ) );
-		$slide_image 		= esc_attr( get_option( 'cc_slider_image' ) );
-		$slide_excerpt 	=	'Una comunidad local de negocios.';
+		$slide = array(
+			'slide_title'		=> 	esc_attr( get_option( 'cc_slider_title' ) ),
+			'slide_excerpt'	=>	esc_attr( get_option( 'cc_slider_excerpt' ) ),
+			'slide_link'		=> 	esc_attr( get_option( 'cc_slider_link' ) ),
+			'slide_image'		=>	esc_attr( get_option( 'cc_slider_image' ) ),
+		);
 
-
-		$html_content = 	'<div class="carousel-item active"><div class="cover-display main-banner" style="background-image: url('  . $slide_image . ')">';
+		$html_content = 	'<div class="carousel-item active"><div class="cover-display main-banner" style="background-image: url('  . $slide['slide_image'] . ')">';
 		$html_content .= 	'<div class="primary-container"><div class="container-fluid"><div class="article-wrapper">';
 		$html_content .= 	'<div class="home fs-slider-content"><div class="container"><div class="row"><section class="float-end">';
-		$html_content .= 	'<h1 class="display-5 text-white fw-bold">' . $slide_title . '</h1>';
-		$html_content .=	'<h2 class="display-6 text-light">' . $slide_excerpt .'</h2>';
-		$html_content .=	'<button type="submit"><a href="' . $slide_link . '">Visitar</a></button>';
+		$html_content .= 	'<h1 class="display-5 text-white fw-bold">' . $slide['slide_title'] . '</h1>';
+		$html_content .=	'<h2 class="display-6 text-light">' . $slide['slide_excerpt'] .'</h2>';
+		$html_content .=	'<button type="submit"><a href="' . $slide['slide_link'] . '">Visitar</a></button>';
 		$html_content .= 	'</section></div></div></div></div></div></div></div></div>';
 
 		echo $html_content;
