@@ -35,19 +35,21 @@ function copycats_custom_settings() {
 
 	$default_values = array(
 		'slides_quantity' => 3,
-		'social_sites'	=> array(
-			'facebook',
-			'Twitter',
-			'Pinterest'
+		'slides'		=> array(
+			'order'		=> 1,
+			'title'		=> '',
+			'excerpt'	=> '',
+			'link'		=> '',
+			'image'		=> '',
 		)
 	);
 
 	$data = shortcode_atts( $default_values, $option_values );
 
-	// Add settings section
+	// Admin Section: Layout Options
 	add_settings_section(
 		'copycats-layout-options',
-		'Layout Options',
+		'Various Theme Options',
 		'copycats_layout_options',
 		'copycats_admin' );
 
@@ -57,11 +59,11 @@ function copycats_custom_settings() {
 		'copycats_slides_section',
 		'copycats_admin' );
 
-	// Adding settings fields
+	// Social Sites Links
 	add_settings_field(
 		'site_link',
 		'Facebook',
-		'copycats_textbox_callback',
+		'copycats_social_media_links',
 		'copycats_admin',
 		'copycats-layout-options',
 		array(
@@ -127,8 +129,9 @@ function copycats_custom_settings() {
 		)
 	);
 
-	// Register setting
-	register_setting( 'cc-social-links-group', 'social_site_link', 'esc_attr' );
+	// Social sites links:options
+ 	register_setting( 'cc-social-links-group', 'social_site_link', 'esc_attr' );
+
 	register_setting( 'cc-social-links-group', 'cc_slider_title', 'esc_attr' );
 	register_setting( 'cc-social-links-group', 'cc_slider_excerpt', 'esc_attr' );
 	register_setting( 'cc-social-links-group', 'cc_slider_link', 'esc_attr' );
@@ -141,7 +144,7 @@ function copycats_custom_settings() {
 // Copycats layout Options
 function copycats_layout_options() {
 	echo '	<h3>Social Link Options</h3>';
-		echo '<p>Edit layout options experimental</p>';
+		echo '<p>Pick available social accounts</p>';
 }
 
 function copycats_slides_section() {
@@ -162,6 +165,18 @@ function copycats_slides_options_callback( $args ) {
         $args['label_for'],
         $args['value']
     );
+}
+
+function copycats_social_media_links() {
+	$social_media = array( 'Facebook', 'Instagram', 'Pinterest', 'Twitter' );
+	$output = '';
+
+	foreach ( $social_media as $site ) {
+		//
+		$output .= '<label><input type="checkbox" id="' . $site .'" name="social_site_link[]" value="1"/>' . $site . '</label><br>';
+	}
+
+	echo $output;
 }
 
 // Creating the Copycats Theme Settings Page
