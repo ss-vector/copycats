@@ -155,7 +155,7 @@ function copycats_textbox_callback( $args ) {
 	$option = get_option($args[0]);
 	echo '<input type="text" id="'. $args[0] .'" name="'. $args[0] .'" value="' . $option . '" />';
 }
-// Experimental example for slides
+// Experimental Callback functions
 function copycats_slides_options_callback( $args ) {
 
     printf(
@@ -173,7 +173,7 @@ function copycats_social_media_links() {
 
 	foreach ( $social_media as $site ) {
 		//
-		$output .= '<label><input type="checkbox" id="' . $site .'" name="social_site_link[]" value="1"/>' . $site . '</label><br>';
+		$output .= '<label><input type="checkbox" id="' . $site .'" name="site_link[]" value="1"/>' . $site . '</label><br>';
 	}
 
 	echo $output;
