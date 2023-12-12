@@ -114,18 +114,10 @@
 
 	/* Main Header Image Widget Display */
 	.cover-display {
-		background-size: cover;	
+		background-size: cover;
+		background-position: center;
 		height: 450px; 
 		display: block; }
-
-		.main-banner {
-			background-image: url('https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1657675742/eltriunfo/crh-banner.jpg');
-		}
-
-	.hardware-banner {
-		/* Images Uploaded to Hostinger File Manager*/
-		background-image: url('/assets/construction-in-progress.jpg');
-	}
 
 	.fs-slider-content {
 		margin-top: 140px;
