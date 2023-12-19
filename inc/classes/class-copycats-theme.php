@@ -38,8 +38,8 @@ class COPYCATS_THEME {
 
 		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
 
-		add_action('copycats_footer_social_block', [ $this, 'copycats_social_media_links'], 10 );
-		add_action('copycats_slider_init', [ $this, 'copycats_main_slider'], 10 );
+		add_action('copycats_footer_social_block', [ $this, 'copycats_social_media_links' ], 10 );
+		add_action('copycats_slider_init', [ $this, 'copycats_main_slider' ], 10 );
 
 		add_theme_support( 'title-tag' );
 
@@ -121,21 +121,6 @@ class COPYCATS_THEME {
 	/*
 	 * Other theme functions
 	*/
-	function copycats_theme_wrapper_start() {
-		$theme_html = '<div class="container">';
-		$theme_html .= '<div class="row">';
-	   	$theme_html .= '<div class="col-lg-12">';
-
-	   	echo $theme_html;
-	}
-
-	function copycats_theme_wrapper_end() {
-		$theme_html = '</div>';
-		$theme_html .= '</div>';
-		$theme_html .= '</div>';
-
-		echo $theme_html;
-	}
 
 	# Template Tags: Footer Link Functions
 	function copycats_social_media_links() {

@@ -9,13 +9,13 @@
 
 <?php
 
-	get_template_part( 'inc/template/sections/cc-main-slides' );	
+	get_template_part( 'template/sections/cc-main-slides' );
 
-	get_template_part( 'inc/template/sections/cc-recent-posts' );
+	get_template_part( 'template/sections/cc-recent-posts' );
 
- 	get_template_part( 'inc/template/sections/cc-featured-section' );
+ 	get_template_part( 'template/sections/cc-featured-section' );
 
- 	get_template_part( 'inc/template/sections/cc-map-section' );
+ 	get_template_part( 'template/sections/cc-map-section' );
 
  	# get_template_part( 'inc/template/sections/cc-newsletter' );
 

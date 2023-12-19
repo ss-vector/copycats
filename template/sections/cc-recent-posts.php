@@ -24,7 +24,7 @@
 			if( $lastBlogPosts->have_posts() ):
 				while( $lastBlogPosts->have_posts() ): $lastBlogPosts->the_post(); ?>
 
-					<?php get_template_part( 'inc/template/layout/content-album' ); # content-featured ?>
+					<?php get_template_part( 'template/parts/content/content-album' ); # content-featured ?>
 
 				<?php endwhile;
 

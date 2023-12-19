@@ -4,14 +4,34 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap');
 
+
+@import '../../../../../../modules/bootstrap/scss/functions';
+
 // Theme color palette
 @import '../../../../../../modules/cc template/colors.scss';
+
+@import '../../../../../../modules/bootstrap/scss/variables';
+@import '../../../../../../modules/bootstrap/scss/variables-dark';
+
+
+// Include Copycats default template scss overrides styles
+// Buttons, Wordpress sections
+
+
+
+@import '../../../../../../modules/cc template/buttons.scss';
+@import '../../../../../../modules/cc template/sections.scss';
 
 // Theme colors: cc for copycats :3
 $copycats-theme-colors: (
   "primary":    $primary,
   "featured":   $pink,
 );
+.carousel-control-prev,
+.carousel-control-next {
+width: 10%;
+
+}
 
 // Links color styles
 $link-color:                             $blue;
@@ -29,9 +49,32 @@ $container-max-widths: (
   xxl: 1440px
 );
 
+@import 'copycats.scss';
+
+// Include Map Overrides below.
+
+@import '../../../../../../modules/bootstrap/scss/maps';
+@import '../../../../../../modules/bootstrap/scss/mixins';
+@import '../../../../../../modules/bootstrap/scss/root';
+
+@import '../../../../../../modules/bootstrap/scss/utilities';
+@import '../../../../../../modules/bootstrap/scss/reboot';
+@import '../../../../../../modules/bootstrap/scss/type';
+
+@import '../../../../../../modules/bootstrap/scss/images';
+@import '../../../../../../modules/bootstrap/scss/containers';
+@import '../../../../../../modules/bootstrap/scss/grid';
+@import '../../../../../../modules/bootstrap/scss/helpers';
 
 
-// Option B: Include parts of Bootstrap
+// Utilities API
+@import '../../../../../../modules/bootstrap/scss/utilities/api';
+
+
+// Woocommerce Style Overrides
+@import '../../../../../../modules/cc template/cc-woo-layout.scss';
+
+// Include Bootstrap
 @import '../../../../../../modules/bootstrap/scss/bootstrap.scss';
 
 // Here use functions: Color Functions
@@ -47,26 +90,13 @@ $shadow-900: shade-color($shadow, 80%);
   }
 }
 
-// Copycats template import ordered styles
-// Buttons, Wordpress sections
-@import '../../../../../../modules/cc template/buttons.scss';
-@import '../../../../../../modules/cc template/sections.scss';
-
-
-// Woocommerce Style Overrides
-@import '../../../../../../modules/cc template/cc-woo-layout.scss';
-
-// Utilizing WooCommerce Styles
-@import 'copycats.scss';
-
-
 // Import Woocommerce
 @import '../../../../plugins/woocommerce/assets/css/woocommerce';
 
 @import '../../../../plugins/woocommerce/assets/css/woocommerce-layout';
 
 
-// 5. Add additional custom code here
+// Additional custom code here
 
 .bg-footer {
   background-color: $cp-footer-bg;

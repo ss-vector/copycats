@@ -25,7 +25,7 @@ require_once COPYCATS_THEME_DIR . '/inc/helpers/autoloader.php';
 require_once COPYCATS_THEME_DIR . '/inc/helpers/template-tags.php';
 
 require_once COPYCATS_THEME_DIR . '/inc/init.php';
-require_once COPYCATS_THEME_DIR . '/inc/template/admin/cc-admin-functions.php';
+require_once COPYCATS_THEME_DIR . '/inc/admin/cc-admin-functions.php';
 
 function copycats_get_theme_instance() {
 	\COPYCATS_THEME\Inc\COPYCATS_THEME::get_instance();
