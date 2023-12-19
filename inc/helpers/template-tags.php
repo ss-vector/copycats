@@ -5,8 +5,6 @@
   *
 */
 
-	# wp_register_style( 'swiper_bundle', COPYCATS_THEME_URI . '/plugins/swiper/swiper-bundle.min.css', false, '6.7.5' ,'all' );
-
 function get_post_custom_thumbnail( $post_id, $size = 'blog-thumbnail', $additional_attributes = [] ) {
   $custom_thumbnail = '';
 

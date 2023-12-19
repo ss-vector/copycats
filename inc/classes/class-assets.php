@@ -33,6 +33,7 @@ class Assets {
     // Aditional fonts
     wp_register_style( 'fontawesome', COPYCATS_THEME_URI . '/assets/fontawesome/css/all.css', false, '6.1.2', 'all' );
     wp_register_style( 'font-electro', COPYCATS_THEME_URI . '/assets/fonts/font-copycats.css', false, '1.0', 'all' );
+    # wp_register_style( 'swiper_bundle', COPYCATS_THEME_URI . '/plugins/swiper/swiper-bundle.min.css', false, '6.7.5' ,'all' );
 
     // Enqueue styles
     wp_enqueue_style( 'template_css' );

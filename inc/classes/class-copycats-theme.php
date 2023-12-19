@@ -92,8 +92,11 @@ class COPYCATS_THEME {
 			]
 		);
 
-		/* Gutenberg Structure */
+		// Gutenberg Theme Support
+
 		add_editor_style();
+
+		// Add link to you editor styles css file.
 
 		add_theme_support( 'wp-block-styles' );
 

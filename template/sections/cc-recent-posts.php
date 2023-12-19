@@ -12,7 +12,7 @@
 	<div class="cc-news-section py-5 bg-body-tertiary">
 
 			<div class="section-title text-center">
-				<h2>Últimas Publicaciones del Blog</h2>
+				<h2><?php __( 'Últimas Publicaciones del Blog', 'copycats' ); ?></h2>
 			</div>
 		<div class="container">
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

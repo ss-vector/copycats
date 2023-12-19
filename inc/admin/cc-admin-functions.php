@@ -186,5 +186,5 @@ function copycats_theme_settings_page() {
 
 function copycats_theme_create_page() {
 	//page generation function
-	require_once( get_template_directory() . '/inc/template/admin/cc-admin-options-page.php' );
+	require_once( get_template_directory() . '/inc/admin/cc-admin-options-page.php' );
 }
