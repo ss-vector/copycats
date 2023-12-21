@@ -12,6 +12,9 @@ const output = {
   filename: 'js/[name].js',
 };
 
+const rules = [
+];
+
 module.exports = ( env, argv );=> ({
   entry: entry,
   output: {
