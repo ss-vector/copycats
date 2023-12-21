@@ -1,7 +1,7 @@
 const path = require( 'path' );
 // Create paths for each asset
 const JS_DIR = path.resolve( __dirname, '/assets/js' );
-
+const BUILD_DIR = path.resolve( __dirname, '/assets/');
 
 const entry = {
   main: JS_DIR + '/main.js',
@@ -15,9 +15,7 @@ const output = {
 const rules = [
 ];
 
-module.exports = ( env, argv );=> ({
+module.exports = ( env, argv )=> ({
   entry: entry,
-  output: {
-    filename: 'main.js',
-  }
+  output: output, 
 });
