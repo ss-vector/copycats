@@ -31,7 +31,7 @@ class Assets {
     wp_register_style( 'copycats_layout', COPYCATS_THEME_URI . '/assets/css/layout.css', false, '1.0.1', 'all' );
 
     // Aditional fonts
-    wp_register_style( 'fontawesome', COPYCATS_THEME_URI . '/assets/fontawesome/css/all.css', false, '6.1.2', 'all' );
+    wp_register_style( 'fontawesome', COPYCATS_THEME_URI . '/assets/css/fontawesome/css/all.css', false, '6.1.2', 'all' );
     wp_register_style( 'font-electro', COPYCATS_THEME_URI . '/assets/fonts/font-copycats.css', false, '1.0', 'all' );
     # wp_register_style( 'swiper_bundle', COPYCATS_THEME_URI . '/plugins/swiper/swiper-bundle.min.css', false, '6.7.5' ,'all' );
 
@@ -49,7 +49,7 @@ class Assets {
 		// Scripts
     wp_enqueue_script( 'coppycats_app', COPYCATS_THEME_URI . '/assets/js/app.js', array('jquery'), '1.0.0', true );
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'bootstrap_js', COPYCATS_THEME_URI . '/assets/js/bootstrap.bundle.min.js', [ 'jquery' ], false, true );
+		wp_enqueue_script( 'bootstrap_js', COPYCATS_THEME_URI . '/assets/js/bootstrap.js', [ 'jquery' ], false, true );
 		# wp_enqueue_script( 'responsive_slides_js', COPYCATS_THEME_URI . '/vendor/responsive-slides/responsiveslides.min.js', array( 'jquery' ), '1.11.2', true );
 
 		# wp_enqueue_script( 'custom_js', COPYCATS_THEME_URI . '/assets/js/custom.js', array( 'jquery' ), '1.0.0', true );

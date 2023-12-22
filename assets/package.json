@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
+    "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress"
   },
   "keywords": [
     "wordpress",
@@ -26,9 +27,13 @@
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "cssnano": "^6.0.2",
+    "eslint": "^7.32.0",
     "file-loader": "^6.2.0",
+    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.7.6",
-    "style-loader": "^3.3.3",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "sass-mq": "^6.0.0",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
   }
