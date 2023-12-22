@@ -31,13 +31,13 @@ $page_query_featured = new WP_Query( $featured );
     <?php if( $page_query_featured->have_posts() ):
             while( $page_query_featured->have_posts() ): $page_query_featured->the_post(); ?>
 
-    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="p-4 p-md-5 mb-4 mt-3 rounded text-body-emphasis bg-body-secondary">
       <div class="col-lg-6 px-0">
         <!-- sprintf( '<a href="%s"><h2 class="blog-entry-title">', esc_url( get_permalink() ) ), '</h2></a>'  -->
         <div <?php post_class(); ?>>
           <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
           <p class="lead my-3"><?php the_excerpt(); ?></p>
-          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold"><?php _e( 'Continuar leyendo...', 'copycats' ); ?></a></p>
+          <p class="lead mb-0"><a href="<?php echo esc_url( get_permalink() ); ?>" class="text-body-emphasis fw-bold"><?php _e( 'Continuar leyendo...', 'copycats' ); ?></a></p>
         </div>
       </div>
     </div>
