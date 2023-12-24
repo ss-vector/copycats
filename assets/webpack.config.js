@@ -63,7 +63,7 @@ module.exports = ( env, argv )=> ({
   entry: entry,
   output: output,
 
-  devtool: 'source-map',
+  devtool: false,
 
   module: {
     rules: rules
