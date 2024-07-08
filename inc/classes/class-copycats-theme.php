@@ -20,6 +20,7 @@ class COPYCATS_THEME {
 		Menus::get_instance();
 		Sidebars::get_instance();
 		WooCommerce::get_instance();
+		CopycatsCustomizer::get_instance();
 
     $this->setup_hooks();
 

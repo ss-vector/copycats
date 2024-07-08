@@ -19,6 +19,7 @@
     * Flexible header menu
     * Search bar.
     * Blog
+    * Bootstrap 5
 
 ## Notes
 

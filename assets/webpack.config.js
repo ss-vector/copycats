@@ -9,7 +9,8 @@ const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 
 /** Directory path.  TODO: Create paths for each asset */
 const JS_DIR = path.join( __dirname, 'src/js/' );
-const BUILD_DIR = path.join( __dirname, '/js/');
+const BUILD_DIR = path.join( __dirname, '/build/js/');
+const IMG_DIR = path.join( __dirname, 'src/img/')
 
 const entry = {
   app: JS_DIR + '/app.js',
@@ -28,7 +29,7 @@ const plugins = ( argv ) => [
   } ),
 
   new MiniCssExtractPlugin( {
-    filename: 'css/[name].css'
+    filename: '../css/[name].css',
   })
 ];
 
@@ -50,11 +51,23 @@ const rules = [
   },
   {
     test: /\.(png|jpeg|svg|gif|ico)$/,
-    loader: 'file-loader',
-    options: {
-      name: '[path][name].[ext]',
-      // depending on your folder structure.
-      publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../',
+    use: {
+      loader: 'file-loader',
+      options: {
+        name: '[path][name].[ext]',
+        publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+      }
+    }
+  },
+  {
+    test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+    exclude: [ IMG_DIR, /node_modules/ ],
+    use: {
+      loader: 'file-loader',
+      options: {
+        name: '[path][name].[ext]',
+        publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+      }
     }
   }
 ];
@@ -67,6 +80,9 @@ module.exports = ( env, argv )=> ({
 
   module: {
     rules: rules
+  },
+  stats: {
+    errorDetails: true
   },
 
   plugins: plugins( argv ),
