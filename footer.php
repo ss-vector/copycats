@@ -1,18 +1,20 @@
 <?php wp_footer(); ?>
 			</div> <!-- /container-fluid -->
 			</div><!-- /main-warpper -->
-			<footer class="site-footer bg-footer">
-				<div class="footer-box">
+			<footer class="site-footer footer bg-dark">
+				
+				<div class="footer-box text-light">
 					<div class="container py-3">
+
 						<div class="row">
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<div class="box">
-									<img src="<?php echo esc_html( get_template_directory_uri() . '/assets/img/logo_eltriunfo.svg' );?>" alt="<?php esc_attr_e( 'ElTriunfo', 'copycats' );?>"/>
+									<img src="<?php echo esc_html( get_template_directory_uri() . '/assets/src/img/logo-final-web.svg' );?>" alt="<?php esc_attr_e( 'IS ElTRIUNFO', 'copycats' );?>"/>
 								</div>
 							</div>
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<div class="box">
-                  <h3><?php _e( 'Productos','copycats' ); ?></h3>
+                  <h3><?php _e( 'Información','copycats' ); ?></h3>
 									<?php
 										wp_nav_menu( array(
 											'menu_class'		=> 'menu',
@@ -66,14 +68,12 @@
 									</div>
 								</div>
 							</div>
-
-
-
-
 						</div>
-					</div>
-					<div class="sub-footer">
-						<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://github.com/ss-vector">ss-Vector</a><strong></span>
+
+						<div class="row">
+							<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://github.com/ss-vector">ss-Vector</a></strong></span>
+						</div>
+
 					</div>
 				</div>
 
