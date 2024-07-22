@@ -2,14 +2,27 @@
 			</div> <!-- /container-fluid -->
 			</div><!-- /main-warpper -->
 			<footer class="site-footer footer bg-dark">
-				
-				<div class="footer-box text-light">
-					<div class="container py-3">
 
-						<div class="row">
+				<div class="footer-box text-light">
+					<div class="container py-5">
+
+						<div class="row g-5">
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
-								<div class="box">
-									<img src="<?php echo esc_html( get_template_directory_uri() . '/assets/src/img/logo-final-web.svg' );?>" alt="<?php esc_attr_e( 'IS ElTRIUNFO', 'copycats' );?>"/>
+								<h1 class="box footer-logo">
+									<img src="<?php echo esc_html( get_template_directory_uri() . '/assets/src/img/logo-final-cc.svg' );?>" alt="<?php esc_attr_e( 'IS ElTRIUNFO', 'copycats' );?>"/>
+								</h1>
+								<div class="d-flex pt-2">
+									<!-- Social Icons classes: footer-social-icons-->
+										<!--div class="social-icons nav p-3">
+											<li>
+												<?php # do_action( 'copycats_footer_social_block' ); ?>
+											</li>
+										</div-->
+										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://wa.me/51978861145"><i class="fa-brands fa-whatsapp"></i></a>
+										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-instagram"></i></a>
+										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-pinterest"></i></a>
+										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-youtube"></i></a>
+										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-twitter"></i></a>
 								</div>
 							</div>
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
@@ -39,45 +52,25 @@
 								</div>
 							</div>
 							<div class="box-footer col-lg-3 col-md-4 mb-3">
-								<div class="socials">
-									<div class="address-data">
-										<strong><?php __( 'Información de Contacto', 'copycats' ); ?></strong>
-										<address>Calle López Vidaurre 1043<br>Lambayeque, Perú</address>
-									</div>
-									<div class="footer-social-icons">
-										<ul class="social-icons nav p-3">
-											<li>
-												<?php do_action( 'copycats_footer_social_block' ); ?>
-											</li>
-											<li>
-												<a href="https://wa.me/51978861145"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa-brands fa-pinterest fa-xl"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
 							</div>
 						</div>
 
-						<div class="row">
-							<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://github.com/ss-vector">ss-Vector</a></strong></span>
-						</div>
+					</div>
 
+					<div class="container-fluid copyright">
+						<div class="container">
+
+							<div class="row">
+								<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://github.com/ss-vector">ss-Vector</a></strong></span>
+							</div>
+
+					</div>
 					</div>
 				</div>
 
 			</footer>
 		</div><!-- </container-fluid> -->
+
+		<!-- visita interiora terrae rectificando invenies occultum lapidem -->
 	</body>
 </html>
