@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 			</div> <!-- /container-fluid -->
 			</div><!-- /main-warpper -->
-			<footer class="site-footer footer bg-dark">
+			<footer class="container-fluid site-footer footer bg-dark">
 
 				<div class="footer-box text-light">
 					<div class="container py-5">
