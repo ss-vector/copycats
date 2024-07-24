@@ -4,16 +4,15 @@
  *
 */
 	$args = array(
-		'type'						=> 'post',
+		'type'				=> 'post',
 		'posts_per_page'	=> 3,
-		'cat'							=> -85,
 	);
 	?>
 
 	<div class="cc-news-section py-5 bg-body-tertiary">
 
 			<div class="section-title text-center">
-				<h2><?php esc_html_e( 'Noticias', 'copycats' ); ?></h2>
+				<h2><?php __( 'Últimas Publicaciones del Blog', 'copycats' ); ?></h2>
 			</div>
 		<div class="container">
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

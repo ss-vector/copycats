@@ -20,7 +20,6 @@ class COPYCATS_THEME {
 		Menus::get_instance();
 		Sidebars::get_instance();
 		WooCommerce::get_instance();
-		CopycatsCustomizer::get_instance();
 
     $this->setup_hooks();
 
@@ -148,7 +147,7 @@ class COPYCATS_THEME {
 									),
 			'slide_2'	=> array(
 										'slide_title'		=> 	'Construye con Nosotros',
-										'slide_excerpt'	=>	'Trabaja con nuestros socios de <strong>confianza</strong>',
+										'slide_excerpt'	=>	'Conce nuestro catálogo de <stroing>Materiales para construcción</strong>',
 										'slide_link'		=> 	'#',
 										'slide_image'		=>	'/wordpress/assets/construction-in-progress.jpg'
 									),

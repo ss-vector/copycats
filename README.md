@@ -1,6 +1,5 @@
 # Copycats Template for Wordpress
-*Wordpress template* created for experimental and learning purposes. This theme is elaborated in order to complete certain php courses and test its
-flexibility. It is named <strong>"Copycats"<strong> after some copies of recipes.
+*Wordpress template* created with experimental and learning purposes, courses and related.
 
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/ss-vector/copycats)
 
@@ -20,7 +19,6 @@ flexibility. It is named <strong>"Copycats"<strong> after some copies of recipes
     * Flexible header menu
     * Search bar.
     * Blog
-    * Bootstrap 5
 
 ## Notes
 

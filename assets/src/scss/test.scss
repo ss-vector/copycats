@@ -1,0 +1,18 @@
+// Copycats Custom scss file
+// Include any default variable overrides here (though functions won't be available) 
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap');
+
+
+@import '../../../../../../assets/modules/bootstrap/scss/functions';
+
+// Theme color palette 
+@import '../../../../../../assets/modules/cc-template/colors';
+
+@import '../../../../../../assets/modules/bootstrap/scss/variables.scss';
+@import '../../../../../../assets/modules/bootstrap/scss/variables-dark.scss';
+
+
+// Include Copycats default template scss overrides styles
+// Buttons, Wordpress sections

@@ -1,0 +1,198 @@
+// Copycats Custom scss file
+// Include any default variable overrides here (though functions won't be available)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap');
+
+
+@import '../../../../../../assets/modules/bootstrap/scss/functions';
+
+// Theme color palette
+@import '../../../../../../assets/modules/cc-template/colors';
+
+@import '../../../../../../assets/modules/bootstrap/scss/variables.scss';
+@import '../../../../../../assets/modules/bootstrap/scss/variables-dark.scss';
+
+
+// Include Copycats default template scss overrides styles
+// Buttons, Wordpress sections
+
+
+
+@import '../../../../../../assets/modules/cc-template/buttons.scss';
+@import '../../../../../../assets/modules/cc-template/sections.scss';
+
+// Theme colors: cc for copycats :3
+$copycats-theme-colors: (
+  "primary":    $primary,
+  "featured":   $pink,
+);
+.carousel-control-prev,
+.carousel-control-next {
+width: 10%;
+
+}
+
+// Links color styles
+$link-color:                             $blue;
+$link-decoration:                         none;
+$link-shade-percentage:                   20%;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration:                   null;
+
+// Container Variables.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);
+
+@import 'copycats.scss';
+
+// Include Map Overrides below.
+
+@import '../../../../../../assets/modules/bootstrap/scss/maps';
+@import '../../../../../../assets/modules/bootstrap/scss/mixins';
+@import '../../../../../../assets/modules/bootstrap/scss/root';
+
+@import '../../../../../../assets/modules/bootstrap/scss/utilities';
+@import '../../../../../../assets/modules/bootstrap/scss/reboot';
+@import '../../../../../../assets/modules/bootstrap/scss/type';
+
+@import '../../../../../../assets/modules/bootstrap/scss/images';
+@import '../../../../../../assets/modules/bootstrap/scss/containers';
+@import '../../../../../../assets/modules/bootstrap/scss/grid';
+@import '../../../../../../assets/modules/bootstrap/scss/helpers';
+
+
+// Utilities API
+@import '../../../../../../assets/modules/bootstrap/scss/utilities/api';
+
+
+// Woocommerce Style Overrides
+@import '../../../../../../assets/modules/cc-template/cc-woo-overrides.scss';
+
+// Include Bootstrap
+@import '../../../../../../assets/modules/bootstrap/scss/bootstrap.scss';
+
+// Here use functions: Color Functions
+// Shadows
+$shadow-100: tint-color($shadow, 80%);
+$shadow-500: $shadow;
+$shadow-600: shade-color($shadow, 20%);
+$shadow-900: shade-color($shadow, 80%);
+
+@each $color, $value in $copycats-theme-colors {
+  .cc-btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+// Import Copycats Woocommerce styles
+// @import '../../../../../../assets/modules/cc-template/cc-woocommerce';
+
+// @import '../../../../../plugins/woocommerce/assets/css/woocommerce-layout';
+
+@import '../../../../../plugins/woocommerce/assets/css/woocommerce.css';
+
+
+// Additional custom code here
+
+.bg-footer {
+  background-color: $cp-footer-bg;
+  color: $cc-text-color-dark; }
+
+.sub-footer {
+  background-color: $sub-footer-bg;
+  text-align: center; }
+
+  /* Sections */
+
+  // News Section
+  .section-title {
+    margin: 1rem 25px; }
+    .section-title h3 {
+      font-weight: 700;
+      text-align: center; }
+  .cc-news-section .entry-title a {
+    color: $bright-blue;  }
+    
+  /* Bottom Bar*/
+	.bottom-bar .wp_is_not_mobile .menu-item {
+		margin: 0 32px;	}
+		.bottom-bar .header_main_menu {
+			flex-grow: 1; }
+		.bottom-bar .header_main_menu li {
+			list-style: none; }
+  .bottom-bar .woo_categories_menu .departments-menu-title {
+    line-height: 3.214em; }
+
+// cards
+.card.anouncement {
+  color: $desaturated-blue;
+  margin: 50px auto;
+  overflow: hidden; }
+  .card.anouncement .hero-img {
+    width: 100%; }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px; }
+    .card-container .card-title {
+      color: $dark-blue;
+      font-weight: 900;
+      font-size: 32px; }
+    .card-container strong {
+      color: $dark-blue; }
+    .card-container > * {
+      margin: 13px 0; }
+
+/* Footer */
+.footer-social-icons .social-icons > ul {
+  flex-direction: row; }
+  .footer-social-icons .social-icons .fa-facebook:hover {
+    color: $clr-facebook; }
+  .footer-social-icons .social-icons .fa-whatsapp:hover {
+    color: $clr-whatsapp; }
+
+  .footer-social-icons .social-icons .fa-instagram:hover {
+    color: $clr-instagram; }
+  .social-icons {
+    align-items: center;
+    justify-content: center;
+    margin: 1rem; }
+    .social-icons > li {
+      display: inline-block; }
+    .social-icons li + li a {
+      margin-left: 26px; }
+  .address-data {
+    padding-left: 3rem;
+    width: 100%;
+    display: inline-block; }
+
+.menu.block_1 {
+	padding-left: .5rem; }
+
+.box {
+	position: relative;
+	padding: 15px;
+	height: 100%; }
+	.box ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none; }
+
+/* Mobile */
+
+@media only screen and ( max-width: 550px ){
+
+  .categories-column {
+    padding-left: 0;
+	}
+
+}
