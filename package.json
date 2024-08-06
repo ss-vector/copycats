@@ -1,0 +1,15 @@
+{
+  "name": "copycats",
+  "version": "1.0.0",
+  "description": "*Wordpress template* created with experimental and learning purposes, courses and related.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.3.5"
+  }
+}
