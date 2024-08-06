@@ -15,7 +15,7 @@
 								<div class="d-flex pt-2">
 									<!-- Social Icons classes: footer-social-icons-->
 										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://wa.me/51978861145"><i class="fa-brands fa-whatsapp"></i></a>
-										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-instagram"></i></a>
+										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-facebook"></i></a>
 										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://pin.it/5Pujyi8OK"><i class="fa-brands fa-pinterest"></i></a>
 										<!--
 												<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-youtube"></i></a>
