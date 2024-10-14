@@ -5,10 +5,10 @@ This will be my first Headless *Wordpress template* created with experimental an
 
 ## Objective
 
-    Learn about Wordpress and Woocommerce
-    Learn about UI/UX
-    Create a full theme from scracht.
-	Create a block structured Woocommerce theme.
+    - Learn about Wordpress and Woocommerce
+    - Learn about UI/UX
+    - Create a full theme from scracht.
+    - Create a block structured Woocommerce theme.
 
 ## Features
     
@@ -20,7 +20,7 @@ This will be my first Headless *Wordpress template* created with experimental an
     * Search bar.
     * Blog
 
-## Notes
+### Notes
 
     **TODO:**
     - PHP server side rendering.
