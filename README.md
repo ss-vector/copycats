@@ -1,5 +1,5 @@
 # Copycats Template for Wordpress
-*Wordpress template* created with experimental and learning purposes, courses and related.
+This will be my first Headless *Wordpress template* created with experimental and learning purposes, using Svelte or React
 
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/ss-vector/copycats)
 
