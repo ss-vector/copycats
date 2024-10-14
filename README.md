@@ -11,7 +11,7 @@ This will be my first Headless *Wordpress template* created with experimental an
 - Create a block structured Woocommerce theme.
 
 ## Features
-    
+
 * Autoloader
 * Woocommerce ready
 * Admin functions
@@ -25,3 +25,4 @@ This will be my first Headless *Wordpress template* created with experimental an
 **TODO:**
 - PHP server side rendering.
 - Implement blocks to theme.
+- Headless Implementation.
