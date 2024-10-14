@@ -22,6 +22,6 @@ This will be my first Headless *Wordpress template* created with experimental an
 
 ## Notes
 
-    TODO:
+    **TODO:**
     - PHP server side rendering.
     - Implement blocks to theme.
