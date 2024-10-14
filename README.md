@@ -5,23 +5,23 @@ This will be my first Headless *Wordpress template* created with experimental an
 
 ## Objective
 
-    - Learn about Wordpress and Woocommerce
-    - Learn about UI/UX
-    - Create a full theme from scracht.
-    - Create a block structured Woocommerce theme.
+- Learn about Wordpress and Woocommerce
+- Learn about UI/UX
+- Create a full theme from scracht.
+- Create a block structured Woocommerce theme.
 
 ## Features
     
-    * Autoloader:
-    * Woocommerce ready
-    * Admin functions
-	* Slider
-    * Flexible header menu
-    * Search bar.
-    * Blog
+* Autoloader
+* Woocommerce ready
+* Admin functions
+* Slider
+* Flexible header menu
+* Search bar.
+* Blog
 
 ### Notes
 
-    **TODO:**
-    - PHP server side rendering.
-    - Implement blocks to theme.
+**TODO:**
+- PHP server side rendering.
+- Implement blocks to theme.
