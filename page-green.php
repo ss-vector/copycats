@@ -28,6 +28,16 @@ $page_query_featured = new WP_Query( $featured );
 
 <div class="container">
 
+    <div>
+
+    <?php if ( is_user_logged_in() ) {
+      <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
+    <?php } 
+    else {  ?>
+      <p>Nothing else matters here!</p>
+    <?php } ?>
+    </div>
+
     <?php if( $page_query_featured->have_posts() ):
             while( $page_query_featured->have_posts() ): $page_query_featured->the_post(); ?>
 
