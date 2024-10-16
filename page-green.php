@@ -30,10 +30,9 @@ $page_query_featured = new WP_Query( $featured );
 
     <div>
 
-    <?php if ( is_user_logged_in() ) {
-      <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
-    <?php } 
-    else {  ?>
+    <?php if ( is_user_logged_in() ) { ?>
+      <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Perfil','woothemes'); ?>"><?php _e('Perfil','woothemes'); ?></a>
+    <?php }else {  ?>
       <p>Nothing else matters here!</p>
     <?php } ?>
     </div>
