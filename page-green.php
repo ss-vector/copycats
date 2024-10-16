@@ -33,7 +33,7 @@ $page_query_featured = new WP_Query( $featured );
     <?php if ( is_user_logged_in() ) { ?>
       <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Perfil','woothemes'); ?>"><?php _e('Perfil','woothemes'); ?></a>
     <?php }else {  ?>
-      <p>Nothing else matters here!</p>
+      <p>Nothing else matters!</p>
     <?php } ?>
     </div>
 

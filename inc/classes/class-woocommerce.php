@@ -21,8 +21,8 @@ class WooCommerce {
   protected function setup_hooks() {
 
     add_action( 'after_setup_theme', [ $this, 'woocommerce_setup' ] );
-    # add_action( 'woocommerce_account_content', [ $this, 'copycats_woocommerce_account_content' ] );
-    # add_action( 'woocommerce_account_navigation', [ $this, 'copycats_woocommerce_account_navigation' ] );
+    # Creating a custom action and registering with woocommerce.
+    add_action( 'copycats_account_content', [ $this, 'copycats_woocommerce_content' ] );
 
   }
 
@@ -41,8 +41,12 @@ class WooCommerce {
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
   }
 
-  function copycats_woocommerce_account_content() {
-  	global $current_user;
+  function copycats_woocommerce_content() {
+    global $current_user;
+
+    # TODO: 
+    # - Woocommerce user mail
+    # - Woocommerce account navigation
 
     echo '<p>' . 'Correo Electrónico: ' . $current_user->user_email .  '</p>';
   }
@@ -55,9 +59,9 @@ class WooCommerce {
   function copycats_theme_wrapper_start() {
     $theme_html = '<div class="container">';
     $theme_html .= '<div class="row">';
-      $theme_html .= '<div class="col-lg-12">';
+    $theme_html .= '<div class="col-lg-12">';
 
-      echo $theme_html;
+    echo $theme_html;
   }
 
   function copycats_theme_wrapper_end() {
