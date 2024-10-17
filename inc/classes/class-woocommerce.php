@@ -88,7 +88,7 @@ class WooCommerce {
   # Filter Functions
 
   function copycats_remove_tab_items( $items ) {
-    unset( $items[ 'edit-address' ] );
+    unset( $items[ 'dashboard' ] );
     unset( $items[ 'downloads' ] );
     unset( $items[ 'dashboard' ] );
     return $items;
