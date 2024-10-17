@@ -72,7 +72,6 @@ class WooCommerce {
     echo $theme_html;
   }
 
-
 }
 
 ?>
