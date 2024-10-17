@@ -22,7 +22,7 @@ class WooCommerce {
 
     add_action( 'after_setup_theme', [ $this, 'woocommerce_setup' ] );
     # Creating a custom action and registering with woocommerce.
-    add_action( 'copycats_account_content', [ $this, 'copycats_woocommerce_content' ] );
+    add_action( 'after_setup_theme', [ $this, 'copycats_woocommerce_custom_content' ] );
 
   }
 
@@ -41,18 +41,32 @@ class WooCommerce {
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
   }
 
-  function copycats_woocommerce_content() {
+  function copycats_woocommerce_custom_content() {
+
+    # My account
+    add_action( 'woocommerce_account_content', [ $this, 'copycats_woocommerce_account_content' ] );
+    add_action( 'woocommerce_account_navigation', [ $this, 'copycats_woocommerce_account_navigation' ] );
+
+    add_filter( 'woocommerce_account_menu_items', [ $this, 'copycats_remove_tab_items'], 9999 );
+
+    remove_action( 'woocommerce_account_content', 'woocommerce_account_content' );
+    remove_action( 'woocommerce_account_menu_items', 'woocommerce_account_menu_items' );
+
+    # Shop page
+
+    # Single Product page
+    // remove_action( '' );
+
+
+  }
+# Action Functions
+  function copycats_woocommerce_account_content() {
     global $current_user;
-
-    # TODO: 
-    # - Woocommerce user mail
-    # - Woocommerce account navigation
-
     echo '<p>' . 'Correo Electrónico: ' . $current_user->user_email .  '</p>';
   }
 
+# TODO: delete copycats_woocommerce_account_navigation
   function copycats_woocommerce_account_navigation() {
-
     echo '<p>testing edition</p>';
   }
 
@@ -70,6 +84,14 @@ class WooCommerce {
     $theme_html .= '</div>';
 
     echo $theme_html;
+  }
+  # Filter Functions
+
+  function copycats_remove_tab_items( $items ) {
+    unset( $items[ 'edit-address' ] );
+    unset( $items[ 'downloads' ] );
+    unset( $items[ 'my-account' ] );
+    return $items;
   }
 
 

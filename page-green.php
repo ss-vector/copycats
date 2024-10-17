@@ -30,11 +30,6 @@ $page_query_featured = new WP_Query( $featured );
 
     <div>
 
-    <?php if ( is_user_logged_in() ) { ?>
-      <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Perfil','woothemes'); ?>"><?php _e('Perfil','woothemes'); ?></a>
-    <?php }else {  ?>
-      <p>Nothing else matters!</p>
-    <?php } ?>
     </div>
 
     <?php if( $page_query_featured->have_posts() ):
