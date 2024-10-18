@@ -26,3 +26,7 @@ This will be my first Headless *Wordpress template* created with experimental an
 - PHP server side rendering.
 - Implement blocks to theme.
 - Headless Implementation.
+
+| Version | Notes   |
+| :------:| :------ |
+| 1.00*    | Basic Woocommerce integration via Hooks |
