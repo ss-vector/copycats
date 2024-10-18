@@ -45,7 +45,6 @@ class WooCommerce {
 
     # My account
     add_action( 'woocommerce_account_content', [ $this, 'copycats_woocommerce_account_content' ] );
-    add_action( 'woocommerce_account_navigation', [ $this, 'copycats_woocommerce_account_navigation' ] );
 
     add_filter( 'woocommerce_account_menu_items', [ $this, 'copycats_remove_tab_items'], 9999 );
 
@@ -55,8 +54,7 @@ class WooCommerce {
     # Shop page
 
     # Single Product page
-    // remove_action( '' );
-
+    add_action( 'woocommerce_single_product_summary', [ $this, 'copycats_woocommerce_single_product_layout' ] );
 
   }
 # Action Functions
@@ -66,8 +64,8 @@ class WooCommerce {
   }
 
 # TODO: delete copycats_woocommerce_account_navigation
-  function copycats_woocommerce_account_navigation() {
-    echo '<p>testing edition</p>';
+  function copycats_woocommerce_single_product_layout() {
+    echo '<h3>This is just some <em>testing</em> edition text. =D!</3>';
   }
 
   function copycats_theme_wrapper_start() {
@@ -85,6 +83,7 @@ class WooCommerce {
 
     echo $theme_html;
   }
+
   # Filter Functions
 
   function copycats_remove_tab_items( $items ) {
