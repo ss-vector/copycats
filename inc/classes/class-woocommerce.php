@@ -65,7 +65,7 @@ class WooCommerce {
 
 # TODO: delete copycats_woocommerce_account_navigation
   function copycats_woocommerce_single_product_layout() {
-    echo '<h3>This is just some <em>testing</em> edition text. =D!</3>';
+    the_title('<h1 class="some-random-class"', '</h1>');
   }
 
   function copycats_theme_wrapper_start() {
