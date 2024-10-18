@@ -30,5 +30,5 @@ This will be my first Headless *Wordpress template* created with experimental an
 | Version | Notes   |
 | :------:| :------ |
 | 1.6    | Basic Woocommerce integration via Hooks |
-|        | Headless integration with React         |
-| ------------------------------------------------ |
+        | Headless integration with React         |
+
