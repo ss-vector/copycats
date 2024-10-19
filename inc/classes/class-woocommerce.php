@@ -67,7 +67,7 @@ class WooCommerce {
   #
   
   function copycats_woocommerce_single_product_layout() {
-    the_title('<h1 class="some-random-class">', '</h1>');
+    get_template_part( 'inc/partials/header/title.php' );
   }
 
   function copycats_theme_wrapper_start() {
