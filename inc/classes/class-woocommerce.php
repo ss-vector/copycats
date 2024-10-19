@@ -63,7 +63,9 @@ class WooCommerce {
     echo '<p>' . 'Correo Electrónico: ' . $current_user->user_email .  '</p>';
   }
 
-# TODO: delete copycats_woocommerce_account_navigation
+  # TODO:
+  #
+  
   function copycats_woocommerce_single_product_layout() {
     the_title('<h1 class="some-random-class">', '</h1>');
   }
