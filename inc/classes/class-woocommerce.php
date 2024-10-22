@@ -54,6 +54,7 @@ class WooCommerce {
     # Shop page
 
     # Single Product page
+    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
     add_action( 'woocommerce_single_product_summary', [ $this, 'copycats_woocommerce_single_product_layout' ] );
 
   }
@@ -63,11 +64,13 @@ class WooCommerce {
     echo '<p>' . 'Correo Electrónico: ' . $current_user->user_email .  '</p>';
   }
 
-  # TODO:
-  #
-  
   function copycats_woocommerce_single_product_layout() {
-    get_template_part( 'inc/partials/header/title.php' );
+    # TODO:
+    # Edit, customize the following:
+    # Title, rating, price, excerpt, add_to_cart, meta, sharing, WC_Structured_Data()
+
+
+    get_template_part( 'inc/partials/woocommerce/single-product/title' );
   }
 
   function copycats_theme_wrapper_start() {
