@@ -57,6 +57,7 @@ class WooCommerce {
     remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
     add_action( 'woocommerce_single_product_summary', [ $this, 'copycats_woocommerce_single_product_layout' ] );
 
+    add_filter( 'woocommerce_breadcrumb_defaults', [ $this, 'copycats_woocommerce_breadcrumb_delimiter' ], 9999 );
   }
 # Action Functions
   function copycats_woocommerce_account_content() {
@@ -96,6 +97,11 @@ class WooCommerce {
     unset( $items[ 'downloads' ] );
     unset( $items[ 'dashboard' ] );
     return $items;
+  }
+
+  function copycats_woocommerce_breadcrumb_delimiter( $defaults ) {
+    $defaults['home'] = 'Inicio';
+    	return $defaults;
   }
 
 }
