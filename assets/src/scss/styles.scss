@@ -72,10 +72,10 @@ $container-max-widths: (
 
 
 // Woocommerce Style Overrides
-@import '../../../../../../assets/modules/cc-template/cc-woo-overrides.scss';
+@import '../../../../../../assets/modules/cc-template/cc-woo-overrides';
 
 // Include Bootstrap
-@import '../../../../../../assets/modules/bootstrap/scss/bootstrap.scss';
+@import '../../../../../../assets/modules/bootstrap/scss/bootstrap';
 
 // Here use functions: Color Functions
 // Shadows
@@ -98,101 +98,5 @@ $shadow-900: shade-color($shadow, 80%);
 @import '../../../../../plugins/woocommerce/assets/css/woocommerce.css';
 
 
-// Additional custom code here
-
-.bg-footer {
-  background-color: $cp-footer-bg;
-  color: $cc-text-color-dark; }
-
-.sub-footer {
-  background-color: $sub-footer-bg;
-  text-align: center; }
-
-  /* Sections */
-
-  // News Section
-  .section-title {
-    margin: 1rem 25px; }
-    .section-title h3 {
-      font-weight: 700;
-      text-align: center; }
-  .cc-news-section .entry-title a {
-    color: $bright-blue;  }
-    
-  /* Bottom Bar*/
-	.bottom-bar .wp_is_not_mobile .menu-item {
-		margin: 0 32px;	}
-		.bottom-bar .header_main_menu {
-			flex-grow: 1; }
-		.bottom-bar .header_main_menu li {
-			list-style: none; }
-  .bottom-bar .woo_categories_menu .departments-menu-title {
-    line-height: 3.214em; }
-
-// cards
-.card.anouncement {
-  color: $desaturated-blue;
-  margin: 50px auto;
-  overflow: hidden; }
-  .card.anouncement .hero-img {
-    width: 100%; }
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-    font-size: 18px; }
-    .card-container .card-title {
-      color: $dark-blue;
-      font-weight: 900;
-      font-size: 32px; }
-    .card-container strong {
-      color: $dark-blue; }
-    .card-container > * {
-      margin: 13px 0; }
-
-/* Footer */
-.footer-social-icons .social-icons > ul {
-  flex-direction: row; }
-  .footer-social-icons .social-icons .fa-facebook:hover {
-    color: $clr-facebook; }
-  .footer-social-icons .social-icons .fa-whatsapp:hover {
-    color: $clr-whatsapp; }
-
-  .footer-social-icons .social-icons .fa-instagram:hover {
-    color: $clr-instagram; }
-  .social-icons {
-    align-items: center;
-    justify-content: center;
-    margin: 1rem; }
-    .social-icons > li {
-      display: inline-block; }
-    .social-icons li + li a {
-      margin-left: 26px; }
-  .address-data {
-    padding-left: 3rem;
-    width: 100%;
-    display: inline-block; }
-
-.menu.block_1 {
-	padding-left: .5rem; }
-
-.box {
-	position: relative;
-	padding: 15px;
-	height: 100%; }
-	.box ul {
-		display: flex;
-		flex-direction: column;
-		list-style: none; }
-
-/* Mobile */
-
-@media only screen and ( max-width: 550px ){
-
-  .categories-column {
-    padding-left: 0;
-	}
-
-}
+// Include aditional code inside extras.scss
+@import '../../../../../../assets/modules/cc-template/extras';
