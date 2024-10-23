@@ -4,23 +4,19 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap');
 
-
 @import '../../../../../../assets/modules/bootstrap/scss/functions';
 
 // Theme color palette
 @import '../../../../../../assets/modules/cc-template/colors';
 
-@import '../../../../../../assets/modules/bootstrap/scss/variables.scss';
-@import '../../../../../../assets/modules/bootstrap/scss/variables-dark.scss';
-
+@import '../../../../../../assets/modules/bootstrap/scss/variables';
+@import '../../../../../../assets/modules/bootstrap/scss/variables-dark';
 
 // Include Copycats default template scss overrides styles
 // Buttons, Wordpress sections
 
-
-
-@import '../../../../../../assets/modules/cc-template/buttons.scss';
-@import '../../../../../../assets/modules/cc-template/sections.scss';
+@import '../../../../../../assets/modules/cc-template/buttons';
+@import '../../../../../../assets/modules/cc-template/sections';
 
 // Theme colors: cc for copycats :3
 $copycats-theme-colors: (
@@ -30,7 +26,6 @@ $copycats-theme-colors: (
 .carousel-control-prev,
 .carousel-control-next {
 width: 10%;
-
 }
 
 // Links color styles
@@ -66,10 +61,8 @@ $container-max-widths: (
 @import '../../../../../../assets/modules/bootstrap/scss/grid';
 @import '../../../../../../assets/modules/bootstrap/scss/helpers';
 
-
 // Utilities API
 @import '../../../../../../assets/modules/bootstrap/scss/utilities/api';
-
 
 // Woocommerce Style Overrides
 @import '../../../../../../assets/modules/cc-template/cc-woo-overrides';
@@ -77,8 +70,8 @@ $container-max-widths: (
 // Include Bootstrap
 @import '../../../../../../assets/modules/bootstrap/scss/bootstrap';
 
-// Here use functions: Color Functions
-// Shadows
+// Copycars Custom SASS functions: Color Functions
+// Example: Shadows
 $shadow-100: tint-color($shadow, 80%);
 $shadow-500: $shadow;
 $shadow-600: shade-color($shadow, 20%);
@@ -96,7 +89,6 @@ $shadow-900: shade-color($shadow, 80%);
 // @import '../../../../../plugins/woocommerce/assets/css/woocommerce-layout';
 
 @import '../../../../../plugins/woocommerce/assets/css/woocommerce.css';
-
 
 // Include aditional code inside extras.scss
 @import '../../../../../../assets/modules/cc-template/extras';
