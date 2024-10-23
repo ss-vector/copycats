@@ -26,6 +26,7 @@ class Assets {
   }
 
   public function register_styles() {
+
     // Register styles
     wp_register_style( 'template_css', COPYCATS_THEME_URI . '/assets/css/styles.css', false, '1.0.2', 'all' );
     wp_register_style( 'copycats_layout', COPYCATS_THEME_URI . '/assets/css/layout.css', false, '1.0.1', 'all' );
@@ -46,8 +47,9 @@ class Assets {
 
   public function register_scripts() {
 
+    $version = wp_get_theme()->get( 'Version' );
 		// Scripts
-    wp_enqueue_script( 'coppycats_app', COPYCATS_THEME_URI . '/assets/js/app.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'coppycats_app', COPYCATS_THEME_URI . '/assets/js/app.js', array('jquery'), $version, true );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bootstrap_js', COPYCATS_THEME_URI . '/assets/js/bootstrap.js', [ 'jquery' ], false, true );
 		# wp_enqueue_script( 'responsive_slides_js', COPYCATS_THEME_URI . '/vendor/responsive-slides/responsiveslides.min.js', array( 'jquery' ), '1.11.2', true );
