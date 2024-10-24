@@ -1,7 +1,7 @@
 Copycats Template for Wordpress
 This will be my first Headless *Wordpress template* created with experimental and learning purposes, using Svelte or React
 
-[Last Commit](https://img.shields.io/github/last-commit/ss-vector/copycats/vite-cat)
+![Last Commit](https://img.shields.io/github/last-commit/ss-vector/copycats/vite-cat)
 
 ## Objective
 
