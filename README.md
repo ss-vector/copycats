@@ -3,6 +3,7 @@ Custom template for WordPress and Woocommerce.
 **Note:** This will be my first **headless _WordPress_ template** created with experimental and learning purposes.
 
 ![Last Commit](https://img.shields.io/github/last-commit/ss-vector/copycats/vite-cat)
+![Status](https://img.shields.io/github/checks-status/ss-vector/copycats/vite-cat)
 
 ## Objective
 
