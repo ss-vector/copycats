@@ -63,14 +63,6 @@
 		box-shadow: 0;
 		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;	}
 
-.btn, button {
-	display: inline-block;
-	font-size: .875rem;
-	font-weight: 400;
-	border: 1px solid transparent;
-	border-radius: 1.375rem;
-}
-
 .input-group {
 	position: relative;
 	display: flex;
@@ -90,13 +82,6 @@
 	line-height: 1.25;
 	text-align: center; }
 	
-	ul.navbar-nav li a {
-		font-size: 13px;
-		line-height: 19px;
-		letter-spacing: 0.4px; }
-		ul.top-bar {
-			list-style: none; }
-
 	.hot-title h5 {
 		margin: 0; 
 		letter-spacing: 0.5px;
@@ -356,3 +341,4 @@
 			font-size: 1rem; }
 
 }
+/* End of Copycats.scss */

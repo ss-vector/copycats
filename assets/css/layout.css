@@ -112,8 +112,7 @@ input[type="search"] {
 
 /*	Icons */
 .copycats-demo .woocommerce-MyAccount-navigation-link {
-	list-style: none;
-}
+	list-style: none; }
 
 .main-header .copycats_woocommerce__atributes{
 	line-height: 1.5rem;
@@ -121,49 +120,7 @@ input[type="search"] {
 	.main-header .copycats_woocommerce__atributes span {
 		padding: 0 20px; }
 
-/* Header Menus: Bottom Bar */
-body ul.copycats-pages-menu > li > a {
-	color: rgba(34, 40, 50, 1);
-	font-weight: 500; }
-
-	ul.copycats-pages-menu {
-		display: flex;
-		justify-content: space-between;
-		list-style: none;
-		margin: 0;
-		padding: 0;	}
-		ul.copycats-pages-menu > li > a {
-			display: block;
-			position: relative;
-			padding: 11px 20px 13px;
-			color: #ffffff;
-			font-weight: 700;
-			letter-spacing: 0.3px;
-			transition: all 0.3s ease-in !important; }
-			
-		ul.copycats-pages-menu > li > .sub-menu {
-			position: absolute;
-			list-style: none;
-			width: 200px;
-			top: 100%;
-			left: 0;
-			padding: 0;
-			background-color: #fff;
-			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-			z-index: 100;
-			text-align: left; }
-		ul.copycats-pages-menu > li .sub-menu {
-			display: none; }
-	.copycats__mobile_content .copycats-pages-menu .nav {
-		display: block;	}
-	.copycats-pages-menu .nav .menu-item a{
-		font-weight: 350;
-		color:#292e28;	}
-
-	.copycats__mobile {
-		display: none; }
-
-/* Mobile 1025 */
+		/* Mobile 1025 */
 @media ( max-width: 1025px ) {
 	.copycats__mobile {
 		display: block;	}
