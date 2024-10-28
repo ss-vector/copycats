@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Copycats Custom scss file */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap");
+/* Woocommerce Color Palete */
 :root {
   --woocommerce: #7F54B3;
   --wc-green: #198754;
@@ -37,6 +38,18 @@ button[type=submit] {
   border: 1px solid transparent;
   border-radius: 1.375rem;
   text-shadow: none;
+}
+
+.fs-slider-content .btn, .fs-slider-content button {
+  background-color: #0d6efd;
+  font-size: 0.96rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 1.375rem;
+  padding: 12px 24px;
+}
+.fs-slider-content a {
+  color: white;
 }
 
 button.proceed-button {
