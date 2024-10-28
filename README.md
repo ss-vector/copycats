@@ -1,7 +1,9 @@
 # Copycats Template for Wordpress
-This will be my first Headless *Wordpress template* created with experimental and learning purposes, using Svelte or React
+Custom template for WordPress and Woocommerce.
+**Note:** This will be my first **headless _WordPress_ template** created with experimental and learning purposes.
 
-![GitHub repo file count](https://img.shields.io/github/directory-file-count/ss-vector/copycats)
+![Last Commit](https://img.shields.io/github/last-commit/ss-vector/copycats/vite-cat)
+![Status](https://img.shields.io/github/checks-status/ss-vector/copycats/vite-cat)
 
 ## Objective
 

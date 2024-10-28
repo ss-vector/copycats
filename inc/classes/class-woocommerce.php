@@ -73,7 +73,6 @@ class WooCommerce {
     # Edit, customize the following:
     # Title, rating, price, excerpt, add_to_cart, meta, sharing, WC_Structured_Data()
 
-
     get_template_part( 'inc/partials/woocommerce/single-product/title' );
   }
 
