@@ -15,7 +15,7 @@ Custom template for WordPress and Woocommerce.
 ## Features
 
 * Autoloader
-* Woocommerce ready
+* Woocommerce Customized theme
 * Admin functions
 * Slider
 * Flexible header menu

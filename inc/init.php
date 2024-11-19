@@ -12,4 +12,6 @@ $theme_name = wp_get_theme( 'copycats' );
  * 
  */
 require get_template_directory() . '/inc/copycats-template-hooks.php';
-require get_template_directory() . '/inc/copycats-template-functions.php';
+
+require_once get_template_directory() . '/inc/functions/header-functions.php';
+require_once get_template_directory() . '/template/template-tags/home.php';
