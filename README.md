@@ -17,16 +17,16 @@ Custom template for WordPress and Woocommerce.
 * Autoloader
 * Woocommerce Customized theme
 * Admin functions
-* Slider
+* Semi integrated image slider
 * Flexible header menu
-* Search bar.
+* Search bar
 * Blog
 
 ### Notes
 
 **TODO:**
 - PHP server side rendering.
-- Implement blocks to theme.
+- Implement blocks inside theme
 - Headless Implementation.
 
 | Version | Notes   |
