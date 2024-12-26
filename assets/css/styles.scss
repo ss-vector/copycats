@@ -1,0 +1,62 @@
+/* Copycats Custom scss file */
+// Include any default variable overrides here (though functions won't be available)
+
+@import '../../bootstrap/functions';
+
+// Include Copycats Theme variables
+@import '../variables';
+
+@import '../../bootstrap/variables';
+// @import '../../bootstrap/variables-dark';
+
+// Include Copycats default SASS modular styles
+/* Buttons, Wordpress sections */
+
+@import '../buttons';
+@import '../sections';
+// @import '../grid';
+@import '../blog';
+
+/* Main copycats.scss */
+@import 'copycats';
+
+
+@import '../../bootstrap/maps';
+@import '../../bootstrap/mixins';
+@import '../../bootstrap/root';
+
+// Optional components: utilities, reboot, containers, grid, helpers, api
+@import '../../bootstrap/utilities';
+@import '../../bootstrap/reboot';
+
+@import '../../bootstrap/containers';
+@import '../../bootstrap/grid';
+@import '../../bootstrap/helpers';
+
+// Bootstrap Utilities API
+@import '../../bootstrap/utilities/api';
+
+/* Woocommerce Style Overrides ? */
+// @import '../../../../../../assets/copycats-theme/layout';
+
+// Do not include Bootstrap
+// @import '../../bootstrap/bootstrap';
+
+// Copycars Custom SASS functions: Color Functions
+// Example: Shadows
+$shadow-100: tint-color($shadow, 80%); 
+$shadow-500: $shadow;
+$shadow-600: shade-color($shadow, 20%);
+$shadow-900: shade-color($shadow, 80%);
+
+@each $color, $value in $copycats-theme-colors {
+  .cc-btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+/* Import Copycats Woocommerce Styles */
+// @import '../../../../../../assets/copycats-theme/cc-woocommerce';
+
+/* Include aditional code inside extras.scss */
+@import '../extras';

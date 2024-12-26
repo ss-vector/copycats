@@ -32,5 +32,6 @@ Custom template for WordPress and Woocommerce.
 | Version | Notes   |
 | :------:| :------ |
 | 1.6    | Basic Woocommerce integration via Hooks |
-| Headless integration with React |
+
+## Headless Approach React  
 

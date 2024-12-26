@@ -146,8 +146,13 @@ button.alt {
   color: #f7f7f7;
 }
 
-.nav {
+.nav ul, .nav {
   list-style: none;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar-search .form-control {
@@ -155,11 +160,9 @@ button.alt {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-
 .navbar-search .input-group {
   height: 41px;
 }
-
 .navbar-search .input-group > div {
   height: 100%;
 }
