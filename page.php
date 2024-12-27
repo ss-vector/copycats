@@ -10,7 +10,7 @@ get_header();
 ?>
 
 
-<div class="container">
+<div class="container page-content">
     <div class="row">
         <div class="col-lg-12">
             <div class="single_post_layout">

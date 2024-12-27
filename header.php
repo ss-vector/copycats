@@ -32,4 +32,4 @@
 				<!-- TODO: Main Slider -->
 
 				<!-- Main container -->
-				<div class="page-content site-content">
+				<div class="site-content">
