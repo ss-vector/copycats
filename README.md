@@ -35,3 +35,4 @@ Custom template for WordPress and Woocommerce.
 
 ## Headless Approach React  
 
+Will atempt in next deploys, using **React**
