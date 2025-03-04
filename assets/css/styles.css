@@ -149,6 +149,10 @@ button.alt {
   list-style: none;
 }
 
+.navbar-nav {
+  flex-direction: row !important;
+}
+
 ul.nav {
   display: flex;
   flex-wrap: wrap;

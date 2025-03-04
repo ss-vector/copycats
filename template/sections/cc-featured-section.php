@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
 	<div class="section-title">
-		<h3>Patrocinado</h3>
+		<h3>Emprendimientos</h3>
 	</div>
 	<div class="container">
 		<section class="row">
@@ -12,7 +12,8 @@
     		<!-- TODO: [ ] Define css styles for featured brands container -->
 			<div class="col-md-3 card align-items-center">
 	      		<a href="https://www.facebook.com/profile.php?id=100089558450689"  target="_blank"><img class="img-thumbnail" src="https://eltriunfo.pe/wp-content/uploads/2023/05/papa-1.jpeg"></a>
-	      		<h3 class="fs-3">Papa Perucha</h3>
+            <h3 class="fs-3">Papa Perucha</h3>
+<p>Sector Gastronómico</p>
 			</div>
 
 		</section>

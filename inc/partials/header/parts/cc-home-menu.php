@@ -16,7 +16,7 @@
       <?php if ( ! empty( $header_menus ) && is_array( $header_menus ) ) {
       ?>
 
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav nav me-auto">
           <?php
             foreach ( $header_menus as $menu_item ) {
 

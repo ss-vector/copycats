@@ -52,13 +52,7 @@
 					?>
 				</div>
 				<!-- Search bar -->
-				<div id="search-bar" class="col">
-					<div class="search-form-container main-header-right">
-						<div class="woo_search woo_search_with_cats">
-							<?php get_search_form(); ?>
-						</div>
-					</div>
-				</div>
+
 				<!-- TODO:	-->
 			</div>
 		</div>
