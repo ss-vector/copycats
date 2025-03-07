@@ -57,7 +57,7 @@
 						<div class="container">
 
 							<div class="row">
-								<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://github.com/ss-vector">ss-Vector</a></strong></span>
+								<span>Copyright © 2021 Negocios El Triunfo <br> Designed by <strong><a rel="nofollow" href="https://ss-vector.github.io">ss-Vector</a></strong></span>
 							</div>
 
 						</div>
