@@ -40,10 +40,10 @@
 								</div>
 							<?php
 							endwhile; ?>
-							<div class="example">
+							<div class="tr-prev">
 								<?php next_posts_link( 'Anterior' ); ?>
 							</div>
-							<div class="example">
+							<div class="tr-next">
 								<?php previous_posts_link( 'Siguiente' ); ?>
 							</div>
 

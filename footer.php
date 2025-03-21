@@ -10,17 +10,13 @@
 						<div class="row g-5">
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
 								<h1 class="box footer-logo">
-									<img src="<?php echo esc_html( get_template_directory_uri() . '/assets/img/logo-final-cc.svg' );?>" alt="<?php esc_attr_e( 'IS ElTRIUNFO', 'copycats' );?>"/>
+									<img src="https://res.cloudinary.com/negocios-el-triunfo/image/upload/v1742420065/logo-final-cc_pkl4uz.svg">
 								</h1>
 								<div class="d-flex pt-2">
 									<!-- Social Icons classes: footer-social-icons-->
 										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://wa.me/51978861145"><i class="fa-brands fa-whatsapp"></i></a>
 										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-facebook"></i></a>
 										<a class="btn btn-square btn-outline-light rounded-circle me-1" href="https://pin.it/5Pujyi8OK"><i class="fa-brands fa-pinterest"></i></a>
-										<!--
-												<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-youtube"></i></a>
-												<a class="btn btn-square btn-outline-light rounded-circle me-1" href="#"><i class="fa-brands fa-twitter"></i></a>
-										-->
 								</div>
 							</div>
 							<div class="box-footer col-lg-2 col-md-4 mb-3">
