@@ -15,11 +15,12 @@ class COPYCATS_THEME {
 
 	protected function __construct() {
 
-    //Load classes
-    Assets::get_instance();
+    	// Load classes
+    	Assets::get_instance();
 		Menus::get_instance();
 		Sidebars::get_instance();
 		WooCommerce::get_instance();
+		// wpse__form::get_instance();
 
     $this->setup_hooks();
 
@@ -37,6 +38,7 @@ class COPYCATS_THEME {
 	public function setup_theme() {
 
 		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
+		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-form.php';
 
 		add_action('copycats_footer_social_block', [ $this, 'copycats_social_media_links' ], 10 );
 		add_action('copycats_slider_init', [ $this, 'copycats_main_slider' ], 10 );

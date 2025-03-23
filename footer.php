@@ -1,6 +1,11 @@
 <?php wp_footer(); ?>
 			</div> <!-- /container-fluid -->
 			</div><!-- /main-warpper -->
+			<?php 
+
+				$email_adress = $_POST['email_address']
+				
+			?>
 
 			<footer class="container-fluid site-footer footer bg-dark">
 
@@ -44,6 +49,13 @@
 										) );
 									?>
 								</div>
+							</div>
+							<div class="box-footer col-lg-3 col-md-8 mb-3">
+								<form action="/footer.php" method="post">
+									<label for="">E-mail</label>
+									<input type="text" name="email_address" size="40">
+									<input class="btn btn-primary" type="submit" class="" name="send" value="Submit">
+								</form>
 							</div>
 						</div>
 
