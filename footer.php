@@ -51,11 +51,7 @@
 								</div>
 							</div>
 							<div class="box-footer col-lg-3 col-md-8 mb-3">
-								<form action="/footer.php" method="post">
-									<label for="">E-mail</label>
-									<input type="text" name="email_address" size="40">
-									<input class="btn btn-primary" type="submit" class="" name="send" value="Submit">
-								</form>
+								<?php echo do_shortcode('[contact]'); ?>
 							</div>
 						</div>
 
