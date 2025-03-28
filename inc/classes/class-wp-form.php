@@ -41,20 +41,20 @@ class wpse__form {
 
         $output = '';
 
-        $output .= '<form method="post">';
-        $output .= '    <p>';
+        $output .= '<div class="form-control" method="post">';
+        $output .= '    <div class="input-group mb-3">';
         $output .= '        ' . $this->display_text( 'full_name', 'Nombre', $full_name );
-        $output .= '    </p>';
-        $output .= '    <p>';
+        $output .= '    </div>';
+        $output .= '    <div class="input-group mb-3">';
         $output .= '        ' . $this->display_text( 'email', 'Correo', $email );
-        $output .= '    </p>';
-        $output .= '    <p>';
+        $output .= '    </div>';
+        $output .= '    <div class="input-group mb-3">';
         $output .= '        ' . $this->display_textarea( 'comments', 'comentarios', $comments );
-        $output .= '    </p>';
-        $output .= '    <p>';
+        $output .= '    </div>';
+        $output .= '    <div class="mb-3">';
         $output .= '        <input class="btn btn-primary" type="submit" name="submit" value="Submit" />';
-        $output .= '    </p>';
-        $output .= '</form>';
+        $output .= '    </div>';
+        $output .= '</div>';
 
         return $output;
     }
@@ -66,8 +66,8 @@ class wpse__form {
 
         $output = '';
 
-        $output .= '<label>' . esc_html__( $label, 'copycats' ) . '</label>';
-        $output .= '<input type="text" name="' . esc_attr( $name ) . '" value="' . esc_attr( $value ) . '">';
+        $output .= '<span class="input-group-text">' . esc_html__( $label, 'copycats' ) . '</span>';
+        $output .= '<input class="form-control" type="text" name="' . esc_attr( $name ) . '" value="' . esc_attr( $value ) . '">';
 
         return $output;
     }
@@ -79,8 +79,8 @@ class wpse__form {
 
         $output = '';
 
-        $output .= '<label> ' . esc_html__( $label, 'wpse_299521' ) . '</label>';
-        $output .= '<textarea name="' . esc_attr( $name ) . '" >' . esc_html( $value ) . '</textarea>';
+        $output .= '<span class="input-group-text"> ' . esc_html__( $label, 'copycats' ) . '</span>';
+        $output .= '<textarea class="form-control" name="' . esc_attr( $name ) . '" >' . esc_html( $value ) . '</textarea>';
 
         return $output;
     }

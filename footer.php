@@ -50,9 +50,9 @@
 									?>
 								</div>
 							</div>
-							<div class="box-footer col-lg-3 col-md-8 mb-3">
+              <div class="box-footer col-lg-3 col-md-8 mb-3">
 								<?php echo do_shortcode('[contact]'); ?>
-							</div>
+              </div>
 						</div>
 
 					</div>

@@ -1,45 +1,23 @@
 /* Copycats Custom scss file */
 // Include any default variable overrides here (though functions won't be available)
 
-@import '../../../../../../assets/modules/bootstrap/scss/functions';
-
 // Include Copycats Theme variables
-@import '../../../../../../assets/copycats-theme/variables';
 
-@import '../../../../../../assets/modules/bootstrap/scss/variables';
-@import '../../../../../../assets/modules/bootstrap/scss/variables-dark';
+@import '../../../../copycats-theme/variables';
+
 
 // Include Copycats default template scss overrides styles
 /* Buttons, Wordpress sections */
 
-@import '../../../../../../assets/copycats-theme/buttons';
-@import '../../../../../../assets/copycats-theme/sections';
+@import '../../../../copycats-theme/buttons';
+@import '../../../../copycats-theme/sections';
 
 /* Main copycats.scss */
+
 @import 'copycats';
 
-// Include Map Overrides below.
-@import '../../../../../../assets/modules/bootstrap/scss/maps';
-@import '../../../../../../assets/modules/bootstrap/scss/mixins';
-@import '../../../../../../assets/modules/bootstrap/scss/root';
-
-@import '../../../../../../assets/modules/bootstrap/scss/utilities';
-@import '../../../../../../assets/modules/bootstrap/scss/reboot';
-@import '../../../../../../assets/modules/bootstrap/scss/type';
-
-@import '../../../../../../assets/modules/bootstrap/scss/images';
-@import '../../../../../../assets/modules/bootstrap/scss/containers';
-@import '../../../../../../assets/modules/bootstrap/scss/grid';
-@import '../../../../../../assets/modules/bootstrap/scss/helpers';
-
-// Bootstrap Utilities API
-@import '../../../../../../assets/modules/bootstrap/scss/utilities/api';
-
-// Woocommerce Style Overrides
-@import '../../../../../../assets/copycats-theme/layout';
-
 // Bootstrap
-@import '../../../../../../assets/modules/bootstrap/scss/bootstrap';
+@import '../../../../bootstrap/bootstrap';
 
 // Copycars Custom SASS functions: Color Functions
 // Example: Shadows
@@ -48,14 +26,14 @@ $shadow-500: $shadow;
 $shadow-600: shade-color($shadow, 20%);
 $shadow-900: shade-color($shadow, 80%);
 
-@each $color, $value in $copycats-theme-colors {
-  .cc-btn-#{$color} {
-    @include button-variant($value, $value);
-  }
-}
+// @each $color, $value in $copycats-theme-colors {
+//   .cc-btn-#{$color} {
+//     @include button-variant($value, $value);
+//   }
+// }
 
 /* Import Copycats Woocommerce styles */
 // @import '../../../../../../assets/copycats-theme/cc-woocommerce';
 
 /* Include aditional code inside extras.scss */
-@import '../../../../../../assets/copycats-theme/extras';
+@import '../../../../copycats-theme/extras';
