@@ -41,7 +41,7 @@ class wpse__form {
 
         $output = '';
 
-        $output .= '<div class="form-control" method="post">';
+        $output .= '<div class="form-control" method="post" data-bs-theme="dark">';
         $output .= '    <div class="input-group mb-3">';
         $output .= '        ' . $this->display_text( 'full_name', 'Nombre', $full_name );
         $output .= '    </div>';

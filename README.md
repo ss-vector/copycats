@@ -6,6 +6,7 @@ Custom template for WordPress and Woocommerce.
 ![Status](https://img.shields.io/github/checks-status/ss-vector/copycats/vite-cat)
 
 ## Objective
+`app.js` is currently empty
 
 - Learn about Wordpress and Woocommerce
 - Learn about UI/UX
