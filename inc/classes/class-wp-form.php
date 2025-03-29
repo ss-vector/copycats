@@ -52,7 +52,7 @@ class wpse__form {
         $output .= '        ' . $this->display_textarea( 'comments', 'comentarios', $comments );
         $output .= '    </div>';
         $output .= '    <div class="mb-3">';
-        $output .= '        <input class="btn btn-primary" type="submit" name="submit" value="Submit" />';
+        $output .= '        <input class="btn btn-primary" type="submit" name="submit" value="Enviar" />';
         $output .= '    </div>';
         $output .= '</div>';
 
