@@ -51,8 +51,10 @@
 								</div>
 							</div>
               <div class="box-footer col-lg-3 col-md-8 mb-3">
-              	<h3><?php _e( 'Subscribete', 'copycats' ); ?></h3>
-								<?php echo do_shortcode('[contact]'); ?>
+              	<div class="box">
+              		<h3><?php _e( 'Subscribete', 'copycats' ); ?></h3>
+									<?php echo do_shortcode('[contact]'); ?>
+								</div>
               </div>
 						</div>
 
