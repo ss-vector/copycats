@@ -66,6 +66,10 @@ button.alt {
     @package Copycats Sections templates
     Includes: Comments, navbar, dropdown, header, footer, copyright
 */
+.site-footer h3, .site-footer .h3 {
+  color: aqua;
+}
+
 .box-footer {
   position: relative;
 }
