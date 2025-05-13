@@ -24,11 +24,25 @@ Custom template for WordPress and Woocommerce.
 * Blog
 
 ### Notes
+Working with multiple directories, some of them not being synched to github.
+Remove unused directories like `/assets/src` and `.git`.
+
+### SASS Implementation
+
+
+
+```bash 
+    sass assets/src/scss/styles.scss assets/css/styles.css
+
+```
 
 **TODO:**
 - PHP server side rendering.
 - Implement blocks inside theme
 - Headless Implementation.
+
+
+
 
 | Version | Notes   |
 | :------:| :------ |

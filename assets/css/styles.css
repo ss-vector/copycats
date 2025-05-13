@@ -67,7 +67,7 @@ button.alt {
     Includes: Comments, navbar, dropdown, header, footer, copyright
 */
 .site-footer h3, .site-footer .h3 {
-  color: aqua;
+  color: tomato;
 }
 
 .box-footer {
@@ -12444,6 +12444,72 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.cc-btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #198754;
+  --bs-btn-border-color: #198754;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #157347;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #198754;
+  --bs-btn-disabled-border-color: #198754;
+}
+
+.cc-btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d63384;
+  --bs-btn-border-color: #d63384;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #b62b70;
+  --bs-btn-hover-border-color: #ab296a;
+  --bs-btn-focus-shadow-rgb: 220, 82, 150;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ab296a;
+  --bs-btn-active-border-color: #a12663;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #d63384;
+  --bs-btn-disabled-border-color: #d63384;
+}
+
+.cc-btn-special {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #4fce5d;
+  --bs-btn-border-color: #4fce5d;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #69d575;
+  --bs-btn-hover-border-color: #61d36d;
+  --bs-btn-focus-shadow-rgb: 67, 175, 79;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #72d87d;
+  --bs-btn-active-border-color: #61d36d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #4fce5d;
+  --bs-btn-disabled-border-color: #4fce5d;
+}
+
+.text-bg-primary {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-secondary {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-special {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-special-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 /* Import Copycats Woocommerce styles */
 /* Include aditional code inside extras.scss */
 /**
