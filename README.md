@@ -24,12 +24,16 @@ Custom template for WordPress and Woocommerce.
 * Blog
 
 ### Notes
+Using `rsync` tool to synch two directories.
 Working with multiple directories, some of them not being synched to github.
 Remove unused directories like `/assets/src` and `.git`.
+```bash
+    rsync -avu --exclude .git --exclude /assets/src/ --delete . /var/www/wordpress/wp-content/themes/copycats/
+```
 
 ### SASS Implementation
 
-
+Creating a custom design system with CSS template, mixins and functions.
 
 ```bash 
     sass assets/src/scss/styles.scss assets/css/styles.css
@@ -48,6 +52,3 @@ Remove unused directories like `/assets/src` and `.git`.
 | :------:| :------ |
 | 1.6    | Basic Woocommerce integration via Hooks |
 
-## Headless Approach React  
-
-Will atempt in next deploys, using **React**
