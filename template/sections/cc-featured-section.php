@@ -18,7 +18,15 @@
 					<li>Guayaba</li>
 				</ul>
 				<h3>Inmobiliaria</h3>
+				<p>Proyectos privados de remodelación, reparacion y mantenimiento de casas</p>
 				<h3>Servicios</h3>
+				<ul>
+					<li>Gestión de Activos</li>
+					<li>Control de inventarios</li>
+					<li>Diseño de Procesos</li>
+					<li>Dessarrollo web</li>
+					<li>Planos Estructurales y Arquitectura</li>
+				</ul>	
 			</div>
 		</section>
 

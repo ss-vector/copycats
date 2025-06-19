@@ -18,7 +18,7 @@
         <?php endif; ?>
 
         <span class="card-title fixed-title text-light">
-          <h3 class="px-4 mb-0"><?php the_title(); ?></h3>
+          <h3 class="px-4 mb-0 section-title"><?php the_title(); ?></h3>
         </span>
       </div>
 

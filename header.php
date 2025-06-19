@@ -16,7 +16,7 @@
 		<title><?php bloginfo( 'title' ); ?></title>
 
 		<?php wp_head(); ?>
-
+		<link rel="preload" as="font" src="https://srv470-files.hstgr.io/b89c85571420c9af/files/public_html/assets/jost-bold.woff2" >
 	</head>
 
 	<body <?php body_class('copycats'); ?>>
