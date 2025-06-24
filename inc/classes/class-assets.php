@@ -43,7 +43,13 @@ class Assets {
     wp_enqueue_style( 'font-electro' );
   	# wp_enqueue_style( 'swiper_bundle' );
 
+    if ( class_exists( 'WooCommerce' ) ) {
+      wp_enqueue_style( 'woocommerce-custom', COPYCATS_THEME_URI . '/assets/css/woocommerce.css' );  
+    }
+
+
   }
+
 
   public function register_scripts() {
 
@@ -62,4 +68,5 @@ class Assets {
   	# wp_enqueue_script( 'swiper_init', COPYCATS_THEME_URI . '/assets/js/swiper_init.js',array(), '1.0.0', true );
 
   }
+
 }

@@ -107,7 +107,6 @@ class COPYCATS_THEME {
 		/** Woocommerce */
 		if ( class_exists( 'WooCommerce' ) ) {
 
-			/* Woocommerce Support */
 			add_theme_support( 'woocommerce', array(
 				'thumbnail_image_width' => 270,
 				'thumbnail_image_crop' 	=> false,
@@ -123,8 +122,13 @@ class COPYCATS_THEME {
 	  	}
 
 	}
+
+	function use_woocommerce_custom_css() {
+    	wp_enqueue_style( 'woocommerce-custom', get_template_directory_uri() . '/woocommerce/woocommerce.css' );
+	}
+
 	/*
-	 * More theme functions
+	 * Experimental theme functions
 	*/
 
 	# Template Tags: Footer Link Functions
