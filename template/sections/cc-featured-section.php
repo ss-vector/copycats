@@ -10,7 +10,7 @@
 			<p>Los principales sectores que abarcamos son: Industrial, extractivo y servicios</p>
 			<div class="container">
 				<h3>Agroindustrias</h3>
-				<p>El Perú es un país muy rico en recursos naturales, entre ellos nuestra tierras que pueden producir hortalizas y plantas frutales con una abundante variedad. </p>
+				<p>El Perú es un país muy rico y diverso, poseyendo en su territorio la mayoria de los climas asi como abundancia de recursos naturales, entre ellos nuestra tierras que pueden producir hortalizas y plantas frutales con una abundante variedad. </p>
 				<ul>
 					<li>Fruta Congelada</li>
 					<li><strong>Ciruela de Hueso</strong> de la cual elaboramos mermeladas y conservas en diferentes presentaciones</li>
