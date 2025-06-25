@@ -1,0 +1,7 @@
+
+@media only screen and ( max-width: 550px ){
+    .woocommerce div.product div.summary {
+        float: right;
+        width: 100%;
+    }
+}
