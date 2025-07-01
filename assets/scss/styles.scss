@@ -1,0 +1,27 @@
+/* Copycats Custom scss file */
+// Include any default variable overrides here (though functions won't be available)
+// Include Copycats Theme variables
+@import '../../../bootstrap/functions';
+@import '../../../copycats-theme-scss/variables';
+
+
+
+// Include Copycats default template scss overrides styles
+/* Buttons, Wordpress sections */
+
+@import '../../../copycats-theme-scss/buttons';
+@import '../../../copycats-theme-scss/sections';
+
+/* Main copycats.scss */
+
+@import '../../../copycats-theme-scss/backup/copycats';
+
+// Bootstrap
+@import '../../../bootstrap/bootstrap-edited';
+
+// Copycars Custom SASS functions: Color Functions
+
+@import '../../../copycats-theme-scss/functions';
+
+/* Include aditional code inside extras.scss */
+@import '../../../copycats-theme-scss/extras';
