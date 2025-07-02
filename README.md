@@ -8,7 +8,7 @@ Custom template for WordPress and Woocommerce.
 ## Objective
 `app.js` is currently empty
 
-- Learn about Wordpress and Woocommerce
+- Implementation of Woocommerce
 - Learn about UI/UX
 - Create a full theme from scracht.
 - Create a block structured Woocommerce theme.

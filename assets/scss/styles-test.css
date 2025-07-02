@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap");
 :root {
   --woocommerce: #7F54B3;
-  --wc-green: #7ad03a;
+  --wc-green: #198754;
   --wc-red: #dc3545;
   --wc-orange: #fd7e14;
   --wc-blue: #0d6efd;
@@ -540,6 +540,11 @@ ul.copycats-pages-menu > li .sub-menu {
   background-position: center;
   height: 450px;
   display: block;
+}
+
+.fs-slider-content {
+  margin-top: 140px;
+  margin-bottom: 134px;
 }
 
 .primary-container {
