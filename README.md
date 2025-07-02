@@ -24,7 +24,7 @@ Custom template for WordPress and Woocommerce.
 * Blog
 
 ### Notes
-Using `rsync` tool to synch two directories.
+Using `rsync` tool to sync with apache2 dev-sites folder.
 Working with multiple directories, some of them not being synched to github.
 Remove unused directories like `/assets/src` and `.git`.
 ```bash
@@ -44,9 +44,6 @@ Creating a custom design system with CSS template, mixins and functions.
 - PHP server side rendering.
 - Implement blocks inside theme
 - Headless Implementation.
-
-
-
 
 | Version | Notes   |
 | :------:| :------ |
