@@ -18,51 +18,7 @@
   --copycats-font-heading-preset: "Jost",Arial,sans-serif;
 }
 
-/* Buttons, Wordpress sections */
-/*  Buttons 
-    @package Main Copycats Buttons templates
-*/
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button[type=submit] {
-  outline: none !important;
-}
-
-.btn, button {
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 400;
-  border: 1px solid transparent;
-  border-radius: 1.375rem;
-  text-shadow: none;
-}
-
-button.proceed-button {
-  width: 100%;
-  border: none;
-  font-weight: 700;
-  font-size: 0.8rem;
-  border-radius: 12px;
-}
-button.alt {
-  background-color: #2c2d33;
-  border-color: #2c2d33;
-  color: white;
-}
-
-.proceed-button {
-  background-color: hsl(245, 75%, 52%);
-  padding: 1rem 0;
-  color: white;
-  box-shadow: 0 20px 30px -8px #333e48;
-}
-.proceed-button:hover {
-  background-color: hsl(244, 83%, 68%);
-}
-
+/* Main copycats.scss */
 /*  Sections
     @package Copycats Sections templates
     Includes: Comments, navbar, dropdown, header, footer, copyright
@@ -109,10 +65,6 @@ button.alt {
 }
 
 /* Topbar, Navbar, Dropdown */
-.copycats-navbar {
-  padding: 2.286em 0 1.857em;
-}
-
 .site-header {
   position: relative;
   background-color: var(--wp--preset--color--luminous-vivid-amber);
@@ -399,9 +351,11 @@ ul.copycats-pages-menu > li .sub-menu {
   display: none;
 }
 
-/* Main copycats.scss */
-/* Containers */
-/* Main Header Image Widget Display */
+/* Containers and Wrappers */
+.primary-container {
+  padding: 25px 25px;
+}
+
 .cover-display {
   background-size: cover;
   background-position: center;
@@ -409,128 +363,159 @@ ul.copycats-pages-menu > li .sub-menu {
   display: block;
 }
 
-.fs-slider-content {
-  margin-top: 140px;
-  margin-bottom: 134px;
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
 }
 
-.primary-container {
-  padding: 25px 25px;
+.input-group-addon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
 }
 
-/* Sliders Featured Main SVG */
-.featured-wrapper {
-  display: grid;
-  margin-top: 10px;
-  color: white;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+/* Blog Styles */
+.blog .main-wrapper {
+  background: #dcf3e5;
 }
 
-.featured-item {
-  grid-column-start: 3;
-  grid-column-end: 6;
+.single_post_layout {
+  padding: 39px 38px 40px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin: 0 0 30px;
+  border-top: solid 1px #e5e5e5;
+}
+.single_post_layout h1, .single_post_layout .h1 {
+  padding-bottom: 30px;
 }
 
-.card .featured.price {
-  float: right;
-  padding: 0.375rem 0.75rem;
-  border-radius: 26px;
-  vertical-align: middle;
-  font-size: 16px;
-  color: #d5d9e1;
-  background-color: black;
+.single-post-title {
+  padding-top: 20px;
 }
 
-.featured-sgv img {
-  height: 300px;
-}
-
-.slide-2 .slide-grid-featured {
-  display: grid;
-  grid-gap: 0.5rem;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-}
-
-/* Grid Template Items Demo Layout*/
-.slide-grid-featured {
-  height: 600px;
-  width: auto;
-  padding: 1.5rem;
-}
-
-.featured.card {
-  height: 100%;
-}
-
-.featured.card-img-overlay {
-  padding: 0.5rem;
-  top: 75%;
+.copycats_news_list {
+  width: 100%;
+  margin: 0 0 30px;
   background-color: #fff;
+  padding: 40px 32px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+.copycats_news_list:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.copycats_news_list .blog-entry-title h2, .copycats_news_list .blog-entry-title .h2 {
+  margin-bottom: 20px;
+  font-size: 33px;
+  line-height: 35px;
+}
+.copycats_news_list .read-more {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 30px;
+  font-size: 11px;
+  line-height: 22px;
+  color: #474747;
+  border: 1px solid #474747;
+  border-radius: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+.copycats_news_list .read-more:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
 }
 
-.item {
-  overflow: hidden;
+/*  Buttons 
+    @package Main Copycats Buttons templates
+*/
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
 }
 
-.slide-2 .slide-grid-featured .item-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background: #fff;
+button[type=submit] {
+  outline: none !important;
 }
 
-.slide-2 .slide-grid-featured .item-2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background: rgb(228, 228, 228);
+.btn, button {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  border-radius: 1.375rem;
+  text-shadow: none;
 }
 
-@media only screen and (max-width: 550px) {
-  #search-bar {
-    display: none;
-  }
-  .inner-slider-wrapper .card {
-    margin: 0 20px 0 20px;
-  }
-  .slide-2 .slide-grid-featured {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-  }
-  /* Grid Template Items Demo Layout*/
-  .slide-grid-featured {
-    height: 600px;
-    width: auto;
-    padding: 1.5rem;
-  }
-  .slide-2 .slide-grid-featured .item-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .slide-2 .slide-grid-featured .item-2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  /* Featured: Card Images */
-  .featured.card-img-overlay {
-    padding: 0.2rem;
-    border-radius: 0;
-    top: 65%;
-  }
-  .featured.card-img-overlay h5, .featured.card-img-overlay .h5 {
-    font-size: 1rem;
-  }
+button.proceed-button {
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 12px;
 }
-/* End of Copycats.scss */
+button.alt {
+  background-color: #2c2d33;
+  border-color: #2c2d33;
+  color: white;
+}
+
+.proceed-button {
+  background-color: hsl(245, 75%, 52%);
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 20px 30px -8px #333e48;
+}
+.proceed-button:hover {
+  background-color: hsl(244, 83%, 68%);
+}
+
+/* Navbars */
+.copycats-navbar {
+  padding: 2.286em 0 1.857em;
+}
+
+.copycats-nav-row {
+  padding-top: 1rem;
+}
+
+.copycats-nav-row .departments-menu-title {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.fs-box.card {
+  background-color: #fed700;
+}
+
+.categories-list-menu a {
+  color: #222832;
+}
+
+.departments-menu-title {
+  background-color: #dc3545;
+  font-weight: 700;
+  font-size: 1em;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 calc(1.143em + 8px);
+  border-radius: 0.5em;
+}
+
+/* Bootstrap */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -12370,6 +12355,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Copycars Custom SASS functions: Color Functions */
 .cc-btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #198754;
@@ -12436,10 +12422,9 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-special-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-/* Import Copycats Woocommerce styles */
 /* Include aditional code inside extras.scss */
 /**
- * Deprecated
+ * Deprecated Woocommerce Styles
  * Fallback for bourbon equivalent
  */
 /**
@@ -13229,4 +13214,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles-test.css.map */
