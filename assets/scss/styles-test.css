@@ -12517,7 +12517,6 @@ textarea.form-control-lg {
 }
 .woocommerce .col2-set,
 .woocommerce-page .col2-set {
-  *zoom: 1;
   width: 100%;
 }
 .woocommerce .col2-set::before, .woocommerce .col2-set::after,
@@ -12551,12 +12550,6 @@ textarea.form-control-lg {
 .woocommerce-page #content div.product div.images {
   float: left;
   width: 48%;
-}
-.woocommerce div.product div.thumbnails,
-.woocommerce #content div.product div.thumbnails,
-.woocommerce-page div.product div.thumbnails,
-.woocommerce-page #content div.product div.thumbnails {
-  *zoom: 1;
 }
 .woocommerce div.product div.thumbnails::before, .woocommerce div.product div.thumbnails::after,
 .woocommerce #content div.product div.thumbnails::before,
@@ -12635,12 +12628,6 @@ textarea.form-control-lg {
 .woocommerce-page #content div.product .woocommerce-tabs {
   clear: both;
 }
-.woocommerce div.product .woocommerce-tabs ul.tabs,
-.woocommerce #content div.product .woocommerce-tabs ul.tabs,
-.woocommerce-page div.product .woocommerce-tabs ul.tabs,
-.woocommerce-page #content div.product .woocommerce-tabs ul.tabs {
-  *zoom: 1;
-}
 .woocommerce div.product .woocommerce-tabs ul.tabs::before, .woocommerce div.product .woocommerce-tabs ul.tabs::after,
 .woocommerce #content div.product .woocommerce-tabs ul.tabs::before,
 .woocommerce #content div.product .woocommerce-tabs ul.tabs::after,
@@ -12662,12 +12649,6 @@ textarea.form-control-lg {
 .woocommerce-page div.product .woocommerce-tabs ul.tabs li,
 .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li {
   display: inline-block;
-}
-.woocommerce div.product #reviews .comment,
-.woocommerce #content div.product #reviews .comment,
-.woocommerce-page div.product #reviews .comment,
-.woocommerce-page #content div.product #reviews .comment {
-  *zoom: 1;
 }
 .woocommerce div.product #reviews .comment::before, .woocommerce div.product #reviews .comment::after,
 .woocommerce #content div.product #reviews .comment::before,
@@ -12695,7 +12676,7 @@ textarea.form-control-lg {
 .woocommerce ul.products,
 .woocommerce-page ul.products {
   clear: both;
-  *zoom: 1;
+  list-style-type: none;
 }
 .woocommerce ul.products::before, .woocommerce ul.products::after,
 .woocommerce-page ul.products::before,
@@ -12774,10 +12755,6 @@ textarea.form-control-lg {
 .woocommerce-page .woocommerce-ordering {
   float: right;
 }
-.woocommerce .woocommerce-pagination ul.page-numbers,
-.woocommerce-page .woocommerce-pagination ul.page-numbers {
-  *zoom: 1;
-}
 .woocommerce .woocommerce-pagination ul.page-numbers::before, .woocommerce .woocommerce-pagination ul.page-numbers::after,
 .woocommerce-page .woocommerce-pagination ul.page-numbers::before,
 .woocommerce-page .woocommerce-pagination ul.page-numbers::after {
@@ -12818,7 +12795,6 @@ textarea.form-control-lg {
 }
 .woocommerce .cart-collaterals,
 .woocommerce-page .cart-collaterals {
-  *zoom: 1;
   width: 100%;
 }
 .woocommerce .cart-collaterals::before, .woocommerce .cart-collaterals::after,
@@ -12852,7 +12828,6 @@ textarea.form-control-lg {
 .woocommerce .cart-collaterals .shipping_calculator,
 .woocommerce-page .cart-collaterals .shipping_calculator {
   width: 48%;
-  *zoom: 1;
   clear: right;
   float: right;
 }
@@ -12877,12 +12852,6 @@ textarea.form-control-lg {
   float: right;
   width: 48%;
 }
-.woocommerce ul.cart_list li,
-.woocommerce ul.product_list_widget li,
-.woocommerce-page ul.cart_list li,
-.woocommerce-page ul.product_list_widget li {
-  *zoom: 1;
-}
 .woocommerce ul.cart_list li::before, .woocommerce ul.cart_list li::after,
 .woocommerce ul.product_list_widget li::before,
 .woocommerce ul.product_list_widget li::after,
@@ -12905,10 +12874,6 @@ textarea.form-control-lg {
 .woocommerce-page ul.product_list_widget li img {
   float: right;
   height: auto;
-}
-.woocommerce form .form-row,
-.woocommerce-page form .form-row {
-  *zoom: 1;
 }
 .woocommerce form .form-row::before, .woocommerce form .form-row::after,
 .woocommerce-page form .form-row::before,
@@ -13014,12 +12979,6 @@ textarea.form-control-lg {
 .woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order {
   float: right;
-}
-.woocommerce .woocommerce-billing-fields,
-.woocommerce .woocommerce-shipping-fields,
-.woocommerce-page .woocommerce-billing-fields,
-.woocommerce-page .woocommerce-shipping-fields {
-  *zoom: 1;
 }
 .woocommerce .woocommerce-billing-fields::before, .woocommerce .woocommerce-billing-fields::after,
 .woocommerce .woocommerce-shipping-fields::before,
