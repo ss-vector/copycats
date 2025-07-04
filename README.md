@@ -8,7 +8,7 @@ Custom template for WordPress and Woocommerce.
 ## Objective
 `app.js` is currently empty
 
-- Learn about Wordpress and Woocommerce
+- Implementation of Woocommerce
 - Learn about UI/UX
 - Create a full theme from scracht.
 - Create a block structured Woocommerce theme.
@@ -24,9 +24,9 @@ Custom template for WordPress and Woocommerce.
 * Blog
 
 ### Notes
-Using `rsync` tool to synch two directories.
+Using `rsync` tool to sync with apache2 dev-sites folder.
 Working with multiple directories, some of them not being synched to github.
-Remove unused directories like `/assets/src` and `.git`.
+Remove unused directories like `/assets/src`(scss folder) and `.git`.
 ```bash
     rsync -avu --exclude .git --exclude /assets/src/ --delete . /var/www/wordpress/wp-content/themes/copycats/
 ```
@@ -34,6 +34,8 @@ Remove unused directories like `/assets/src` and `.git`.
 ### SASS Implementation
 
 Creating a custom design system with CSS template, mixins and functions.
+Starting point after crashed src folder: `fa0ccbddf263f4b179cfd06da5478d731cd9c31b  scss/styles-back.css`
+
 
 ```bash 
     sass assets/src/scss/styles.scss assets/css/styles.css
@@ -44,9 +46,6 @@ Creating a custom design system with CSS template, mixins and functions.
 - PHP server side rendering.
 - Implement blocks inside theme
 - Headless Implementation.
-
-
-
 
 | Version | Notes   |
 | :------:| :------ |
