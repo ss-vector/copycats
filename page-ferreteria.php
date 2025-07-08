@@ -8,6 +8,7 @@
  */
 get_header();
 ?>
+<?php
 $args = array(
   'post_type' => 'product',
   'posts_per_page' => 12,
@@ -15,15 +16,17 @@ $args = array(
 );
 
 $loop = new WP_Query($args);
-<?php
-
 ?>
 <div class="container page-content">
-
 <?php 
 if( $loop->have_posts() ){
   while($loop->have_posts()) : $loop->the_post();
+?>
+<div class="product">
+<?php the_title(); ?>
 
+</div>
+<?php
   endwhile;
 }else{
   echo __("No products found");
