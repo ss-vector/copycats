@@ -41,7 +41,7 @@ Starting point after crashed src folder: `fa0ccbddf263f4b179cfd06da5478d731cd9c3
 
 ```
 
-Refer to: `web/copycats-theme-notes.md` for more details about design system structure.
+Refer to: `web/copycats-theme-notes.md` for more details about design system structure and development environment.
 
 **TODO:**
 - PHP server side rendering.
