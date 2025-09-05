@@ -37,7 +37,7 @@ Creating a custom design system with CSS template, mixins and functions.
 Starting point after crashed src folder: `fa0ccbddf263f4b179cfd06da5478d731cd9c31b  scss/styles-back.css`
 
 ```bash 
-    sass assets/src/scss/styles.scss assets/css/styles.css
+    sass assets/scss/styles.scss assets/css/styles.css
 
 ```
 

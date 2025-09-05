@@ -383,9 +383,21 @@ ul.copycats-pages-menu > li .sub-menu {
   text-align: center;
 }
 
-/* Blog Styles */
+/* Single Post & Blog Styles */
 .blog .main-wrapper {
   background: #dcf3e5;
+}
+.blog .featured-header {
+  overflow: hidden;
+}
+.blog.featured-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0.5) 75%);
 }
 
 .single_post_layout {
@@ -13173,4 +13185,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=styles-test.css.map */
+/*# sourceMappingURL=styles.css.map */

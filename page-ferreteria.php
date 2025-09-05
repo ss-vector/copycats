@@ -12,7 +12,7 @@ get_header();
     $args = array(
       'post_type' => 'product',
       'product_cat' => 'hardware',
-      'posts_per_page' => 12,
+      'posts_per_page' => 5,
       'paged' => get_query_var('paged') ? get_query_var('paged') : 1
     );
 
@@ -24,7 +24,7 @@ get_header();
       while($loop->have_posts()) : $loop->the_post();
     ?>
   <div class="row">
-  <div class="product" style="width:360px;" aria-hidden="false">
+  <div class="product product-card" style="width:360px;" aria-hidden="false">
     <h2><?php the_title(); ?></h2>
     <?php if(has_post_thumbnail($loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" />'; ?>
 

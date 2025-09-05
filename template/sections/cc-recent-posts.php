@@ -6,6 +6,7 @@
 	$args = array(
 		'type'				=> 'post',
 		'posts_per_page'	=> 3,
+		'category__not_in' => array(),
 	);
 	?>
 
