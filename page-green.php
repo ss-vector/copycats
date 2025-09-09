@@ -26,21 +26,19 @@ $page_query_featured = new WP_Query( $featured );
 
 ?>
 
-<div class="container">
+<div class="content-grid container">
 
     <?php if( $page_query_featured->have_posts() ):
             while( $page_query_featured->have_posts() ): $page_query_featured->the_post(); ?>
 
-    <div class="blog featured-header p-4 p-md-5 mb-4 mt-3 rounded text-body-emphasis bg-body-secondary">
+    <div class="featured-card large-block p-4 p-md-5 mb-4 mt-3 rounded" style="background: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' );?>) ;">
       <div class="col-lg-6 px-0">
-        
-        <a href="<?php echo esc_url( get_permalink() ); ?>">
-          <div <?php post_class(); ?>>
-            <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
-            <p class="lead my-3"><?php the_excerpt(); ?></p>
-            <p class="lead mb-0">Categorias</p>
-          </div>
-        </a>
+          <!--href="<?php echo esc_url( get_permalink() ); ?>"-->
+            <div <?php post_class(); ?>>
+              <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
+              <p class="lead my-3"><?php the_excerpt(); ?></p>
+              <p class="lead mb-0">Categorias</p>
+            </div>
       </div>
     </div>
 

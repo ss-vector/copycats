@@ -384,14 +384,35 @@ ul.copycats-pages-menu > li .sub-menu {
 }
 
 /* Single Post & Blog Styles */
+.site-content .content-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.content-grid {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
 .blog .main-wrapper {
   background: #dcf3e5;
 }
-.blog .featured-header {
+
+.featured-card {
   overflow: hidden;
+  flex-direction: column;
+  border-top: none;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  color: #f7f7f7;
 }
-.blog.featured-header::after {
+.featured-card.large-block {
+  display: flex;
+}
+.featured-card.large-block::after {
   content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
