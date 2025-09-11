@@ -32,7 +32,7 @@ $page_query_featured = new WP_Query( $featured );
             while( $page_query_featured->have_posts() ): $page_query_featured->the_post(); ?>
 
     <div class="featured-card large-block p-4 p-md-5 mb-4 mt-3 rounded" style="background: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' );?>) ;">
-      <div class="col-lg-6 px-0">
+      <div class="featured-content col-lg-6 px-0">
           <!--href="<?php echo esc_url( get_permalink() ); ?>"-->
             <div <?php post_class(); ?>>
               <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
@@ -42,79 +42,96 @@ $page_query_featured = new WP_Query( $featured );
       </div>
     </div>
 
-      <?php endwhile; ?>
-    <?php endif;
+    <?php 
+      endwhile;
+      endif;
       wp_reset_postdata();
     ?>
 
-  <div class="row mb-2">
+    <div class="row mb-2">
 
-    <?php
-      $feed = array(
-        'type'          => 'post',
-        'cat'           => $post_category_ID,
-        'post_per_page' => 2,
-        'offset'        => 1,
-      );
+      <?php
+        $feed = array(
+          'type'          => 'post',
+          'cat'           => $post_category_ID,
+          'post_per_page' => 2,
+          'offset'        => 1,
+        );
 
-      $page_posts_feed = new WP_Query( $feed );
-    ?>
+        $page_posts_feed = new WP_Query( $feed );
+      ?>
 
-    <?php if( $page_posts_feed->have_posts() ):
-            while( $page_posts_feed->have_posts() ): $page_posts_feed->the_post(); ?>
+      <?php if( $page_posts_feed->have_posts() ):
+              while( $page_posts_feed->have_posts() ): $page_posts_feed->the_post(); ?>
 
-    <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <span class="newsletter-categories">
+        <div class="mini-card col-md-6 mt-3">
 
-              <?php
-                $categories = get_the_category( $post->ID );
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col d-flex flex-column position-static">
 
-                if ( ! empty( $categories ) ){
-                  echo '<strong class="d-inline-block mb-2 text-primary-emphasis">' . esc_html( $categories[0]->cat_name ) . '</strong>';
-                }
-              ?>
+                <span class="newsletter-categories">
 
-            </span>
-            <h3 class="mb-0"><?php the_title(); ?></h3>
-            <div class="mb-1 text-body-secondary"><?php the_date(); ?></div>
-            <p class="card-text mb-auto"><?php echo the_excerpt(); ?></p>
-            <a href="<?php echo esc_url( get_permalink() ); ?>" class="icon-link gap-1 icon-link-hover stretched-link">
+                  <?php
+                    $categories = get_the_category( $post->ID );
 
-              <?php _e( 'Continuar leyendo ...', 'copycats' ); ?>
+                    if ( ! empty( $categories ) ){
+                      echo '<strong class="tag d-inline-block text-white">' . esc_html( $categories[0]->cat_name ) . '</strong>';
+                    }
+                  ?>
 
-              <!--svg class="bi"><use xlink:href="#chevron-right"/></svg-->
-            </a>
-          </div>
+                </span>
 
-          <?php
-            if ( has_post_thumbnail() ): ?>
-          <div class="col-auto d-none d-lg-block">
-            <div class="thumbnail">
+                <?php if ( has_post_thumbnail() ): ?>
 
-              <?php the_post_custom_thumbnail(
-                  get_the_ID(),
-                  'woocommerce_thumbnail',
-                  [
-                    'sizes' => '(max-width: 200px), 200px, 250px',
-                    'class' => 'demo-thumbnail'
-                  ]
-                );
-              ?>
+                  <div class="col-auto d-none d-lg-block">
+                    <div class="card-thumbnail">
 
+                      <?php the_post_custom_thumbnail(
+                          get_the_ID(),
+                          'woocommerce_thumbnail',
+                          [
+                            'sizes' => '(max-width: 200px), 200px, 250px',
+                            'class' => 'mini-card__thumbnail'
+                          ]
+                        );
+                      ?>
+
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <h3 class="mb-0"><?php the_title(); ?></h3>
+                    <span class="mb-1 text-body-secondary"><?php the_date(); ?></span>
+                    <p class="card-text mb-auto"><?php echo the_excerpt(); ?></p>
+                    <a href="<?php echo esc_url( get_permalink() ); ?>" class="icon-link gap-1 icon-link-hover stretched-link">
+                    </a>
+                  </div>
+
+                <?php endif; ?>
+                
+                <?php if ( !has_post_thumbnail() ): ?>
+                  <div class="text-card container">  
+                      <div class="p-4">
+                        <h3 class="mb-0"><?php the_title(); ?></h3>
+                        <span class="mb-1 text-body-secondary"><?php the_date(); ?></span>
+                        <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                      </div>
+                  </div>
+                <?php endif; ?>
+
+              </div>
             </div>
-
+          
           </div>
-        <?php endif; ?>
-        </div>
-      </div>
-          <?php endwhile; ?>
-        <?php endif;
-          wp_reset_postdata();
-        ?>
 
-  </div>
+          <?php endwhile; ?>
+          <?php endif;
+            wp_reset_postdata();
+          ?>
+
+
+    </div>
+
 </div>
 
 <?php get_footer(); ?>

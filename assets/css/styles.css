@@ -398,6 +398,11 @@ ul.copycats-pages-menu > li .sub-menu {
   background: #dcf3e5;
 }
 
+.card-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
 .featured-card {
   overflow: hidden;
   flex-direction: column;
@@ -406,6 +411,9 @@ ul.copycats-pages-menu > li .sub-menu {
   position: relative;
   width: 100%;
   color: #f7f7f7;
+}
+.featured-card .featured-content {
+  z-index: 1;
 }
 .featured-card.large-block {
   display: flex;
@@ -419,6 +427,26 @@ ul.copycats-pages-menu > li .sub-menu {
   bottom: 0;
   right: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0.5) 75%);
+}
+
+.newsletter-categories {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mini-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  background-color: black;
+  padding: 0 10px 0 10px;
+  color: white;
+  font-size: 12px;
+  line-height: 22px;
+  border-radius: 40px;
 }
 
 .single_post_layout {

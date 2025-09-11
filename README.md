@@ -27,7 +27,7 @@ Using `rsync` tool to sync with apache2 dev-sites folder.
 Working with multiple directories, some of them not being synched to github.
 Remove unused directories like `/assets/src`(scss folder) and `.git`.
 ```bash
-    rsync -avu --exclude .git --exclude /assets/src/ --delete . /var/www/wordpress/wp-content/themes/copycats/
+    rsync -avu --exclude .git --exclude /assets/scss/ --delete . /var/www/wordpress/wp-content/themes/copycats/
 ```
 - `app.js` is currently empty.
 
