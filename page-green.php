@@ -1,7 +1,7 @@
 <?php
 /**
- * Copycats Main Page Template
- *
+ * Copycats Green Section Template
+ *  
  * @package Copycats
  * @since 1.3.7
  */
