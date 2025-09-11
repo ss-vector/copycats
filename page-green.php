@@ -37,7 +37,15 @@ $page_query_featured = new WP_Query( $featured );
             <div <?php post_class(); ?>>
               <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
               <p class="lead my-3"><?php the_excerpt(); ?></p>
-              <p class="lead mb-0">Categorias</p>
+              <hr>
+
+              <?php
+                $categories = get_the_category( $post->ID );
+                if ( ! empty( $categories ) ){
+                    echo '<span class="tag d-inline-block text-white">' . esc_html( $categories[0]->cat_name ) . '</span>';
+                }
+              ?>
+
             </div>
       </div>
     </div>
@@ -73,7 +81,6 @@ $page_query_featured = new WP_Query( $featured );
 
                   <?php
                     $categories = get_the_category( $post->ID );
-
                     if ( ! empty( $categories ) ){
                       echo '<strong class="tag d-inline-block text-white">' . esc_html( $categories[0]->cat_name ) . '</strong>';
                     }
