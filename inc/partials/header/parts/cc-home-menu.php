@@ -29,8 +29,8 @@
                 if ( ! $has_children ) {
                   ?>
 
-                  <li class="nav-item">
-                    <a class="nav-link"
+                  <li class="cc-nav-item">
+                    <a
                        href="<?php echo esc_url( $menu_item->url ); ?>">
 
                       <?php echo esc_html( $menu_item->title );  ?>

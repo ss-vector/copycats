@@ -15,7 +15,7 @@
 
     get_template_part( 'template/sections/cc-featured-section' );
 
- 	# get_template_part( 'template/sections/cc-map-section' );
+ 	get_template_part( 'template/sections/cc-map-section' );
 
  	# get_template_part( 'inc/template/sections/cc-newsletter' );
 

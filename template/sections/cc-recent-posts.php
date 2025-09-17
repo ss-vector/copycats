@@ -3,17 +3,22 @@
  *  Copycats Last Blog Posts
  *
 */
+
+
+	$removeCat = get_category_by_slug('politicas');
+	$removeCatId = $removeCat->term_id;
+
 	$args = array(
 		'type'				=> 'post',
 		'posts_per_page'	=> 3,
-		'category__not_in' => array(),
+		'category__not_in' => array( $removeCatId ),
 	);
 	?>
 
 	<div class="cc-news-section py-5 bg-body-tertiary">
 
 			<div class="section-title text-center">
-				<h2><?php __( 'Publicaciones Recientes', 'copycats' ); ?></h2>
+				<h2><?php esc_html_e( 'Publicaciones Recientes', 'copycats' ); ?></h2>
 			</div>
 		<div class="container">
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

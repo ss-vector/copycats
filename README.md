@@ -41,11 +41,11 @@ Starting point after crashed src folder: `fa0ccbddf263f4b179cfd06da5478d731cd9c3
 
 ```
 
-Refer to: `web/copycats-theme-notes.md` for more details about design system structure and development environment.
+Refer to: `web/copycats-theme-notes.md` for more details about design system structure and development environment. Zip file must have the same name for updating the theme
 
 ```bash
-# experimental branch, exclude scss folder
-zip -r ../copycats-test.zip * -x /assets/scss/*
+# experimental branch, exclude scss folder and Readme.md file
+zip -r ../copycats.zip * -x /assets/scss/* -x .git/
 
 ```
 
@@ -54,9 +54,9 @@ zip -r ../copycats-test.zip * -x /assets/scss/*
 - Implement blocks inside theme
 - Headless Implementation.
 
-| Version   | Notes                                     |
-| :------:  | :------                                   |
-| 1.6       | Basic Woocommerce integration via Hooks   |
-| 1.9       | Woocommerce theme and payment plugins     |
+| Version   | Notes                                     | Release   |
+| :---:     | :---                                      | :---      |
+| 1.9.1     | Basic Woocommerce integration via Hooks   | set-2025  |
+| 2.0       | Woocommerce theme and payment plugins     | tba       |
 |           | integration                               | 
 

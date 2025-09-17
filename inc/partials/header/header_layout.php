@@ -26,8 +26,8 @@
 						 */
 							wp_nav_menu( array(
 								'menu' 						=> '',
-                'menu_class'			=> 'nav',
-                'menu_id'         => 'top-menu',
+                				'menu_class'			=> 'nav',
+                				'menu_id'         => 'top-menu',
 								'theme_location' 	=> 'top-primary-menu',
 								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 								'container'				=> false,

@@ -35,8 +35,10 @@ $page_query_featured = new WP_Query( $featured );
       <div class="featured-content col-lg-6 px-0">
           <!--href="<?php echo esc_url( get_permalink() ); ?>"-->
             <div <?php post_class(); ?>>
-              <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
-              <p class="lead my-3"><?php the_excerpt(); ?></p>
+              <a href="<?php echo esc_url( get_permalink() ); ?>">
+                <h1 class="display-4 fst-italic"><?php the_title(); ?></h1>
+                <p class="lead my-3"><?php the_excerpt(); ?></p>
+              </a>
               <hr>
 
               <?php
@@ -107,7 +109,7 @@ $page_query_featured = new WP_Query( $featured );
                   </div>
 
                   <div class="container">
-                    <h3 class="mb-0"><?php the_title(); ?></h3>
+                    <h3 class="card-title"><?php the_title(); ?></h3>
                     <span class="mb-1 text-body-secondary"><?php the_date(); ?></span>
                     <p class="card-text mb-auto"><?php echo the_excerpt(); ?></p>
                     <a href="<?php echo esc_url( get_permalink() ); ?>" class="icon-link gap-1 icon-link-hover stretched-link">

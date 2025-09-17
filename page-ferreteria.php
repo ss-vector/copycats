@@ -19,6 +19,9 @@ get_header();
     $loop = new WP_Query($args);
     ?>
   <div class="container page-content">
+    <div class="row">
+      <h2>Ferreteria</h2>
+    </div>
     <?php 
     if( $loop->have_posts() ){
       while($loop->have_posts()) : $loop->the_post();
