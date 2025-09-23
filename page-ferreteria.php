@@ -28,6 +28,8 @@ get_header();
             'order'  => 'DESC',
         ) );
 
+        $price_pre = "S/.";
+
 
         foreach ( $products as $product ) {
             $imageId = $product->get_image_id();
@@ -38,9 +40,9 @@ get_header();
               <div class="row">
                 <div class="col-sm-6">
                   <?php
-                  echo 'ID: ' . $product->get_id() . '<br>';
-                  echo 'Name: ' . $product->get_name() . '<br>';
-                  echo 'Price: ' . $product->get_price() . '<br>';
+                  echo '<span>'. $product->get_id() . '</span>' . '<br>';
+                  echo '<h3>' . $product->get_name() . '</h3><br>';
+                  echo 'Price: ' . $price_pre . $product->get_price() . '<br>';
                   echo 'ImageID: ' . $imageId . '<br>';
                   echo $product->get_image( 'woocommerce_thumbnail' );
                   ?>
