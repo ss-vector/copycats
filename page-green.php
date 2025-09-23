@@ -31,7 +31,7 @@ $page_query_featured = new WP_Query( $featured );
     <?php if( $page_query_featured->have_posts() ):
             while( $page_query_featured->have_posts() ): $page_query_featured->the_post(); ?>
 
-    <div class="featured-card large-block p-4 p-md-5 mb-4 mt-3 rounded" style="background: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' );?>) ;">
+    <div class="featured-card large-block p-4 p-md-5 mb-4 mt-3 rounded" style="background: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' );?>);">
       <div class="featured-content col-lg-6 px-0">
           <!--href="<?php echo esc_url( get_permalink() ); ?>"-->
             <div <?php post_class(); ?>>
@@ -123,7 +123,7 @@ $page_query_featured = new WP_Query( $featured );
                       <div class="p-4">
                         <h3 class="mb-0"><?php the_title(); ?></h3>
                         <span class="mb-1 text-body-secondary"><?php the_date(); ?></span>
-                        <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                        <p><?php echo esc_html( the_excerpt() ); ?></p>
                       </div>
                   </div>
                 <?php endif; ?>

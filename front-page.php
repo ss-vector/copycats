@@ -9,7 +9,7 @@
 
 <?php
 
-	# get_template_part( 'template/sections/cc-main-slides' );
+	get_template_part( 'template/sections/cc-main-slides' );
 
 	get_template_part( 'template/sections/cc-recent-posts' );
 

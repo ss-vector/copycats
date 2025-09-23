@@ -8,43 +8,51 @@
  */
 get_header();
 ?>
-    <?php
-    $args = array(
-      'post_type' => 'product',
-      'product_cat' => 'hardware',
-      'posts_per_page' => 5,
-      'paged' => get_query_var('paged') ? get_query_var('paged') : 1
-    );
 
-    $loop = new WP_Query($args);
-    ?>
   <div class="container page-content">
     <div class="row">
-      <h2>Ferreteria</h2>
+      <h2 class=""><?php echo get_the_title(); ?></h2>
     </div>
-    <?php 
-    if( $loop->have_posts() ){
-      while($loop->have_posts()) : $loop->the_post();
-    ?>
-  <div class="row">
-  <div class="product product-card" style="width:360px;" aria-hidden="false">
-    <h2><?php the_title(); ?></h2>
-    <?php if(has_post_thumbnail($loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" />'; ?>
+
+    <div class="test-card">
+      <div class="text-conainer">
+
+        <?php
+
+        // Example: Retrieve all published simple products
+        $products = wc_get_products( array(
+            'status' => 'publish',           // Only published products
+            'type'   => 'simple',            // Product type (e.g., 'simple', 'variable', 'booking')
+            'limit'  => 10,                  // Limit to 10 products
+            'orderby' => 'date',
+            'order'  => 'DESC',
+        ) );
 
 
+        foreach ( $products as $product ) {
+            $imageId = $product->get_image_id();
+            $image_url = wp_get_attachment_image_url( $image_id, 'full' );
+
+            ?>
+          
+              <div class="row">
+                <div class="col-sm-6">
+                  <?php
+                  echo 'ID: ' . $product->get_id() . '<br>';
+                  echo 'Name: ' . $product->get_name() . '<br>';
+                  echo 'Price: ' . $product->get_price() . '<br>';
+                  echo 'ImageID: ' . $imageId . '<br>';
+                  echo $product->get_image( 'woocommerce_thumbnail' );
+                  ?>
+                </div>
+            </div>      
+        <?php
+        } 
+
+        ?>
+    </div>
   </div>
-    <?php
-      endwhile;
-      }else{
-        echo __("No products found");
-      }
-    ?>
-  </div>
-
 </div>
 
-<?php
-  wp_reset_postdata();
-?>
 
 <?php get_footer(); ?>

@@ -43,8 +43,9 @@ Starting point after crashed src folder: `fa0ccbddf263f4b179cfd06da5478d731cd9c3
 
 Refer to: `web/copycats-theme-notes.md` for more details about design system structure and development environment. Zip file must have the same name for updating the theme
 
+On `experimental` branch, exclude scss folder and Readme.md file
+
 ```bash
-# experimental branch, exclude scss folder and Readme.md file
 zip -r ../copycats.zip * -x /assets/scss/* -x .git/
 
 ```
