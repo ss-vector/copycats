@@ -33,6 +33,9 @@ class COPYCATS_THEME {
 
 		add_action( 'after_setup_theme', [ $this, 'setup_theme' ] );
 
+		// [Optional and Experimental]
+		add_action( 'demo_callback1', [ $this, 'copycats_wc_product_filtered_demo' ], 10, 2 );
+		add_action('copycats_footer_social_block', [ $this, 'copycats_social_media_links' ], 10 );
 	}
 
 	public function setup_theme() {
@@ -40,7 +43,6 @@ class COPYCATS_THEME {
 		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-bootstrap-navwalker.php';
 		require_once COPYCATS_THEME_DIR . '/inc/classes/class-wp-form.php';
 
-		add_action('copycats_footer_social_block', [ $this, 'copycats_social_media_links' ], 10 );
 		add_action('copycats_slider_init', [ $this, 'copycats_main_slider' ], 10 );
 
 		add_theme_support( 'title-tag' );
@@ -104,7 +106,7 @@ class COPYCATS_THEME {
 
 		add_theme_support( 'align-wide' );
 
-		/** Woocommerce */
+		/** Woocommerce Thumbnail Config*/
 		if ( class_exists( 'WooCommerce' ) ) {
 
 			add_theme_support( 'woocommerce', array(
@@ -123,15 +125,20 @@ class COPYCATS_THEME {
 
 	}
 
+	// Move to woocommerce Class
 	function use_woocommerce_custom_css() {
     	wp_enqueue_style( 'woocommerce-custom', get_template_directory_uri() . '/woocommerce/woocommerce.css' );
 	}
 
 	/*
-	 * Experimental theme functions
+	 * [Experimental theme functions]
 	*/
 
-	# Template Tags: Footer Link Functions
+	function copycats_wc_product_filtered_demo($arg1, $arg2 ) {
+		echo "<p>" . "Estas son " . $arg1 . $arg2 . "</p>";
+	}
+
+	# Footer Link Templates
 	function copycats_social_media_links() {
 		// Retrieve Link Options from: copycats-admin-functions
 		$fblink = esc_attr( get_option( 'social_site_link' ) );

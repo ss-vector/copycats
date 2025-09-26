@@ -9,6 +9,10 @@
 			<h2>Sectores</h2>
 			<p>Los principales sectores que abarcamos son: Industrial, extractivo y servicios</p>
 			<div class="container">
+
+				<?php
+					do_action( 'demo_callback1', 'Lourdes y Lilyan', ' son tus perras' );
+				?>
 				<h3>Agroindustrias</h3>
 				<p>El Perú es un país muy rico y diverso, poseyendo en su territorio la mayoria de los climas asi como abundancia de recursos naturales, entre ellos nuestra tierras que pueden producir hortalizas y plantas frutales con una abundante variedad. </p>
 				<ul>

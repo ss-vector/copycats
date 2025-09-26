@@ -50,7 +50,7 @@ get_header();
             </div>      
         <?php
         } 
-
+        
         ?>
     </div>
   </div>
