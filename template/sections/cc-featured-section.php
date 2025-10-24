@@ -16,18 +16,16 @@
 				<h3>Agroindustrias</h3>
 				<p>El Perú es un país muy rico y diverso, poseyendo en su territorio la mayoria de los climas asi como abundancia de recursos naturales, entre ellos nuestra tierras que pueden producir hortalizas y plantas frutales con una abundante variedad. </p>
 				<ul>
-					<li>Fruta Congelada</li>
-					<li><strong>Ciruela de Hueso</strong> de la cual elaboramos mermeladas y conservas en diferentes presentaciones</li>
-					<li>Higo</li>
-					<li>Guayaba</li>
+					<li><strong>Fruta Congelada:</strong> Ciruela de Hueso, Guayaba, Higo, tamarindo, maracuya, etc. </li>
+					<li>Venta de cacao y cafe, procesado y sin procesar</li>
 				</ul>
 				<h3>Inmobiliaria</h3>
 				<p>Proyectos privados de remodelación, reparacion y mantenimiento de casas</p>
 				<h3>Servicios</h3>
 				<ul>
 					<li>Gestión de Activos</li>
-					<li>Control de inventarios</li>
-					<li>Diseño de Procesos</li>
+					<li>Control de Inventarios</li>
+					<li>Diseño de Procesos y Sistemas</li>
 					<li>Dessarrollo web</li>
 					<li>Planos Estructurales y Arquitectura</li>
 				</ul>	

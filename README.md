@@ -14,7 +14,7 @@ Custom template for WordPress and Woocommerce for my friends.
 
 ## Features
 
-* Autoloader
+* Autoloader, and Slider from [responsive slides](http://responsiveslides.com/)
 * Woocommerce Customized theme
 * Admin functions
 * Semi integrated image slider
@@ -26,6 +26,7 @@ Custom template for WordPress and Woocommerce for my friends.
 Using `rsync` tool to sync with apache2 dev-sites folder.
 Working with multiple directories, some of them not being synched to github.
 Remove unused directories like `/assets/src`(scss folder) and `.git`.
+
 ```bash
     rsync -avu --exclude .git --exclude /assets/scss/ --delete . /var/www/wordpress/wp-content/themes/copycats/
 ```
