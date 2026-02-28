@@ -11,7 +11,16 @@ get_header();
 
   <div class="container page-content">
     <div class="row">
-      <h2 class=""><?php echo get_the_title(); ?></h2>
+      <h2 class="page-title"><?php echo get_the_title(); ?></h2>
+    </div>
+
+    <div class="row">
+      <?php 
+        $current_page = get_queried_object();
+        $content = apply_filters('the_content', $current_page->post_content);
+        echo '<small>' . $content . '</small>';
+
+      ?>
     </div>
 
     <div class="test-card">

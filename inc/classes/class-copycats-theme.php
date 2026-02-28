@@ -154,21 +154,21 @@ class COPYCATS_THEME {
 		$slides = array(
 			'slide_1' => array(
 										'slide_title'		=> 	esc_attr( get_option( 'cc_slider_title' ) ),
-										'slide_excerpt'	=>	esc_attr( get_option( 'cc_slider_excerpt' ) ),
+										'slide_excerpt'		=>	esc_attr( get_option( 'cc_slider_excerpt' ) ),
 										'slide_link'		=> 	esc_attr( get_option( 'cc_slider_link' ) ),
 										'slide_image'		=>	esc_attr( get_option( 'cc_slider_image' ) )
 									),
 			'slide_2'	=> array(
 										'slide_title'		=> 	'Construye con Nosotros',
 										'slide_excerpt'	=>	'Conce nuestro catálogo de <stroing>Materiales para construcción</strong>',
-										'slide_link'		=> 	'#',
+										'slide_link'		=> 	'',
 										'slide_image'		=>	'/wordpress/assets/construction-in-progress.jpg'
 									),
 			'slide_3'	=> array(
 										'slide_title'		=> 	'Proyectos Sostenibles',
 										'slide_excerpt'	=>	'Vivir mejor en un mundo verde',
-										'slide_link'		=> 	'#',
-										'slide_image'		=>	'/wordpress/assets/spondias-purpurea.jpg'
+										'slide_link'		=> 	'',
+										'slide_image'		=>	'https://images.unsplash.com/photo-1545601445-4d6a0a0565f0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974'
 									),
 		);
 
@@ -181,7 +181,11 @@ class COPYCATS_THEME {
 				$html_content .= 	'<div class="home fs-slider-content"><div class="container"><div class="row"><section class="float-end">';
 				$html_content .= 	'<h1 class="display-5 text-white fw-bold">' . $slide[ 'slide_title' ] . '</h1>';
 				$html_content .=	'<h2 class="display-6 text-light">' . $slide[ 'slide_excerpt' ] .'</h2>';
-				$html_content .=	'<button type="submit"><a href="' . $slide[ 'slide_link' ] . '">Visitar</a></button>';
+
+				if (!empty($slide['slide_link'])){
+					$html_content .=	'<button type="submit"><a href="' . $slide[ 'slide_link' ] . '">Visitar</a></button>';					
+				}
+
 				$html_content .= 	'</section></div></div></div></div></div></div></div></div>';
 
 		}

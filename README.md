@@ -28,7 +28,7 @@ Working with multiple directories, some of them not being synched to github.
 Remove unused directories like `/assets/src`(scss folder) and `.git`.
 
 ```bash
-    rsync -avu --exclude .git --exclude /assets/scss/ --delete . /var/www/wordpress/wp-content/themes/copycats/
+    rsync -avu --exclude .git --exclude /assets/scss/ --delete . /var/www/html/wordpress/wp-content/themes/copycats/
 ```
 - `app.js` is currently empty.
 
@@ -42,7 +42,7 @@ Starting point after crashed src folder: `fa0ccbddf263f4b179cfd06da5478d731cd9c3
 
 ```
 
-Refer to: `web/copycats-theme-notes.md` for more details about design system structure and development environment. Zip file must have the same name for updating the theme
+Refer to: `OneDrive/copycats-theme-notes.md` for more details about design system structure and development environment. Zip file must have the same name for updating the theme
 
 On `experimental` branch, exclude scss folder and Readme.md file
 

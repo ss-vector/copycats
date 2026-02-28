@@ -1,6 +1,6 @@
 /* Copycats Custom scss file */
 // Include any default variable overrides here (though functions won't be available)
-@import '../../../bootstrap/functions';
+@import '../../../ui/bootstrap-5.3.8/scss/functions';
 // Copycats-theme variables
 @import '../../../copycats-theme-scss/variables';
 
@@ -8,7 +8,7 @@
 @import '../../../copycats-theme-scss/copycats-theme';
 
 /* Bootstrap */
-@import '../../../bootstrap/bootstrap-edited';
+@import '../../../ui/copycats-bootstrap';
 
 /* Copycars Custom SASS functions: Color Functions */
 @import '../../../copycats-theme-scss/functions';
