@@ -165,22 +165,3 @@
 .cc-trust .cc-trust-text strong { display: block; font-size: 1.02rem; }
 .cc-trust .cc-trust-text span { font-size: .85rem; opacity: .85; }
 
-/* ---------- 9. Scroll-reveal (only when JS active) ---------- */
-.cc-js .reveal-init {
-  opacity: 0;
-  transform: translateY(26px);
-  transition: opacity .6s ease, transform .6s ease;
-}
-.cc-js .reveal-init.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* ---------- 10. Map card ---------- */
-.map.map-responsive {
-  border-radius: var(--cc-radius-lg);
-  overflow: hidden;
-  margin: 2.5rem auto;
-  max-width: 1140px;
-  box-shadow: var(--cc-shadow-sm);
-}
