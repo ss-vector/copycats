@@ -31,11 +31,11 @@
 		              			else echo '<img src="' . woocommerce_placeholder_img_src() . '" alt="Placeholder" width="250px" height="250px" />';
 		              	?>
 
-		              	<div class="card-title">
+		              	<div class="card-heading">
 					    	<a href="<?php echo get_permalink( $loop->post->ID ); ?>"><?php the_title( '<h5 class="card-title">', '</h5>' ); ?></a>
 						</div>
 					  	
-					  	<div class="card-description">
+					  	<div class="card-description m-3">
 
 					    	<p class="card-text"><?php echo $product->get_short_description( ); ?></p>
 					    	
@@ -44,7 +44,7 @@
 					    
 					  	</div>
 				  		
-				  		<a href="#" class="btn btn-primary">Prueba</a>
+				  		<a href="#" class="btn btn-primary"><?php _e( 'Añadir', 'copycats' )?></a>
 
 					</div>
 			

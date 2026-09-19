@@ -29,7 +29,7 @@ class Assets {
 
     // Register styles
     wp_register_style( 'template_css', COPYCATS_THEME_URI . '/assets/css/styles.css', false, '1.0.2', 'all' );
-    wp_register_style( 'copycats_layout', COPYCATS_THEME_URI . '/assets/css/layout.css', false, '1.0.1', 'all' );
+    wp_register_style( 'copycats_layout', COPYCATS_THEME_URI . '/assets/css/layout.css', 'template_css', '1.0.1', 'all' );
 
     // Aditional styles
     wp_register_style( 'fontawesome', COPYCATS_THEME_URI . '/assets/css/fontawesome/css/all.css', false, '6.1.2', 'all' );

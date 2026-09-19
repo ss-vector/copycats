@@ -1,33 +1,8 @@
 /* =====================================================================
    Copycats — Front-end UI upgrades (override layer)
    Loaded AFTER styles.css so it wins on equal specificity.
+   [ ] Mergin to styles.scss design.
    ===================================================================== */
-
-/* ---------- 1. Brand design tokens ---------- */
-:root:root {
-  --cc-green:       #0a3622;
-  --cc-green-700:   #0f4229;
-  --cc-green-600:   #1f3d2b;
-  --cc-green-500:   #2f6b45;
-  --cc-green-300:   #4f8a63;
-  --cc-accent:      #7ad03a;
-  --cc-accent-600:  #5fb02b;
-
-  --cc-radius:      .75rem;
-  --cc-radius-lg:   1.25rem;
-
-  --cc-shadow-sm:   0 4px 14px rgba(10, 54, 34, .08);
-  --cc-shadow:      0 12px 30px rgba(10, 54, 34, .14);
-
-  --cc-font-heading: "Inter", var(--bs-font-sans-serif);
-  --cc-transition:   .3s cubic-bezier(.4, 0, .2, 1);
-
-  /* Re-skin Bootstrap primitives to the brand palette */
-  --bs-link-color:        var(--cc-green-500);
-  --bs-link-hover-color:  var(--cc-green-600);
-  --bs-btn-font-weight:   600;
-}
-
 /* ---------- 2. Buttons on-brand ---------- */
 .btn-primary {
   --bs-btn-bg:               var(--cc-green-500);
@@ -145,23 +120,3 @@
   flex: 0 0 auto;
 }
 .featured-section .section-title { color: var(--cc-green); }
-
-/* ---------- 8. Trust strip ---------- */
-.cc-trust {
-  background: var(--cc-green-500);
-  color: #fff;
-}
-.cc-trust .cc-trust-item {
-  display: flex;
-  align-items: center;
-  gap: .85rem;
-  justify-content: center;
-  padding: 1.1rem .5rem;
-}
-.cc-trust .cc-trust-icon {
-  font-size: 1.6rem;
-  color: var(--cc-accent);
-}
-.cc-trust .cc-trust-text strong { display: block; font-size: 1.02rem; }
-.cc-trust .cc-trust-text span { font-size: .85rem; opacity: .85; }
-
